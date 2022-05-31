@@ -73,7 +73,8 @@ h4{
 h5{
     font-family:  "Montserrat";
     font-weight: 400;
-    font-size: small;color: var(--text-color);
+    font-size: small;
+    color: var(--text-color);
 }
 
 p {
@@ -192,10 +193,12 @@ p {
 }
 
 .footer-container .logo{
-    width: 262px;
+    width: 268px;
     border-top: 6rem;
     padding-left: 31%;
-    margin-top: 2rem;}
+    margin-top: 2rem;
+}
+
 
 .footer-container .contact{
     width: 282px;
@@ -225,8 +228,6 @@ p {
 
 .footer-box h3{
     font-size: 1.1rem;
-/* font-weight: 400; */
-/* margin-bottom: 6rem; */
 }
 
 .footer-box a{
@@ -239,6 +240,11 @@ p {
 
 .footer-box a:hover{
     color: var(--hover-color);
+    padding-left: 10px;
+}
+
+.footer-box .up-footer .fc:hover{
+    color: var(--hover-color);
     padding-left: 2px;
 }
 
@@ -246,7 +252,9 @@ p {
     padding-left: 0px;
 }
 
-
+/* .footer-container .logo a:hover {
+    padding-left: 0px;
+} */
 
 .footer-container .footer-box .up-footer, .down-footer {
     display: flex;

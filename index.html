@@ -18,7 +18,9 @@
 <body>
     <!-- Nav section -->
     <header class="header">
-        <div id="menu-btn" class="fa-solid fa-bars"></div>
+        <div id="menu-btn" class="fa-solid fa-bars">
+        </div>
+
         <a href="index.html" class="logo"><img src="/res/logo.png" alt="logo"></a>
 
         <nav class="navbar">
@@ -40,265 +42,265 @@
         </div>
     </header>
 
- <!-- Home section -->
- <section class="home" id="home">
-    <img class="car-image" src="res/car2.png" alt="car image">
-        <div class="home-text">
-            <h1>Let's find your new cars</h1>
-            <div id="search-form">
-                <div class="button-container">
-                   <span class="folded-button" id="border">All</span>
-                   <span class="folded-button">Used</span>
-                   <span class="folded-button">New</span>
-               </div>
+    <!-- Home section -->
+    <section class="home" id="home">
+        <img class="car-image" src="res/car2.png" alt="car image">
+            <div class="home-text">
+                <h1>Let's find your new cars</h1>
+                <div id="search-form">
+                    <div class="button-container">
+                    <span class="folded-button" id="border">All</span>
+                    <span class="folded-button">Used</span>
+                    <span class="folded-button">New</span>
+                </div>
 
-            <div class="dropdown">
-                <div class="firstcol">
-                    <div class="dropdown1">
-                        <input type="text" class="textBox1" placeholder="Make" readonly>
-                        <div class="option">
-                            <div onclick="show('Audi')">Audi</div>
-                            <div onclick="show('BMW')">BMW</div>
-                            <div onclick="show('Holden')">Holden</div>
-                            <div onclick="show('Honda')">Honda</div>
-                            <div onclick="show('Hyundai')">Hyundai</div>
-                            <div onclick="show('Jaguar')">Jaguar</div>
-                            <div onclick="show('Jeep')">Jeep</div>
-                            <div onclick="show('KIA')">KIA</div>
-                            <div onclick="show('Maserati')">Maserati</div>
-                            <div onclick="show('Mazda')">Mazda</div>
-                            <div onclick="show('Mercedes-Benz')">Mercedes-Benz</div>
-                            <div onclick="show('Mini')">Mini</div>
-                            <div onclick="show('Subaru')">Subaru</div>
-                            <div onclick="show('Toyota')">Toyota</div>
-                            <div onclick="show('Volkswagen')">Volkswagen</div> 
+                <div class="dropdown">
+                    <div class="firstcol">
+                        <div class="dropdown1">
+                            <input type="text" class="textBox1" placeholder="Make" readonly>
+                            <div class="option">
+                                <div onclick="show('Audi')">Audi</div>
+                                <div onclick="show('BMW')">BMW</div>
+                                <div onclick="show('Holden')">Holden</div>
+                                <div onclick="show('Honda')">Honda</div>
+                                <div onclick="show('Hyundai')">Hyundai</div>
+                                <div onclick="show('Jaguar')">Jaguar</div>
+                                <div onclick="show('Jeep')">Jeep</div>
+                                <div onclick="show('KIA')">KIA</div>
+                                <div onclick="show('Maserati')">Maserati</div>
+                                <div onclick="show('Mazda')">Mazda</div>
+                                <div onclick="show('Mercedes-Benz')">Mercedes-Benz</div>
+                                <div onclick="show('Mini')">Mini</div>
+                                <div onclick="show('Subaru')">Subaru</div>
+                                <div onclick="show('Toyota')">Toyota</div>
+                                <div onclick="show('Volkswagen')">Volkswagen</div> 
+                            </div>
+                        </div>
+
+                        <div class="dropdown2">
+                            <input type="text" class="textBox2" placeholder="Location" readonly>
+                            <div class="option">
+                                <div onclick="show('East Perth')">East Perth</div>
+                                <div onclick="show('Highgate')">Highgate</div>
+                                <div onclick="show('Ashfield')">Ashfield</div>
+                                <div onclick="show('Crawley')">Crawley</div>
+                                <div onclick="show('Rossmoyne')">Rossmoyne</div>
+                                <div onclick="show('North Fremantle')">North Fremantle</div>
+                                <div onclick="show('Maylands')">Maylands</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="dropdown2">
-                        <input type="text" class="textBox2" placeholder="Location" readonly>
-                        <div class="option">
-                            <div onclick="show('East Perth')">East Perth</div>
-                            <div onclick="show('Highgate')">Highgate</div>
-                            <div onclick="show('Ashfield')">Ashfield</div>
-                            <div onclick="show('Crawley')">Crawley</div>
-                            <div onclick="show('Rossmoyne')">Rossmoyne</div>
-                            <div onclick="show('North Fremantle')">North Fremantle</div>
-                            <div onclick="show('Maylands')">Maylands</div>
+                    <div class="secondcol">
+                        <div class="dropdown3">
+                            <input type="text" class="textBox3" placeholder="Model" readonly>
+                            <div class="option">
+                                <div onclick="show('Hatchback')">Hatchback</div>
+                                <div onclick="show('SUV')">SUV</div>
+                                <div onclick="show('Truck')">Truck</div>
+                                <div onclick="show('Sedan')">Sedan</div>
+                                <div onclick="show('Convertible')">Convertible</div>
+                                <div onclick="show('Wagon')">Wagon</div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown4">
+                            <input type="text" class="textBox4" placeholder="Keywords" readonly>
                         </div>
                     </div>
                 </div>
 
-                <div class="secondcol">
-                    <div class="dropdown3">
-                        <input type="text" class="textBox3" placeholder="Model" readonly>
-                        <div class="option">
-                            <div onclick="show('Hatchback')">Hatchback</div>
-                            <div onclick="show('SUV')">SUV</div>
-                            <div onclick="show('Truck')">Truck</div>
-                            <div onclick="show('Sedan')">Sedan</div>
-                            <div onclick="show('Convertible')">Convertible</div>
-                            <div onclick="show('Wagon')">Wagon</div>
-                        </div>
-                    </div>
+                <a class="searchbtn" href="#"><i class="fa-solid fa-magnifying-glass"></i>Show results</a>
+            </div>
+    </section>
 
-                    <div class="dropdown4">
-                        <input type="text" class="textBox4" placeholder="Keywords" readonly>
-                    </div>
+    <!-- Body style section -->
+    <section class="body_style">
+        <h2>Browse by body style</h2>
+    <div>
+        <ul class="body_list">
+            <li><img src="/res/body/Hatchback.png" alt="hatchback"><a href="#">Hatchback</a></li>
+            <li><img src="/res/body/SUV.png" alt="suv"><a href="#">SUV</a></li>
+            <li><img src="/res/body/truck.png" alt="truck"><a href="#">Truck</a></li>
+            <li><img src="/res/body/sedan.png" alt="sedan"><a href="#">Sedan</a></li>
+            <li><img src="/res/body/Convertible.png" alt="convertible"><a href="#">Convertible</a></li>
+            <li><img src="/res/body/Wagon.png" alt="wagon"><a href="#">Wagon</a></li>
+        </ul> 
+    </div>
+    </section>
+
+    <!-- Brand style section -->
+    <section class="brand_style">
+        <h2>Browse by brands</h2>
+    <div class="brand_list">
+        <div class="firstrow">
+            <a href="#"><img src="/res/brand/BMW.png" alt="BMW"></a>
+            <a href="#"><img src="/res/brand/MB.png" alt="Mercedes-Benz"></a>
+            <a href="#"><img src="/res/brand/audi.png" alt="Audi"></a>
+            <a href="#"><img src="/res/brand/Toyota.png" alt="Toyota"></a>
+        </div>
+
+        <div class="secondrow">
+            <a href="#"><img src="/res/brand/Honda.png" alt="Honda"></a>
+            <a href="#"><img src="/res/brand/ford.png" alt="Ford"></a>
+            <a href="#"><img src="/res/brand/hyundai.png" alt="Hyundai"></a>
+            <a href="#"><img src="/res/brand/Volkswagen.png" alt="Volkswagen"></a>
+        </div>
+    </div>
+    </section>
+
+    <!--  News & Article section -->
+    <section class="article">
+        <h2>News & Featured Articles</h2>
+
+        <div class="article-container">
+
+            <!-- Container 1 -->
+            <div class="box">
+                <img src="/res/news/news1.png" alt="">
+                <span>May 20 2022</span>
+                <h3>Aussies are planning to hit the highways in droves this Easter break</h3>
+                <p>New survey suggests that Australian's are keen to hit the road for a much-deserved holiday break with the hope the Easter Bunny will find them ...</p>
+                <a href="#" class="article-btn">See More<i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Container 2 -->
+            <div class="box">
+                <img src="/res/news/news2.png" alt="">
+                <span>May 24 2022</span>
+                <h3>New Lexus LX sold out until 2023</h3>
+                <p>Featuring a Twin Turbo Engine & 10 Speed Transmission to Power Your Adventure. Learn More. Explore Rough Terrain In Comfort & Style Where Luxury Knows No Limits. </p>
+                <a href="#" class="article-btn">See More<i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Container 3 -->
+            <div class="box">
+                <img src="/res/news/news3.png" alt="">
+                <span>June 1 2022</span>
+                <h3>Top 10 Best selling cars in Australia</h3>
+                <p>Older Australians may fondly remember a time when every house in town seemed to have either a dusty Holden Commodore or a well-used Ford Falcon sitting on the driveway, but as our country changes, so does our taste in vehicles. </p>
+                <a href="#" class="article-btn">See More<i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--  Review section -->
+    <section class="review">
+        <h2>Reviews</h2> 
+        <h3>View all</h3>
+
+        <div class="review-container">
+            <!-- Container 1 -->
+            <div class="reviewbox">
+                <img src="/res/review/review1.png" alt="">
+                <h4>3.3       <i class="fa-solid fa-star"></i></h4>
+                <h4>2014 Holden Cruze</h4>
+            </div>
+
+            <!-- Container 2 -->
+            <div class="reviewbox">
+                <img src="/res/review/review2.png" alt="">
+                <h4>4.5        <i class="fa-solid fa-star"></i></h4>
+                <h4>2016 Mazda 3</h4>
+            </div>
+
+            <!-- Container 3 -->
+            <div class="reviewbox">
+                <img src="/res/review/review3.png" alt="">
+                <h4>3.3        <i class="fa-solid fa-star"></i></h4>
+                <h4>2014 Holden Cruz</h4>
+            </div>
+
+            <!-- Container 4 -->
+            <div class="reviewbox">
+                <img src="/res/review/review4.png" alt="">
+                <h4>4.5        <i class="fa-solid fa-star"></i></h4>
+                <h4>2016 Mazda 3</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!--  Company Infomation section -->
+    <section class="info">
+        <h3>Welcome to Auto Classic Pre-Owned Cars & Motorcycles
+            PERTH'S BIGGEST RANGE OF LUXURY USED CARS AND MOTORCYCLES</h3>
+
+        <h4>Explore our diverse range of stock online or at our showroom which is conveniently located in Burswood, Perth WA. Our used car stock is sourced from a cross-section of suppliers, to suit a range of buying needs.
+            Visit our online used car listing to see our latest range of used car stock and online specials. Our friendly staff are available on hand to help you with any queries you may have.</h4>
+    </section>
+
+
+    <!--  Footer -->
+    <section class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <a href="index.html"><img class="logo" src="/res/logo.png" alt="logo"></a>
+                <div class="contact">
+                    <h5>Call us: (08)9311 7533</h5>
+                    <h5>Location: 49 Burswood Rd,</h5>
+                    <h5>Burswood WA 6100</h5>
                 </div>
             </div>
 
-            <a class="searchbtn" href="#"><i class="fa-solid fa-magnifying-glass"></i>Show results</a>
+            <div class="footer-box">
+                <h3>OUR STOCK</h3>
+                <a href="#">Demo Vehicles</a>
+                <a href="#">Used Vehicles</a>
+                <a href="#">Luxury Vehicles</a>
+                <a href="#">Motorcycles</a>
+            </div>
+
+            <div class="footer-box">
+                <div class="up-footer">
+                    <h3>SPECIALS</h3>
+                    <a href="#">Special</a>
+                </div>
+
+                <div class="down-footer">
+                    <h3>FINANCE</h3>
+                    <a href="#">Finance</a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <div class="up-footer">
+                    <h3>SERVICE</h3>
+                    <a class="fc" href="#">Finance Calculator</a>
+                    <a href="#">Latest News</a>
+                </div>
+                
+                <div class="down-footer">
+                    <h3>TRADE & SELL</h3>
+                    <a href="#">Sell Your Car</a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>CONTACT US</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+                <a href="#">COVID-19 Update</a>
+                <div class="social">
+                    <a href="https://www.instagram.com/autoclassicbmw/"><img src="/res/social media/Icon metro-instagram.png" alt="ins"></a>
+                    <a href="https://www.facebook.com/autoclassicbmw"><img src="/res/social media/Icon awesome-facebook-square.png" alt="fb"></a>
+                    <a href="#"><img src="/res/social media/Icon material-email.png" alt="email"></a>
+                    <a href="#"><img src="/res/social media/Icon awesome-youtube.png" alt="ytb"></a>
+                </div>
+            </div>
         </div>
-</section>
+    </section>
 
-<!-- Body style section -->
-<section class="body_style">
-    <h2>Browse by body style</h2>
-   <div>
-       <ul class="body_list">
-           <li><img src="/res/body/Hatchback.png" alt="hatchback"><a href="#">Hatchback</a></li>
-           <li><img src="/res/body/SUV.png" alt="suv"><a href="#">SUV</a></li>
-           <li><img src="/res/body/truck.png" alt="truck"><a href="#">Truck</a></li>
-           <li><img src="/res/body/sedan.png" alt="sedan"><a href="#">Sedan</a></li>
-           <li><img src="/res/body/Convertible.png" alt="convertible"><a href="#">Convertible</a></li>
-           <li><img src="/res/body/Wagon.png" alt="wagon"><a href="#">Wagon</a></li>
-       </ul> 
-   </div>
-</section>
-
-<!-- Brand style section -->
-<section class="brand_style">
-    <h2>Browse by brands</h2>
-   <div class="brand_list">
-       <div class="firstrow">
-        <a href="#"><img src="/res/brand/BMW.png" alt="BMW"></a>
-        <a href="#"><img src="/res/brand/MB.png" alt="Mercedes-Benz"></a>
-        <a href="#"><img src="/res/brand/audi.png" alt="Audi"></a>
-        <a href="#"><img src="/res/brand/Toyota.png" alt="Toyota"></a>
-       </div>
-
-       <div class="secondrow">
-        <a href="#"><img src="/res/brand/Honda.png" alt="Honda"></a>
-        <a href="#"><img src="/res/brand/ford.png" alt="Ford"></a>
-        <a href="#"><img src="/res/brand/hyundai.png" alt="Hyundai"></a>
-        <a href="#"><img src="/res/brand/Volkswagen.png" alt="Volkswagen"></a>
-       </div>
-   </div>
-</section>
-
- <!--  News & Article section -->
-<section class="article">
-    <h2>News & Featured Articles</h2>
-
-    <div class="article-container">
-
-        <!-- Container 1 -->
-        <div class="box">
-            <img src="/res/news/news1.png" alt="">
-            <span>May 20 2022</span>
-            <h3>Aussies are planning to hit the highways in droves this Easter break</h3>
-            <p>New survey suggests that Australian's are keen to hit the road for a much-deserved holiday break with the hope the Easter Bunny will find them ...</p>
-            <a href="#" class="article-btn">See More<i class="fa-solid fa-arrow-right-long"></i></a>
-        </div>
-
-        <!-- Container 2 -->
-        <div class="box">
-            <img src="/res/news/news2.png" alt="">
-            <span>May 24 2022</span>
-            <h3>New Lexus LX sold out until 2023</h3>
-            <p>Featuring a Twin Turbo Engine & 10 Speed Transmission to Power Your Adventure. Learn More. Explore Rough Terrain In Comfort & Style Where Luxury Knows No Limits. </p>
-            <a href="#" class="article-btn">See More<i class="fa-solid fa-arrow-right-long"></i></a>
-        </div>
-
-        <!-- Container 3 -->
-        <div class="box">
-            <img src="/res/news/news3.png" alt="">
-            <span>June 1 2022</span>
-            <h3>Top 10 Best selling cars in Australia</h3>
-            <p>Older Australians may fondly remember a time when every house in town seemed to have either a dusty Holden Commodore or a well-used Ford Falcon sitting on the driveway, but as our country changes, so does our taste in vehicles. </p>
-            <a href="#" class="article-btn">See More<i class="fa-solid fa-arrow-right-long"></i></a>
-        </div>
-
+    <!-- Copyright -->
+    <div class="copyright">
+        <h5>Copyright© 2022. All rights reserved by Auto Classic Pre-Owned Cars and Motorcycles</h5>
     </div>
-</section>
 
- <!--  Review section -->
-<section class="review">
-    <h2>Reviews</h2> 
-    <h3>View all</h3>
-
-    <div class="review-container">
-         <!-- Container 1 -->
-        <div class="reviewbox">
-            <img src="/res/review/review1.png" alt="">
-            <h4>3.3       <i class="fa-solid fa-star"></i></h4>
-            <h4>2014 Holden Cruze</h4>
-        </div>
-
-        <!-- Container 2 -->
-        <div class="reviewbox">
-            <img src="/res/review/review2.png" alt="">
-            <h4>4.5        <i class="fa-solid fa-star"></i></h4>
-            <h4>2016 Mazda 3</h4>
-        </div>
-
-        <!-- Container 3 -->
-        <div class="reviewbox">
-            <img src="/res/review/review3.png" alt="">
-            <h4>3.3        <i class="fa-solid fa-star"></i></h4>
-            <h4>2014 Holden Cruz</h4>
-        </div>
-
-        <!-- Container 4 -->
-        <div class="reviewbox">
-            <img src="/res/review/review4.png" alt="">
-            <h4>4.5        <i class="fa-solid fa-star"></i></h4>
-            <h4>2016 Mazda 3</h4>
-        </div>
-
-    </div>
-</section>
-
-<!--  Company Infomation section -->
-<section class="info">
-    <h3>Welcome to Auto Classic Pre-Owned Cars & Motorcycles
-        PERTH'S BIGGEST RANGE OF LUXURY USED CARS AND MOTORCYCLES</h3>
-
-    <h4>Explore our diverse range of stock online or at our showroom which is conveniently located in Burswood, Perth WA. Our used car stock is sourced from a cross-section of suppliers, to suit a range of buying needs.
-        Visit our online used car listing to see our latest range of used car stock and online specials. Our friendly staff are available on hand to help you with any queries you may have.</h4>
-</section>
-
-
-<!--  Footer -->
-<section class="footer">
-
-    <div class="footer-container">
-
-        <div class="footer-box">
-            <a href="index.html"><img class="logo" src="/res/logo.png" alt="logo"></a>
-            <div class="contact">
-                <h5>Call us: (08)9311 7533</h5>
-                <h5>Location: 49 Burswood Rd,</h5>
-                <h5>Burswood WA 6100</h5>
-            </div>
-        </div>
-
-        <div class="footer-box">
-            <h3>OUR STOCK</h3>
-            <a href="#">Demo Vehicles</a>
-            <a href="#">Used Vehicles</a>
-            <a href="#">Luxury Vehicles</a>
-            <a href="#">Motorcycles</a>
-        </div>
-
-        <div class="footer-box">
-            <div class="up-footer">
-                <h3>SPECIALS</h3>
-                <a href="#">Special</a>
-            </div>
-
-            <div class="down-footer">
-                <h3>FINANCE</h3>
-                <a href="#">Finance</a>
-            </div>
-        </div>
-
-        <div class="footer-box">
-            <div class="up-footer">
-                <h3>SERVICE</h3>
-                <a href="#">Finance Calculator</a>
-                <a href="#">Latest News</a>
-            </div>
-            
-            <div class="down-footer">
-                <h3>TRADE & SELL</h3>
-                <a href="#">Sell Your Car or Motorcycle</a>
-            </div>
-        </div>
-
-        <div class="footer-box">
-            <h3>CONTACT US</h3>
-            <a href="#">Contact Us</a>
-            <a href="#">About Us</a>
-            <a href="#">COVID-19 Update</a>
-            <div class="social">
-                <a href="https://www.instagram.com/autoclassicbmw/"><img src="/res/social media/Icon metro-instagram.png" alt="ins"></a>
-                <a href="https://www.facebook.com/autoclassicbmw"><img src="/res/social media/Icon awesome-facebook-square.png" alt="fb"></a>
-                <a href="#"><img src="/res/social media/Icon material-email.png" alt="email"></a>
-                <a href="#"><img src="/res/social media/Icon awesome-youtube.png" alt="ytb"></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Copyright -->
-<div class="copyright">
-    <h5>Copyright© 2022. All rights reserved by Auto Classic Pre-Owned Cars and Motorcycles</h5>
-</div>
-
-<!-- js link -->
-<script src="/js/main.js"></script>
+    <!-- js link -->
+    <script src="/js/main.js"></script>
 
 </body>
 </html>
