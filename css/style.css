@@ -225,8 +225,8 @@ p {
 
 .footer-box h3{
     font-size: 1.1rem;
-    font-weight: 400;
-    margin-bottom: 6rem;
+/* font-weight: 400; */
+/* margin-bottom: 6rem; */
 }
 
 .footer-box a{
@@ -238,20 +238,14 @@ p {
 }
 
 .footer-box a:hover{
-    color:var(--hover-color);
-    padding-right:2rem;
-
+    color: var(--hover-color);
+    padding-left: 2px;
 }
 
-/* .footer-container .footer-box a i{
-    padding-right: .5rem;
-    color: var(--text-color);
+.footer-box .social a:hover{
+    padding-left: 0px;
 }
 
-.footer-container .footer-box a:hover i{
-    padding-right: 2rem;
-    color:var(--hover-color);
-} */
 
 
 .footer-container .footer-box .up-footer, .down-footer {
