@@ -1,0 +1,286 @@
+/*-------------------------------------
+        Product section
+--------------------------------------*/
+
+.product{
+    margin: 10rem;
+}
+
+.product .product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/*-------------------------------------
+        Product left section
+--------------------------------------*/
+
+.product-container .container-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    gap: 10rem;
+}
+
+.fa-arrow-left, .fa-heart, .fa-car, .fa-brush, .fa-gas-pump, .fa-car-side{
+    font-size: 30px;
+    color: var(--main-color);
+    cursor: pointer;
+    /* margin-top: 1rem; */
+}
+
+.product-container .container-left .title .title-btn .fa-heart:hover{
+    color:#D33DA5;
+}
+
+.fa-arrow-left:hover{
+    color:#D33DA5;
+}
+
+.car-title{
+    padding: 1rem;
+}
+
+.title .title-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-left: -3rem;
+}
+
+.comparebtn:hover{
+    color: var(--hover-color);
+}
+
+.comparebtn{
+    font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    background-image: var(--gradient);
+    padding: 8px 11px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+    
+.comparebtn:hover{
+    color: var(--hover-color);
+}
+
+.car-title h2{
+    padding: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.car-title h5{
+    text-align: center;
+}
+
+.container-left .single-image{
+    margin-top: -10rem;
+}
+
+.container-left .single-image img{
+    width: 100%;
+    height: auto;
+}
+
+.multi-image-group .small-image-group .multi-image-col img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.multi-image-group .small-image-group .multi-image-col h4{
+    text-align: center;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.multi-image-group .small-image-group{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.product-container .container-left .title{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+/*-------------------------------------
+        Product right section
+--------------------------------------*/
+
+.container-right{
+    width: 50%;
+    background-color: #d8d5eb2c;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #b1a6eaad;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.container-right h2{
+    text-align: center;
+    padding: 2rem;
+}
+
+.key-features{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* gap: 2rem; */
+}
+
+.feature-box{
+    display: flex;
+    background-color: white;
+    box-shadow: 3px 2px 2px #b0afb1ad;
+    margin: 2rem;
+    padding: 30px 25px;
+    border-radius: 31px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.feature-box i{
+    margin-right: -93px;
+}
+
+.feature-box h4 {
+    text-align: left;
+    margin-left: 7rem;
+    color: var(--btntext-color);
+    line-height: 20px;
+}
+
+.Comment h5{
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.contact-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.contact-btn .details{
+    font-family: "Poppins", medium;
+    font-weight: 500;
+    color: var(--btntext-color);
+    cursor: pointer;
+    color: white;
+    background-image: var(--gradient);
+    box-shadow: 3px 2px 2px #b0afb1ad;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contact-btn .details:hover{
+    color: var(--hover-color);
+}
+
+.contact-btn .contactseller{
+    font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--main-color);
+    background-color: white;
+    box-shadow: 3px 2px 2px #b0afb1ad;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contact-btn .contactseller:hover{
+    background-color: var(--hover-color);
+}
+
+
+/*-------------------------------------
+        Car Details section
+--------------------------------------*/
+.car-details{
+    background-color: #d8d5eb2c;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 2px 2px #b0afb1ad;
+    margin-top: -5rem;
+}
+
+.car-details h1{
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.car-details .heading{
+    padding: 2rem;
+    text-align: center;
+}
+
+.heading span{
+    position: relative;z-index: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.heading span::before{
+    content: '';
+    position:absolute;
+    bottom:.5rem;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--main-color);
+    clip-path:polygon(0 90%, 100% 80%, 100% 100%, 0% 100%)
+}
+
+.car-details .details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.car-details .details .fa-circle{
+    font-size: 60%;
+    color: var(--main-color);
+    margin: 0.5rem;
+}
+
+.car-details .details .detail-col{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.car-details .details .detail-col li{
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin: 10px;
+}
+
+.car-details .details .detail-col span{
+    font-family: "Montserrat";
+    font-weight: 600;
+}
