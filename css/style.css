@@ -223,7 +223,7 @@ p {
     width: 58%;
 }
 
-footer-box h3{
+.footer-box h3{
     font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 6rem;
@@ -240,7 +240,7 @@ footer-box h3{
 .footer-box a:hover{
     color:var(--hover-color);
     padding-right:2rem;
-    
+
 }
 
 /* .footer-container .footer-box a i{
@@ -253,7 +253,8 @@ footer-box h3{
     color:var(--hover-color);
 } */
 
-.footer-container .footer-box .up-footer, .down-footer{
+
+.footer-container .footer-box .up-footer, .down-footer {
     display: flex;
     flex-direction: column;
 }

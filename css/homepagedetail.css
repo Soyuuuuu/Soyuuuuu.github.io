@@ -307,7 +307,6 @@
     color: var(--hover-color);
     column-gap: 0.7rem;
     transition: 0.4s;
-
 }
 
 
@@ -343,6 +342,12 @@
     flex-wrap: nowrap;
     margin-top: -1.5rem;
     overflow: scroll;
+}
+
+
+.review .review-container .reviewbox:hover{
+    opacity: 80%;
+    border-radius: 20px;
 }
 
 .reviewbox{
