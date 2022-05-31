@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/*-------------------------------------
+        Home section
+--------------------------------------*/
+
+.home{
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+
+.car-image{
+    margin-top: 10rem;
+    width: 55rem;
+    height: auto;
+}
+
+.home .home-text{
+    display: flex;
+    margin-top: 13rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.home .button-container{
+    text-align: center;
+    padding-left: 3rem;
+}
+
+.folded-button {
+    font-family: "Poppins", medium;
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding-left: 5rem;
+    justify-items: center;
+    /* border-radius: 130px; */
+    border-radius: 0px 30px 30px 0px;
+    margin-left: -4rem;
+    border: 1px solid #707070;
+    border-left: none; 
+}
+
+#border {
+    font-family: "Poppins", medium;
+    width: 7rem;
+    height: 3rem;
+    text-align: center;
+    /* display: inline-flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding-left: 3rem;
+    justify-items: center;
+    border-radius: 30px;
+    border: 1px solid var(--btntext-color);
+}
+
+.folded-button:hover, #border:hover{
+    background-color: #F5F5F5;
+    color: #ACA1E5;
+    border-left:  1px solid #707070;
+    border-radius: 30px;
+}
+
+.home .dropdown{
+    display: flex;
+    /* text-align: center; */
+    /* flex-direction: row; */
+    /* font-family: "Montserrat", Light; */
+    /* font-weight: 300; */
+    /* font-size: 21px; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 5rem; */
+    margin-top: 20px;
+}
+
+.home .secondcol{
+    margin-left: 3rem;
+}
+.home .dropdown2{
+    margin-top: 2rem;
+}
+
+.home .dropdown4{
+    margin-top: 2rem;
+}
+
+.dropdown::before{
+    content: '';
+    position: absolute;
+    right: 21.5rem;
+    top: 27.3rem;
+    /*     z-index: 10000; */
+    width: 8px;
+    height: 8px;
+    border: 2px solid #727272;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff; 
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.dropdown input{
+    font-family: "Montserrat", Light;
+    font-weight: 300;
+    font-size: 14px;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgb(19 18 18 / 5%);
+    padding: 2px 10px;
+}
+
+.dropdown .option{
+    position: absolute;
+    width: 10rem;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(19, 18, 18, 0.05);
+    overflow: hidden;
+    padding: 10px;
+    display: none;
+}
+
+.dropdown.active .option{
+    display: block;
+}
+
+.dropdown .option div{
+    padding: 4px 4px;
+    cursor: pointer;
+}
+
+.dropdown .option div:hover{
+    background: #ACA1E5;
+    color: white;
+}
+
+.searchbtn{
+    display: flex;
+    /* align-items: center; */
+    margin-left: 12rem;
+    margin-top: 2rem;
+    margin-right: 13rem;
+    font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    background-image: var(--gradient);
+    padding: 8px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.searchbtn:hover{
+    color: var(--hover-color);
+}
+
+/*-------------------------------------
+       Brand & body style
+--------------------------------------*/
+
+.body_style, .brand_style{
+    background-color: var(--mainbackground-color);
+}
+
+.body_list {
+    display: flex;
+    /* align-items: center; */
+    /* justify-items: center; */
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    /* overflow: scroll; */
+}
+
+.body_list a{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    /* gap: 0rem; */
+    font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--btntext-color);
+    padding: 1rem;
+    display: inline-block;
+}
+
+.body_list > *{
+    display: block;
+    text-align: center;
+}
+
+.body_list img {
+    /* width: 8rem; */
+    height: 4rem;
+    display: flex;
+}
+
+.brand_list{
+    padding-left: 8%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10rem;/* overflow: scroll; */
+}
+
+.brand_list img{
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand_list .firstrow, .secondrow{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+.brand_list .secondrow{
+    margin-top: -8rem;
+}
+
+/*-------------------------------------
+       News & Articles
+--------------------------------------*/
+
+.box img{
+    width: 100%;
+}
+
+.article-container{
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+    margin-top: -2rem;
+}
+
+.article-container .box{
+    flex: 1 1 13rem;
+    padding: 20px;
+    margin: 18px auto;
+}
+
+.article-container .box:hover{
+    opacity: 80%;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px #b1a6eaad;
+}
+
+.article-container .box span{
+    font-family: "Montserrat", bold;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--main-color);
+    padding-top: 0.5rem;
+}
+
+.article-container h3 {
+    color: var(--text-color);
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    line-height: 1.2;
+}
+
+.article-container .box p{
+    font-size: 0.938rem;
+    margin: 4px 0;
+    padding-top: 0.5rem;
+    line-height: 1.2;
+}
+
+.article-container .box .article-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color: var(--text-color);
+    font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--btntext-color);
+    padding-top: 0.5rem;
+}
+
+.article-container .box .article-btn:hover{
+    color: var(--hover-color);
+    column-gap: 0.7rem;
+    transition: 0.4s;
+
+}
+
+
+/*-------------------------------------
+       Review Section
+--------------------------------------*/
+
+.review h3{
+  text-align: right;
+  margin-right: 4rem;
+}
+
+.review h2{
+    padding-bottom: initial;
+}
+
+.review h3:hover{
+   color: var(--hover-color);
+   text-decoration:underline;
+}
+
+.review{
+    background-color: var(--mainbackground-color);
+}
+
+.reviewbox img{
+    width: 300px;
+}
+
+.review .review-container{
+    padding-left: 4%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -1.5rem;
+    overflow: scroll;
+}
+
+.reviewbox{
+    flex: 1 1 13rem;
+    padding:20px;
+    margin: 14px auto;
+}
+
+.reviewbox h4{
+   padding-bottom: 0.5rem;
+   padding-left: 1.5rem;
+}
+
+.review-container .fa-star{
+    color: var(--main-color);
+}
+
+/*-------------------------------------
+       Company Introduction Section
+--------------------------------------*/
+
+.info{
+    padding-left: 8%;
+    padding-right: 8%;
+    line-height: 1.5;
+}
+
+.info h3{
+    margin-bottom: 1rem;
+}
