@@ -1,0 +1,323 @@
+/*-------------------------------------
+       Search result space
+--------------------------------------*/
+
+.search_result{
+	width:100rem;
+	height:auto;
+	margin:0 auto;
+	margin-top:10rem;
+	display:flex;
+	gap:2rem;
+}
+
+/*-----------------------------------------
+       Search result left space - filter
+-------------------------------------------*/
+
+.filter{
+	flex:0 1 460px;
+	background:#fff;
+	box-shadow:0 0 5px #aaa;
+	padding:20px;
+	border-radius:1rem;
+	box-sizing:border-box;
+}
+
+.filter .row button{
+	font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    background-image: var(--gradient);
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+	display:block;
+	margin:0 auto;
+}
+
+.filter .title{
+	display:flex;
+    align-items: center;
+    justify-content: space-between;
+	line-height:37px;
+}
+
+.filter .title .title_txt{
+	font-size:1.75rem;
+	text-indent:2.5rem;
+	background-image:url(../res/search_result/filter.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	background-size:1.75rem;
+}
+
+.filter .title .clear_all{
+	font-size:1.25rem;
+    color: var(--btntext-color);
+}
+
+.filter .row{
+	margin: 1rem 0;
+}
+
+.filter .row h3{
+	line-height:2.5rem;
+}
+
+.filter .row.price {
+	display:flex;
+	gap:1rem;
+}
+
+.filter .row.price div{
+	flex:1;
+	font-size:1rem;
+}
+
+.filter .row.price div input{
+	width:100%;
+	border: 1px solid #707070;
+	height:3rem;
+	box-sizing:border-box;
+    border-radius: 13px;
+	margin-top:0.6rem;
+}
+
+.row .range {
+	margin:2rem 0;
+	height:3px;
+	background:#E3E0E0;
+	position:relative;
+}
+
+.row .range .line{
+	width:60%;
+	margin:0 auto;
+	height:3px;
+	background:#9B8FE4;
+}
+
+.row .range .spot{
+	width:1.68rem;
+	height:1.68rem;
+	box-sizing:border-box;
+	border:3px solid #9B8FE4;
+	border-radius:50%;
+	position:absolute;
+	background:#fff;
+	box-shadow:0 0 11px #aaa;
+}
+
+.row .range .spot1{
+	top:-0.8rem;
+	left:20%;
+}
+
+.row .range .spot2{
+	top:-0.8rem;
+	right:20%;
+}
+
+.row.per input{
+	width:100%;
+	height:3rem;
+	box-sizing:border-box;
+    border-radius: 13px;
+	margin-top:0.6rem;
+	border: 1px solid #707070;
+	background-image:url(../res/search_result/sort.png);
+	background-position:97% center;
+	background-repeat:no-repeat;
+}
+
+.row .iconlist{
+	width:100%;
+	display:flex;
+	 flex-wrap:wrap;
+}
+
+.row .iconlist .icon{
+	flex:0 1 25%;
+	text-align:center;
+	margin:1rem 0;
+}
+
+.row .iconlist .icon img{
+	width:4.5rem;
+}
+
+/*-----------------------------------------
+       Search result right space - result
+-------------------------------------------*/
+
+.result{
+	flex:1 1 1160px;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+	box-sizing:border-box;
+}
+
+.result .search{
+	width:100%;
+	position:relative;
+}
+
+.result .search input{
+	width:100%;
+	background:#F9F9F9;
+	height:5.4rem;
+	border-radius:10px;
+	border:1px solid #707070;
+	font-size:2.2rem;
+	text-indent:8%;
+}
+
+.result .search div{
+	position:absolute;
+	top:0px;
+	height:5.4rem;
+	display: flex;
+    justify-content: space-between;
+	align-items:center;
+}
+
+.result .search .search_icon{
+	left:2%;
+}
+
+.result .search .mike{
+	right:2%;
+}
+
+/*-----------------------------------------
+       right space - result tips/hints
+-------------------------------------------*/
+
+.tips{
+	font-size:2.2rem;
+	line-height:2.56rem;
+	margin:1rem 0;
+}
+
+.filter_items{
+	display:flex;
+	gap:1rem;
+	background-image:url(../res/search_result/sort.png);
+	background-position:98% center;
+	background-repeat:no-repeat;
+}
+
+.filter_items .filter_btn{
+	font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    background-image: var(--gradient);
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+	display: flex;
+	gap:0.5rem;
+}
+
+.filter_items .filter_btn img{
+	width:1rem;
+}
+
+/*-----------------------------------------
+       right space - result content
+-------------------------------------------*/
+.result_content{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+    justify-content: space-between;
+	gap:2rem;
+}
+
+.result_item{
+	flex:0 1 45%;
+	height:20rem;
+	background:#FDFDFD;
+	border:1px solid #CFCFCF;
+	border-radius:15px;
+	box-shadow:3px 3px 6px #aaa;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+	box-sizing:border-box;
+	padding:20px;
+}
+
+.result_item .result_title{
+	display:flex;
+    justify-content: space-between;
+}
+
+.result_item .result_title_icon{
+	line-height:2.5rem;
+	font-size:1.7rem;
+}
+
+.result_item .result_title_txt b{
+	font-size:1.25rem;
+	line-height:1.7rem;
+}
+
+.result_item .result_title_txt p{
+	font-size:0.85rem;
+}
+
+.result_item img{
+	display:block;
+	margin:0 auto;
+}
+
+.result_item .result_item_bottom{
+	display:flex;
+    justify-content: space-between;
+}
+
+.result_item .result_item_bottom .result_bottom_right button{
+	font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    background-image: var(--gradient);
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/*-----------------------------------------
+       right space - page number section
+-------------------------------------------*/
+
+.pagenum ul{
+	display:flex;
+	justify-content:center;
+	gap:0.8rem;
+}
+.pagenum ul li{
+	width:3rem;
+	height:3rem;
+	line-height:3rem;
+	text-align:center;
+	line-height:3rem;
+	border:1px solid #707070;
+	border-radius:6px;
+}
+.pagenum ul li.nostyle{
+	border:0px solid #707070;
+	border-radius:6px;
+	width:1.5rem;
+}
+.pagenum ul li.act{
+	border:1px solid #ACACAC;
+	border-radius:12px;
+    background-image: linear-gradient(#A09AEE,#C8AFE4);
+}
