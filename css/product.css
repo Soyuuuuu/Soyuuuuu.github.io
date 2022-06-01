@@ -237,6 +237,192 @@ padding-bottom: 2rem;}
     background-color: var(--hover-color);
 }
 
+/*-------------------------------------
+        pop-up enquiry section
+--------------------------------------*/
+/* .enquiry-container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+} */
+
+.contactseller, .submit-btn{
+    font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--main-color);
+    background-color: white;
+    box-shadow: 3px 2px 2px #b0afb1ad;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contactseller:hover, .submit-btn:hover{
+    background-color: var(--hover-color);
+}
+
+.fa-xmark{
+    color: var(--main-color);
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.fa-xmark:hover{
+    color: var(--hover-color);
+}
+
+.form-heading{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.contact-form, .contact-confirm{
+    background: #4a4a4a86;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 7rem;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-content{
+    height: 78%;
+    width: 45%;
+    background: #fffdfd;
+    padding: 2rem;
+    border-radius: 40px;
+    position: relative;
+}
+
+
+.contact-confirm-content{
+    height: 60%;
+    width: 32%;
+    background: #fffdfd;
+    padding: 2rem;
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-confirm-content .form-heading h2{
+    padding: 2rem;
+    padding-left: 0%;
+}
+
+.contact-confirm-content .confirm-text h5{
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+
+form{
+    padding: 1rem;
+}
+
+.contact-form .contact-form-content h2{
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}  
+
+label{
+    display: block;
+    margin: 18px 0 8px 0;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.data1 input{
+    width: 136%;
+border: 1px solid #707070;}
+
+.data1{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    gap: 11rem;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+border: 1px solid #707070;}
+
+/* checkbox  */
+
+.checkbox{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox input{
+    width: 5%;
+}
+
+ .checkbox-input{
+    display: none;
+}
+
+.checkbox-box{
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid var(--btntext-color);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px; 
+    flex-shrink: 0;
+}
+
+.checkbox-box::after{
+    content: '\2714';
+    color: var(--main-color);
+    transform: scale(0);
+    transition: transform 0.15s;
+}
+
+.checkbox-input:checked + .checkbox-box {
+    /* background: #707070; */
+    border-color: var(--hover-color);
+}
+
+.checkbox-input:checked + .checkbox-box::after{
+    transform: scale(1);
+} 
+
+.contact-form-content p{
+    padding: 0rem 0.5rem;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: smaller;
+    line-height: 18px;
+}
+
+/* submit button */
+.submit{
+    margin-left: -2rem;
+    text-align: center;
+    padding-top: 15px;
+    /* padding-bottom: 0rem; */
+    /* padding-top: 1rem; */
+}
 
 /*-------------------------------------
         Car Details section
