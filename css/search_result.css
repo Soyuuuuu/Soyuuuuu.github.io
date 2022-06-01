@@ -282,6 +282,11 @@
     justify-content: space-between;
 }
 
+.result_item .result_item_bottom p{
+	margin-top: 0.5rem;
+}
+
+
 .result_item .result_item_bottom .result_bottom_right button{
 	font-family: "Poppins", medium;
     font-weight: 500;
