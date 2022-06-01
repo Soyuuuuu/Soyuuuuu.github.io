@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Homepage</title>
 
     <!-- font awesome cdn link -->
@@ -16,12 +16,10 @@
 
 </head>
 <body>
-    <!-- Nav section -->
+    <!-- Header section -->
     <header class="header">
-        <div id="menu-btn" class="fa-solid fa-bars">
-        </div>
-
-        <a href="index.html" class="logo"><img src="/res/logo.png" alt="logo"></a>
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+        <a href="#" class="logo"><img src="res/logo.png" alt="logo"></a>
 
         <nav class="navbar">
             <a href="#">Our Stock</a>
@@ -32,8 +30,8 @@
         </nav>
 
         <div class="header-btn">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-heart hide"></i>
+            <i class="fa-regular fa-bell hide"></i>
             <div class ="account-btn">
                 <a class="sign-up" href="#"> Sign up</a>
                 <a class="log-in" href="#"> Log in</a>
@@ -55,60 +53,68 @@
                 </div>
 
                 <div class="dropdown">
-                    <div class="firstcol">
-                        <div class="dropdown1">
-                            <input type="text" class="textBox1" placeholder="Make" readonly>
-                            <div class="option">
-                                <div onclick="show('Audi')">Audi</div>
-                                <div onclick="show('BMW')">BMW</div>
-                                <div onclick="show('Holden')">Holden</div>
-                                <div onclick="show('Honda')">Honda</div>
-                                <div onclick="show('Hyundai')">Hyundai</div>
-                                <div onclick="show('Jaguar')">Jaguar</div>
-                                <div onclick="show('Jeep')">Jeep</div>
-                                <div onclick="show('KIA')">KIA</div>
-                                <div onclick="show('Maserati')">Maserati</div>
-                                <div onclick="show('Mazda')">Mazda</div>
-                                <div onclick="show('Mercedes-Benz')">Mercedes-Benz</div>
-                                <div onclick="show('Mini')">Mini</div>
-                                <div onclick="show('Subaru')">Subaru</div>
-                                <div onclick="show('Toyota')">Toyota</div>
-                                <div onclick="show('Volkswagen')">Volkswagen</div> 
-                            </div>
-                        </div>
-
-                        <div class="dropdown2">
-                            <input type="text" class="textBox2" placeholder="Location" readonly>
-                            <div class="option">
-                                <div onclick="show('East Perth')">East Perth</div>
-                                <div onclick="show('Highgate')">Highgate</div>
-                                <div onclick="show('Ashfield')">Ashfield</div>
-                                <div onclick="show('Crawley')">Crawley</div>
-                                <div onclick="show('Rossmoyne')">Rossmoyne</div>
-                                <div onclick="show('North Fremantle')">North Fremantle</div>
-                                <div onclick="show('Maylands')">Maylands</div>
-                            </div>
-                        </div>
+                    <div class="dropdown1"> 
+                        <div class="custom-select" style="width:12rem;">
+                            <select>
+                              <option value="0">Make</option>
+                              <option value="1">Audi</option>
+                              <option value="2">BMW</option>
+                              <option value="3">Holden</option>
+                              <option value="4">Honda</option>
+                              <option value="5">Hyundai</option>
+                              <option value="6">Jaguar</option>
+                              <option value="7">Jeep</option>
+                              <option value="8">KIA</option>
+                              <option value="9">Maserati</option>
+                              <option value="10">Mazda</option>
+                              <option value="11">Mercedes-Benz</option>
+                              <option value="12">Mini</option>
+                              <option value="13">Subaru</option>
+                              <option value="14">Toyota</option>
+                              <option value="15">Volkswagen</option>
+                            </select>
+                          </div>
                     </div>
-
-                    <div class="secondcol">
-                        <div class="dropdown3">
-                            <input type="text" class="textBox3" placeholder="Model" readonly>
-                            <div class="option">
-                                <div onclick="show('Hatchback')">Hatchback</div>
-                                <div onclick="show('SUV')">SUV</div>
-                                <div onclick="show('Truck')">Truck</div>
-                                <div onclick="show('Sedan')">Sedan</div>
-                                <div onclick="show('Convertible')">Convertible</div>
-                                <div onclick="show('Wagon')">Wagon</div>
-                            </div>
-                        </div>
-
-                        <div class="dropdown4">
-                            <input type="text" class="textBox4" placeholder="Keywords" readonly>
-                        </div>
+            
+                    <div class="dropdown2"> 
+                        <div class="custom-select" style="width:12rem;">
+                            <select>
+                              <option value="0">Model</option>
+                              <option value="1">Hatchback</option>
+                              <option value="2">SUV</option>
+                              <option value="3">Truck</option>
+                              <option value="4">Sedan</option>
+                              <option value="5">Convertible</option>
+                              <option value="6">Wagon</option>
+                            </select>
+                          </div>
+                    </div>
+            
+                    <div class="dropdown3"> 
+                        <div class="custom-select" style="width:12rem;">
+                            <select>
+                              <option value="0">Location</option>
+                              <option value="1">East Perth</option>
+                              <option value="2">Highgate</option>
+                              <option value="3">Ashfield</option>
+                              <option value="4">Crawley</option>
+                              <option value="5">Rossmoyne</option>
+                              <option value="6">North Fremantle</option>
+                              <option value="7">Maylands</option>
+                            </select>
+                          </div>
+                    </div>
+            
+                    <div class="dropdown4">
+                        <div class="custom-select" style="width:12rem;">
+                            <select>
+                              <option value="0">Keywords</option>
+                              <option value="1">any</option>
+                            </select>
+                          </div> 
                     </div>
                 </div>
+            
 
                 <a class="searchbtn" href="search_result.html"><i class="fa-solid fa-magnifying-glass"></i>Show results</a>
             </div>
@@ -231,14 +237,12 @@
             Visit our online used car listing to see our latest range of used car stock and online specials. Our friendly staff are available on hand to help you with any queries you may have.</h4>
     </section>
 
-
+	
     <!--  Footer -->
     <section class="footer">
-
         <div class="footer-container">
-
-            <div class="footer-box">
-                <a href="index.html"><img class="logo" src="/res/logo.png" alt="logo"></a>
+            <div class="footer-box hide">
+                <a href="index.html"><img class="logo" src="res/logo.png" alt="logo"></a>
                 <div class="contact">
                     <h5>Call us: (08)9311 7533</h5>
                     <h5>Location: 49 Burswood Rd,</h5>
@@ -269,13 +273,13 @@
             <div class="footer-box">
                 <div class="up-footer">
                     <h3>SERVICE</h3>
-                    <a class="fc" href="#">Finance Calculator</a>
+                    <a href="#">Finance Calculator</a>
                     <a href="#">Latest News</a>
                 </div>
                 
                 <div class="down-footer">
                     <h3>TRADE & SELL</h3>
-                    <a href="#">Sell Your Car</a>
+                    <a href="#">Sell Your Car or Motorcycle</a>
                 </div>
             </div>
 
@@ -285,10 +289,10 @@
                 <a href="#">About Us</a>
                 <a href="#">COVID-19 Update</a>
                 <div class="social">
-                    <a href="https://www.instagram.com/autoclassicbmw/"><img src="/res/social media/Icon metro-instagram.png" alt="ins"></a>
-                    <a href="https://www.facebook.com/autoclassicbmw"><img src="/res/social media/Icon awesome-facebook-square.png" alt="fb"></a>
-                    <a href="product1.html"><img src="/res/social media/Icon material-email.png" alt="email"></a>
-                    <a href="product2.html"><img src="/res/social media/Icon awesome-youtube.png" alt="ytb"></a>
+                    <a href="#"><img src="res/social media/Icon metro-instagram.png" alt="ins"></a>
+                    <a href="#"><img src="res/social media/Icon awesome-facebook-square.png" alt="fb"></a>
+                    <a href="#"><img src="res/social media/Icon material-email.png" alt="email"></a>
+                    <a href="#"><img src="res/social media/Icon awesome-youtube.png" alt="ytb"></a>
                 </div>
             </div>
         </div>
