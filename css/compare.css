@@ -1,0 +1,231 @@
+
+/*-------------------------------------
+        Compare car Section
+--------------------------------------*/
+
+.compare_cars{
+	width:100rem;
+	height:auto;
+	margin:0 auto;
+	margin-top:10rem;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/*-------------------------------------
+        Header Title Section
+--------------------------------------*/
+
+.tit1{
+	font-family: "Poppins";
+	font-size:2rem;
+	line-height:2.8rem;
+	text-align:center;
+	color:var(--main-color);
+	font-weight:600;
+}
+
+.tit2{
+	font-family: "Poppins";
+	text-align:center;
+	font-size:3rem;
+	line-height:4rem;
+	font-weight:600;
+}
+
+.searchbox{
+	width:55rem;
+	display:flex;
+	gap:2rem;
+}
+
+.searchbox .search{
+	flex:0 1 70%;
+	position:relative;
+}
+
+.searchbox .clear_list{
+	font-family: "Montserrat";
+	min-width: 200px;
+	flex:0 1 20%;
+	background-image:url(../res/compare_cars/del.png);
+	background-position:2% center;
+	line-height:2.5rem;
+	color:var(--main-color);
+	text-indent:25%;
+	font-size: 1.5rem;
+	font-weight: 500;
+	background-repeat:no-repeat;
+}
+
+.searchbox .search input{
+	width:100%;
+	background:#F9F9F9;
+	height:2.5rem;
+	border-radius:10px;
+	border:1px solid #707070;
+	font-size:1rem;
+	text-indent:8%;
+	font-family: "Montserrat";
+	font-weight: 300;
+}
+
+.searchbox .search div{
+	position:absolute;
+	top:0px;
+	height:2.5rem;
+	display: flex;
+    justify-content: space-between;
+	align-items:center;
+}
+
+.searchbox .search .search_icon{
+	left:2%;
+}
+
+/*-------------------------------------
+        Single car space
+--------------------------------------*/
+
+.car_list{
+	width:100%;
+	display:flex;
+    justify-content: space-between;
+	gap:2rem;
+}
+
+.car_space{
+	flex:0 1 28rem;
+	height:auto;
+	background:#FDFDFD;
+	border:2px dashed #CFCFCF;
+	border-radius:15px;
+	background-image:url(../res/compare_cars/add.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	position:relative;
+}
+
+.car_item{
+	margin-top:-2px;
+	margin-left:-2px;
+	flex:0 1 28rem;
+	height:auto;
+	background:#FDFDFD;
+	border:1px solid #CFCFCF;
+	box-shadow:3px 3px 6px #aaa;
+	border-radius:15px;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+	box-sizing:border-box;
+	padding:20px;
+}
+
+.car_item .car_item_title{
+	display:flex;
+    justify-content: space-between;
+}
+
+.car_item .car_item_title_txt h3{
+	font-size:1.25rem;
+	line-height:2.7rem;
+
+}
+
+.car_item .car_item_title_txt p{
+	font-size:0.85rem;
+}
+
+.car_item img{
+	display: block;	
+	margin-top: 18px;
+	margin-bottom: -14px;
+}
+
+.car_item .car_item_bottom{
+	display:flex;
+    justify-content: space-between;
+}
+
+.car_item .car_item_bottom .car_item_bottom_left h3{
+	font-size:1.25rem;
+	line-height:4.5rem;
+}
+
+.car_item .car_item_bottom .car_item_bottom_right button{
+	font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    background:#F5F5F5;
+	color:var(--main-color);
+	box-shadow:2px 1px 4px #9D8FEA;
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------
+        Single car space - Text section
+-------------------------------------------------*/
+
+.text_list .row{
+	display:flex;
+	height:2.2rem;
+	background:#D9D9D9;
+	border-radius:1.1rem;
+}
+
+.text_list .row div{
+	display:flex;
+	align-items:center;
+}
+
+.text_list .row .column1{
+	flex:0 1 13rem;
+	text-indent:2rem;
+	font-family: "Montserrat";
+	font-weight: 500;
+}
+
+.text_list .row .column2 p{
+	line-height: .5rem;
+}
+
+.text_list .row .column2{
+	display: flex;
+	align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+	font-family: "Montserrat";
+	font-size: small;
+}
+
+.text_list .row:nth-child(2n){
+	background:#fff;
+}
+
+/*-------------------------------------
+        Bottom button space
+--------------------------------------*/
+
+.car_item button{
+	font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    background-image: var(--gradient);
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+	display:block;
+	margin:1rem auto;
+}
+
+.car_item button:hover{
+	color: var(--hover-color);
+}
