@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product 2 Details Page</title>
+    <title>Homepage</title>
 
     <!-- font awesome cdn link -->
     <script src="https://kit.fontawesome.com/3a1f568e67.js" crossorigin="anonymous"></script>
@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/homepagedetail.css">
-    <link rel="stylesheet" href="/css/product.css">
-
+    <link rel="stylesheet" href="/css/enquiry.css">
 
 </head>
 <body>
@@ -45,102 +44,10 @@
     </header>
 
 
-    <!-- Single product detail -->
-    <section class="product">
-
-        <div class="product-container">
-
-            <div class="container-left">
-
-                <div class="title">
-                    <div id="back-btn">
-                        <a href="search_result.html"><i class="fa-solid fa-arrow-left"></i></a>
-                    </div>
-
-                    <div class="car-title">
-                        <h2>2020 BMW 8 SERIES 840I M SPORT G16</h2>
-                        <h5>Sedan | 10,586km</h5>
-                    </div>
-
-                    <div class="title-btn">
-                        <div>
-                            <i class="fa-regular fa-heart"></i>
-                        </div class="compare-btn">
-                         <a class="comparebtn" href="compare.html">+Compare</a>
-                    </div>
-                </div>
-
-                <div class="multi-image-group">
-                    <div>
-                        <div class="single-image">
-                            <img class="car-image" src="res/product/BMW8-1.png" alt="product 2 image BMW 8 series">
-                        </div>
-                    </div>
-                    <div class="small-image-group">
-                        <div class="multi-image-col">
-                            <img src="res/product/Exterior2.png" alt="">
-                            <h4>Exterior</h4>
-                        </div>
-                        <div class="multi-image-col">
-                            <img src="res/product/Interior2.png" alt="">
-                            <h4>Interior</h4>
-                        </div>
-                        <div class="multi-image-col">
-                            <img src="res/product/Hardware2.png" alt="">
-                            <h4>Hardware</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-right">
-                <h2>Key features</h2>
-                <div class="key-features-container">
-                    <div class="key-features">
-                        <div class="box1">
-                            <i class="fa-solid fa-car"></i>
-                            <h4> 8 SP Sports Automatic</h4>
-                        
-                        </div>
-                        <div class="box2">
-                            <i class="fa-solid fa-brush"></i>
-                            <h4>Mineral White</h4>
-                            
-                        </div>
-                        <div class="box3"> 
-                            <i class="fa-solid fa-gas-pump"></i>
-                            <h4>6 CYL Direct Injection</h4>
-
-                        </div>
-                        <div class="box4"> 
-                            <i class="fa-solid fa-car-side"></i>
-                            <h4>Luxury 5 seater Sedan</h4>
-                        </div>
-                </div>
-            </div>
-
-            <div>
-                <h2>Dealer Comment</h2>
-
-                <div class="Comment">
-                    <h5>This 8 Series BMW has been very well looked after. Ready for Delivery!!!</h5>
-                    <h5>remote central locking & regenerative brakes| leather seats & steering wheel </h5>
-                    <h5>satellite navigation (GPS) | voice recognition all in one with this</h5>
-                </div>
-
-                <div class ="contact-btn">
-                    <a class="details" href="#"> View Details </a>
-                    <a class="contactseller" href="#"> Contact Seller </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-     <!-- popup enquiry section -->
-     <!-- <div class="enquiry-container">
+    <!-- popup enquiry section -->
+    <div class="enquiry-container">
         <a href="#" class="contactseller" id="contactseller"> Contact Seller </a>
-    </div> -->
+    </div>
 
     <div class="contact-form">
         <div class="contact-form-content">
@@ -216,39 +123,40 @@
     </div>
 
 
-    <!-- Details specifications -->
-    <section class="car-details">
-        <h1 class="heading"> Details <span>specifications</span> </h1>
+    <script>
 
-        <div class="details">
-            <div class="detail-col">
-                <ul>
-                    <li><i class="fa-solid fa-circle"></i><span>Model Year</span>    2020</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Type</span>    Used</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Kilometres</span>    10,586</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Colour</span>    Mineral White</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Transmission</span>    8 SP Sports Automatic</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Engine</span>    6 Cylinders 3 Litres Petrol - Premium ULP</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Power</span>    250</li>
-                </ul>
-            </div>
+    document.getElementById("contactseller").addEventListener("click", function(){
+        document.querySelector(".contact-form").style.display = "flex";
+    })
+
+    document.querySelector(".fa-xmark").addEventListener("click", function(){
+        document.querySelector(".contact-form").style.display = "none";
+    })
+
+    document.getElementsById("submit-btn").addEventListener("click", function(){
+        document.querySelector(".contact-form").style.display = "none",
+        document.querySelector(".contact-confirm").style.display = "flex";
+    })
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-            <div class="detail-col">
-                <ul>
-                    <li><i class="fa-solid fa-circle"></i><span>GVM</span>    2435 kg</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Drive Type</span>    Rear Wheel Drive</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Fuel System</span>    6 CYL Direct Injection</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Body</span>    Sedan</li>
-                    <li><i class="fa-solid fa-circle"></i><span>VIN#</span>    WBAAE220-50CD91269</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Reg#</span>    1HNS840</li>
-                    <li><i class="fa-solid fa-circle"></i><span>Stock#</span>    52400</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
     <!--  Footer -->
-    <section class="footer">
+    <!-- <section class="footer">
 
         <div class="footer-container">
 
@@ -307,38 +215,19 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Copyright -->
-    <div class="copyright">
+    <!-- <div class="copyright">
         <h5>Copyright© 2022. All rights reserved by Auto Classic Pre-Owned Cars and Motorcycles</h5>
-    </div>
+    </div> -->
 
     <!-- js link -->
-    <script src="/js/main.js"></script>
-
-    <script>
-
-        document.getElementById("contactseller").addEventListener("click", function(){
-            document.querySelector(".contact-form").style.display = "flex";
-        })
-    
-        document.querySelector(".fa-xmark").addEventListener("click", function(){
-            document.querySelector(".contact-form").style.display = "none";
-        })
-    
-    </script>
-
-    <script>
-        document.getElementsById("submit-btn").addEventListener("click", function(){
-            document.querySelector(".contact-confirm").style.display = "flex";
-        })
-        
-    </script>
+    <!-- <script src="/js/main.js"></script>
 
 </body>
 </html>
 
 
 
-
+ -->

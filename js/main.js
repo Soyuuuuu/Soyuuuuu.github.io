@@ -21,15 +21,15 @@ dropdown.onclick = function(){
 }
 
 
-document.getElementById("contactseller").addEventListener("click", function(){
-    document.querySelector(".contact-form").style.display = "flex";
-})
+// document.getElementById("contactseller").addEventListener("click", function(){
+//     document.querySelector(".contact-form").style.display = "flex";
+// })
 
-document.querySelector(".fa-xmark").addEventListener("click", function(){
-    document.querySelector(".contact-form").style.display = "none";
-})
+// document.querySelector(".fa-xmark").addEventListener("click", function(){
+//     document.querySelector(".contact-form").style.display = "none";
+// })
 
-document.getElementsById("submit-btn").addEventListener("click", function(){
-    document.querySelector(".contact-form").style.display = "none",
-    document.querySelector(".contact-confirm").style.display = "flex";
-})
+// document.getElementsById("submit-btn").addEventListener("click", function(){
+//     document.querySelector(".contact-form").style.display = "none",
+//     document.querySelector(".contact-confirm").style.display = "flex";
+// })
