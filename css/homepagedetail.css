@@ -14,11 +14,12 @@
 .car-image{
     width: 55rem;
     height: auto;
+    margin-top: 4rem;
 }
 
 .home .home-text{
     display: flex;
-    margin-top: 13rem;
+    margin-top: 5rem;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -68,83 +69,86 @@
     border-radius: 30px;
 }
 
-.home .dropdown{
-    display: flex;
-    /* text-align: center; */
-    /* flex-direction: row; */
-    /* font-family: "Montserrat", Light; */
-    /* font-weight: 300; */
-    /* font-size: 21px; */
-    color: black;
-    display: flex;
-    justify-content: center;
-    /* margin-left: 5rem; */
-    margin-top: 20px;
+.dropdown {
+    display: grid;
+    grid-template-columns: repeat(2, 12rem);
+    grid-template-rows: repeat(2, 2rem);
+    grid-column-gap: 40px;
+    grid-row-gap: 2rem;
+    padding-top: 2rem;padding-left: 4.5rem;
+    }
+    
+.dropdown1 { grid-area: 1 / 1 / 2 / 2; }
+
+.dropdown2 { grid-area: 1 / 2 / 2 / 3; }
+
+.dropdown3 { grid-area: 2 / 1 / 3 / 2; }
+
+.dropdown4 { grid-area: 2 / 2 / 3 / 3; }
+
+/* The container must be positioned relative: */
+.custom-select {
+position: relative;
+font-family: "Montserrat";
+border: 1px solid #707070;
+border-radius: 6px;
 }
 
-.home .secondcol{
-    margin-left: 3rem;
-}
-.home .dropdown2{
-    margin-top: 2rem;
+.custom-select select {
+display: none; /*hide original SELECT element: */
 }
 
-.home .dropdown4{
-    margin-top: 2rem;
+.select-selected {
+/* background-color: white; */
 }
 
-.dropdown::before{
-    content: '';
-    position: absolute;
-    right: 21.5rem;
-    top: 27.3rem;
-    /*     z-index: 10000; */
-    width: 8px;
-    height: 8px;
-    border: 2px solid #727272;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff; 
-    transform: rotate(-45deg);
-    transition: 0.5s;
-    pointer-events: none;
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+position: absolute;
+content: "";
+top: 14px;
+right: 10px;
+width: 0;
+height: 0;
+border: 6px solid transparent;
+border-color: #707070 transparent transparent transparent;
 }
 
-.dropdown input{
-    font-family: "Montserrat", Light;
-    font-weight: 300;
-    font-size: 14px;
-    width: 10rem;
-    height: 2rem;
-    cursor: pointer;
-    border: 1px solid #707070;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgb(19 18 18 / 5%);
-    padding: 2px 10px;
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+border-color: transparent transparent #404040 transparent;
+top: 7px;
 }
 
-.dropdown .option{
-    position: absolute;
-    width: 10rem;
-    border: 1px solid #707070;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(19, 18, 18, 0.05);
-    overflow: hidden;
-    padding: 10px;
-    display: none;
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+color: #707070;
+padding: 8px 16px;
+border: 1px solid transparent;
+border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+cursor: pointer;
 }
 
-.dropdown.active .option{
-    display: block;
+/* Style items (options): */
+.select-items {
+position: absolute;
+background-color: white;
+border-radius: 6px;border: 1px solid #707070;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
 }
 
-.dropdown .option div{
-    padding: 4px 4px;
-    cursor: pointer;
+/* Hide the items when the select box is closed: */
+.select-hide {
+display: none;
 }
 
-.dropdown .option div:hover{
-    background: #ACA1E5;
-    color: white;
+.select-items div:hover, .same-as-selected {
+background-color: var(--hover-color);
+color:white;
 }
 
 .searchbtn{
@@ -370,8 +374,7 @@
 --------------------------------------*/
 
 .info{
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: 3% 8%;
     line-height: 1.5;
 }
 
@@ -379,3 +382,12 @@
     margin-bottom: 1rem;
 }
 
+
+.home .home-text select {
+    /* display: block; */
+/* padding: 5px 10px; */
+/* margin-bottom: 13px; */
+color: #707070;
+background-color: white;
+border: 1px solid #707070;
+}
