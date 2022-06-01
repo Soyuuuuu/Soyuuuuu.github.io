@@ -98,10 +98,6 @@ border-radius: 6px;
 display: none; /*hide original SELECT element: */
 }
 
-.select-selected {
-/* background-color: white; */
-}
-
 
 /* Style the arrow inside the select element: */
 .select-selected:after {
