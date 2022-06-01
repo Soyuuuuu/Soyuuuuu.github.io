@@ -41,7 +41,8 @@
 	display:flex;
     align-items: center;
     justify-content: space-between;
-	line-height:37px;
+	line-height: 37px;
+	font-family: "Poppins";
 }
 
 .filter .title .title_txt{
@@ -54,8 +55,13 @@
 }
 
 .filter .title .clear_all{
-	font-size:1.25rem;
+	font-size: 1rem;
     color: var(--btntext-color);
+	font-family: "Montserrat";
+}
+
+.filter .title .clear_all:hover{
+	color: var(--hover-color);
 }
 
 .filter .row{
@@ -67,8 +73,9 @@
 }
 
 .filter .row.price {
-	display:flex;
-	gap:1rem;
+	display: flex;
+	gap: 1rem;
+	font-family: "Montserrat";
 }
 
 .filter .row.price div{
@@ -172,8 +179,9 @@
 	height:5.4rem;
 	border-radius:10px;
 	border:1px solid #707070;
-	font-size:2.2rem;
+	font-size:1.7rem;
 	text-indent:8%;
+	font-family: "Montserrat";
 }
 
 .result .search div{
@@ -198,9 +206,9 @@
 -------------------------------------------*/
 
 .tips{
-	font-size:2.2rem;
+	font-size: 1.7rem;
 	line-height:2.56rem;
-	margin:1rem 0;
+	margin: 1rem 0;
 }
 
 .filter_items{
@@ -262,6 +270,9 @@
 	line-height:2.5rem;
 	font-size:1.7rem;
 }
+.result_item .result_title_icon:hover{
+	color: #D33DA5;
+}
 
 .result_item .result_title_txt h3{
 	font-size:1.25rem;
@@ -314,8 +325,16 @@
 	text-align:center;
 	line-height:3rem;
 	border:1px solid #707070;
-	border-radius:6px;
+	border-radius: 6px;
+	font-family: "Montserrat";
+	cursor: pointer;
 }
+
+.pagenum ul li:hover{
+	background: var(--gradient);
+	color: white;
+}
+
 .pagenum ul li.nostyle{
 	border:0px solid #707070;
 	border-radius:6px;
@@ -324,5 +343,6 @@
 .pagenum ul li.act{
 	border:1px solid #ACACAC;
 	border-radius:12px;
-    background-image: linear-gradient(#A09AEE,#C8AFE4);
+	color: white;
+    background-image: var(--gradient);
 }
