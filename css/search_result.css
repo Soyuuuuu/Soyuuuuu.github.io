@@ -263,7 +263,7 @@
 	font-size:1.7rem;
 }
 
-.result_item .result_title_txt b{
+.result_item .result_title_txt h3{
 	font-size:1.25rem;
 	line-height:1.7rem;
 }
