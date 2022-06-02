@@ -128,10 +128,14 @@ p {
     gap: 2rem;
 }
 
-.header-btn .fa-heart, .fa-bell, .account-btn i{
+.header-btn .fa-heart, .fa-bell, .fa-magnifying-glass, .account-btn i{
     font-size: 25px;
     color: var(--btntext-color);
     cursor: pointer;
+}
+
+.fa-magnifying-glass{
+    border: 2px;
 }
 
 .header #menu-btn{
@@ -140,7 +144,7 @@ p {
     cursor: pointer;
 }
 
-.header-btn .fa-heart:hover, .fa-bell:hover{
+.header-btn .fa-heart:hover, .fa-bell:hover, .fa-magnifying-glass:hover{
     color:var(--hover-color);
 } 
 
@@ -368,8 +372,15 @@ p {
      }
 }
 
-/* homepage mobile responsive */
-@media(max-width:648px){
+/* homepage mobile footer responsive */
+
+@media(max-width:1920px){
+	html{
+		font-size:14px;
+	}
+}
+
+@media(max-width:844px){
 	html{
 		font-size:14px;
 	}
@@ -399,7 +410,7 @@ p {
 }
 
 
-@media(max-width:648px){
+@media(max-width:844px){
 	html,body{
 		width:100%;
 		height:100%;
@@ -409,7 +420,8 @@ p {
 		display:block;
 		text-align:center;
 	}
-	.bigtit div b{
+
+	.bigtit div h3{
 		font-size:2rem;
 	}
 	.bigtit div i{
@@ -457,9 +469,6 @@ p {
 	}
 	.car_item img{
 		width:90%;
-	}
-	.hide{
-		display:none;
 	}
 	
 }

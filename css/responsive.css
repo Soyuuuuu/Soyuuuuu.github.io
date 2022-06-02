@@ -1,0 +1,259 @@
+
+/*-------------------------------------
+       Make responsive design
+--------------------------------------*/
+
+/* The first version is more detailed responsive */
+
+@media(max-width:1391px){
+    
+    html{
+        font-size: 40%;
+    }
+
+    .header{
+/*         padding: 4rem; */
+        padding: 30px 20px;
+    }
+
+    .brand_list .firstrow, .secondrow {
+        gap: 11rem;
+    }
+}
+
+
+
+@media(max-width:1025px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    .header{
+        padding: 4rem;
+    }
+
+    .header .account-btn i{
+        display: block;
+    }
+
+    .header .account-btn i:hover{
+        color: var(--hover-color);
+    }
+
+    .header-btn .account-btn .sign-up, .log-in{
+        display: none;
+    }
+
+    .brand_list .firstrow, .secondrow {
+        gap: 5rem;
+    }
+}
+
+/* Navigation bar responsive */
+
+@media(max-width:968px){
+
+    #menu-btn{
+        display: block;
+    }
+
+    #menu-btn:hover{
+        color: var(--hover-color);
+    }
+
+    #menu-btn.fa-xmark{
+        transform: rotate(-180deg);
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 80%;
+        left: 0;
+        right: 0;
+        background: #f2f2f2;
+        box-shadow: -1px 4px 5px #2727274d;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+     .header .navbar a{
+         display: block;
+         margin: 2.5rem;
+         font-size: 2rem;
+     }
+
+     .hide{
+		display:none;
+	}
+
+    .brand_list .firstrow, .secondrow {
+        gap: 4rem;
+    }
+}
+
+
+/* The second version only consider computer and mobile page */
+
+/* Homepage responsive */
+
+@media(max-width:1920px){
+	html{
+		font-size: large;
+	}
+
+    .brand_list .firstrow, .secondrow {
+        gap: 20rem;
+    }
+}
+
+@media(max-width:844px){
+	html{
+		font-size:14px;
+	}
+
+    /* footer repsonsive  */
+	.footer-container .footer-box.hide{
+		display:none;
+	}
+	.footer-container{
+		flex-wrap:wrap;
+		gap:0rem;
+		padding-left:2rem;
+	}
+	.footer-container .footer-box{
+		width:50%;
+		line-height:2rem;
+	}
+	.footer-box a,.footer-box .up-footer a, .down-footer a{
+		margin:0;
+	}
+
+    /* homepagedetail responsive */
+
+    .car-image {
+        width: 34rem;
+    }
+
+    .home .home-text {
+        margin-top: 2rem;
+        margin-left: -3rem;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .dropdown {
+        grid-column-gap: 0rem;
+        padding-left: 5rem;
+    }
+
+    .custom-select {
+        width: 10rem;
+    }
+
+    .brand_list .firstrow, .secondrow {
+        gap: 7rem;
+    }
+
+    .brand_list img {
+        width: 8rem;
+    }
+
+    .searchbtn {
+        font-size: 13px;
+        text-align: center;
+        line-height: 1.1rem;
+        padding: 7px 28px;
+    }
+
+    .hide{
+		display: none;
+	}
+}
+
+/* compare page mobile responsive */
+
+@media(max-width:1920px){
+	html{
+		font-size:14px;
+	}
+
+    .fa-magnifying-glass{
+        display: none;
+    }
+}
+
+
+@media(max-width:844px){
+	html,body{
+		width:100%;
+		height:100%;
+	}
+	.mobile_show{
+		width:100vw;
+		display:block;
+		text-align:center;
+	}
+	.bigtit div h3{
+		font-size:2rem;
+	}
+	.bigtit div i{
+		float:left;
+		margin-left:1rem;
+		font-size:2rem;
+		color:var(--main-color)
+	}
+	.searchbox{
+		width:96%;
+	}
+	.searchbox .search{
+		width:80%;
+		flex: 1 0 70%;
+	}
+	.searchbox .search input{
+		font-size:0.8rem;
+		text-indent:2.5rem;
+	}
+	.searchbox .clear_list{
+		min-width:0px;
+		width:30%;
+		flex: 0 1 30%;
+		font-size:1rem;
+		background:none;
+	}
+	.footer{
+		width:100vw;
+	}
+	.compare_cars{
+		width:100%;
+		box-sizing:border-box;
+		padding:0 2%;
+	}
+	.car_list{
+		width:100%;
+		overflow:scroll;
+	}
+	.car_space{
+		min-width:20rem;
+	}
+	.car_space,.car_item{
+		width:20rem;
+		flex: 0 1 20rem;
+	}
+	.car_item img{
+		width:90%;
+	}
+	.hide{
+		display:none;
+	}
+	
+}

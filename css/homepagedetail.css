@@ -5,11 +5,13 @@
 --------------------------------------*/
 
 .home{
-    margin:auto;
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     margin-top: 5rem;
+    justify-content: space-evenly;
 }
+
 
 .car-image{
     width: 55rem;
@@ -92,6 +94,7 @@ position: relative;
 font-family: "Montserrat";
 border: 1px solid #707070;
 border-radius: 6px;
+width:12rem;
 }
 
 .custom-select select {
@@ -163,6 +166,12 @@ color:white;
     cursor: pointer;
 }
 
+.searchbtn .fa-magnifying-glass{
+    color: white;
+    font-size: 17px;
+    margin-right: .5rem;
+}
+
 .searchbtn:hover{
     color: var(--hover-color);
 }
@@ -175,17 +184,16 @@ color:white;
     background-color: var(--mainbackground-color);
 }
 
+ .brand_style{
+    height: 80vh;
+ }
+
 .body_list {
     display: flex;
-    /* align-items: center; */
-    /* justify-items: center; */
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 8%;
     padding-right: 8%;
-    /* flex-direction: row; */
-    /* flex-wrap: nowrap; */
-    /* overflow: scroll; */
 }
 
 .body_list a{
@@ -194,7 +202,6 @@ color:white;
     align-items: center;
     justify-items: center;
     align-content: center;
-    /* gap: 0rem; */
     font-family: "Poppins", medium;
     font-weight: 500;
     font-size: 16px;
@@ -220,8 +227,8 @@ color:white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10rem;/* overflow: scroll; */
-}
+    gap: 10rem;justify-content: center;/* overflow: scroll; */
+/* margin: 3rem; *//* margin-bottom: 30rem; */}
 
 .brand_list img{
     width: 12rem;
@@ -232,7 +239,7 @@ color:white;
 .brand_list .firstrow, .secondrow{
     display: flex;
     flex-direction: row;
-    gap: 10rem;
+    gap: 20rem;
 }
 
 .brand_list .secondrow{
@@ -330,6 +337,7 @@ color:white;
 
 .review{
     background-color: var(--mainbackground-color);
+    padding-right: 4%;
 }
 
 .reviewbox img{
