@@ -127,16 +127,41 @@
     /* homepagedetail responsive */
 
     .car-image {
-        width: 34rem;
+        width: 71rem;
+        margin-left: -43rem;
+    }
+
+    .home {
+        margin-top: 0rem;
     }
 
     .home .home-text {
         margin-top: 2rem;
-        margin-left: -3rem;
     }
 
-    h1 {
-        font-size: 28px;
+    .home .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .home .button-container {
+        padding-left: 3rem;
+    }
+
+    .folded-button {
+        font-size: 18px;
+        width: 11rem;
+        height: 3.5rem;
+        margin-left: -4rem;
+        border: 1.5px solid #707070;
+        border-left: none;
+        padding-left: 5.5rem;
+    }
+
+    #border {
+        width: 8rem;
+        height: 3.5rem;
+        padding-left: 3.5rem;
+        border: 1.5px solid var(--btntext-color);
     }
 
     .dropdown {
@@ -144,13 +169,31 @@
         padding-left: 5rem;
     }
 
-    .custom-select {
-        width: 10rem;
+    .select-items div, .select-selected {
+        color: #707070;
+        padding: 15px 14px;
     }
 
+    .custom-select {
+        width: 11rem;
+        height: 3.4rem;
+        font-size: 1rem;
+    }
+
+    .select-selected:after {
+    top: 20px;
+    right: 14px;
+    }
+
+    .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #404040 transparent;
+        top: 11px;
+    }
+        
     .body_list {
         gap: 2.5rem;
     }
+
 
     .body_list img {
         width: 6rem;
@@ -163,9 +206,9 @@
     }
 
     .brand_style {
-        height: 98vh;
+        height: 56vh;
     }
-    
+
     .brand_list .firstrow, .secondrow {
         gap: 7rem;
     }
@@ -175,10 +218,16 @@
     }
 
     .searchbtn {
-        font-size: 13px;
+        font-size: 16px;
         text-align: center;
-        line-height: 1.1rem;
-        padding: 7px 28px;
+        line-height: 1.5rem;
+        padding: 6px 36px;
+        margin-top: 3rem;
+        margin-left: 12rem;
+    }
+
+    .searchbtn .fa-magnifying-glass {
+        display: none;
     }
 
     .review .review-container {
@@ -203,20 +252,174 @@
 	}
 	.footer-container{
 		flex-wrap:wrap;
-		gap:0rem;
-		padding-left:3rem;
+		gap: 1rem;
+        padding-left: 10rem;
 	}
-	.footer-container .footer-box{
-		width: 50%;
-		line-height: 2rem;
+    .footer-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-box a {
+        font-size: 17px;
+    }
+
+    .footer-container .footer-box {
+        width: 40%;
+        line-height: 3.5rem;
 	}
 	.footer-box a,.footer-box .up-footer a, .down-footer a{
 		margin:0;
 	}
 
-}
-/* The third version  consider computer and mobile page */
+    .social img {
+        width: 45%;
+    }
 
+    .social a{
+        width: 4rem;
+    }
+
+    .social .ytb{
+        width: 2.3rem;
+    }
+
+    .social .email{
+        width: 2rem;
+    }
+
+}
+/* The third version consider mobile page */
+
+@media(max-width:648px){
+	html{
+		font-size:14px;
+	}
+
+    .header .logo img {
+        width: 12rem;
+        margin: 0.5rem 0 0 1rem;
+    }
+    .header-btn {
+        gap: 1rem;
+    }
+
+    .car-image {
+        display:none;
+    }
+
+    .home .home-text {
+        margin: 9rem 1rem 3rem;
+        /* background: #b4aedc82; */
+        /* background-image: url(../res/background.png); */
+        /* background-repeat: no-repeat; */
+    }
+
+    .body_list {
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        justify-content: space-evenly;
+    }
+
+    .brand_list .firstrow, .secondrow {
+        gap: 2rem;
+    }
+
+
+    .body_style, .brand_style {
+        text-align: center;
+        height: 34vh;
+    }
+
+    .body_list a {
+        font-size: 9px;
+    }
+
+    .body_list img {
+        width: auto;
+        height: 2rem;
+    }
+
+    .body_list .sedan{
+        margin-left: 1.5rem;
+    }
+
+    .brand_list img {
+        width: 4rem;
+    }
+
+    .article-container #box2, .article-container .box p{
+        display: none;
+    }
+
+    .article-container .box {
+        text-align: center;
+    }
+    
+    .article-container .box .article-btn {
+        justify-content: center;
+    }
+
+    .box img {
+        margin-bottom: 1rem;
+    }
+
+    .review h2{
+        text-align: center;
+    }
+
+    .info h3{
+        text-align: center;
+        margin: 1rem 0 -1rem 0;
+    }
+
+    .info h4{
+        display: none;
+    }
+
+    .footer-box h3 {
+        font-size: 1rem;
+    }
+
+    .footer-box a {
+        font-size: 12px;
+    }
+
+    .social img {
+        width: 38%;
+    }
+
+    .social .email {
+        width: 1.3rem;
+    }
+
+    .social .ytb {
+        width: 1.6rem;
+    }
+
+    .footer-box .social a{
+        margin-right: -23px;
+        margin-top: 1rem;
+    }
+
+	.footer-container .footer-box.hide{
+		display:none;
+	}
+	.footer-container{
+		flex-wrap:wrap;
+		gap:0rem;
+		padding-left:2rem;
+	}
+	.footer-container .footer-box{
+		width:50%;
+		line-height:2rem;
+	}
+	.footer-box a,.footer-box .up-footer a, .down-footer a{
+		margin:0;
+	}
+
+
+
+}
 
 
 /* compare page mobile responsive */
