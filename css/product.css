@@ -95,9 +95,14 @@
     margin-left: 6rem;
 }
 
+
 .container-left .single-image img{
     width: 130%;
     height: auto;
+}
+
+.container-left .single-image .product-car{
+    display: none;
 }
 
 .multi-image-group .small-image-group .multi-image-col img{
@@ -302,8 +307,8 @@ padding-top: 2rem;}
     height: 100%;
     position: absolute;
     top: 7rem;
-    display: flex;
-    /* display: none; */
+    /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -359,7 +364,6 @@ input, textarea{
 }
 
 /* checkbox  */
-
 .checkbox{
     display: inline-flex;
     align-items: center;
@@ -394,7 +398,6 @@ input, textarea{
 }
 
 .checkbox-input:checked + .checkbox-box {
-    /* background: #707070; */
     border-color: var(--hover-color);
 }
 
@@ -415,8 +418,6 @@ input, textarea{
     margin-left: -2rem;
     text-align: center;
     padding-top: 15px;
-    /* padding-bottom: 0rem; */
-    /* padding-top: 1rem; */
 }
 
 .contact-confirm-content{

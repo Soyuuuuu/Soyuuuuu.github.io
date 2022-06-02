@@ -124,7 +124,9 @@
         display: block;
     }
 
-    /* homepagedetail responsive */
+    /*---------------------------------
+        homepagedetail responsive
+    ----------------------------------*/
 
     .car-image {
         width: 71rem;
@@ -246,7 +248,10 @@
 		display: none;
 	}
 
-    /* footer repsonsive  */
+    /*--------------------------------
+        Footer mobile responsive
+    ---------------------------------*/
+
 	.footer-container .footer-box.hide{
 		display:none;
 	}
@@ -288,6 +293,7 @@
     }
 
 }
+
 /* The third version consider mobile page */
 
 @media(max-width:648px){
@@ -420,9 +426,99 @@
 
 
 }
+/*----------------------------------------
+        Product page mobile responsive
+-----------------------------------------*/
+
+/*----------------------------------------
+        Product detail page mobile responsive
+-----------------------------------------*/
+    /* .product .product-container {
+        flex-direction: column;
+    }
+
+    .fa-arrow-left, .fa-heart, .fa-car, .fa-brush, .fa-gas-pump, .fa-car-side {
+        font-size: 1.5rem;
+    }
+    
+    #back-btn{
+        margin-left: -6rem;
+        margin-right: -2rem;
+    }
+
+    .car-title h2 {
+        line-height: 1.5;
+        font-size: 1.3rem;
+    }
+
+    .car-title h5 {
+        font-size: small;
+        margin-top: 0rem;
+    }
+
+    .comparebtn {
+        font-size: 8px;
+        padding: 9px 14px;
+    }
+
+    .product-container .container-left .title {
+        margin-right: 9rem;
+    }
+
+    .container-left .single-image .car-image{
+        display: none;
+    }
+    
+    .container-left .single-image .product-car {
+        display: block;
+    }
+
+    .title .title-btn {
+        gap: 1rem;
+        margin-right: -20rem;
+    }
+
+    .multi-image-group .small-image-group {
+        margin: 1rem;
+        padding-top: 26rem;
+        margin-left: -6rem;
+        margin-right: -10rem;
+    } */
 
 
-/* compare page mobile responsive */
+
+
+
+
+
+/*----------------------------------------
+        Enquiry page mobile responsive
+-----------------------------------------*/
+
+
+
+
+
+
+
+
+/*---------------------------------------------
+        Confirmation page mobile responsive
+----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------
+        Compare page mobile responsive
+------------------------------------------*/
 
 @media(max-width:1920px){
 	html{
