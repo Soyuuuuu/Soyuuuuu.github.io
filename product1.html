@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/homepagedetail.css">
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/responsive.css">
 
 
 </head>
@@ -34,12 +35,13 @@
         </nav>
 
         <div class="header-btn">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-heart hide"></i>
+            <i class="fa-regular fa-bell hide"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
             <div class ="account-btn">
                 <a class="sign-up" href="#"> Sign up</a>
                 <a class="log-in" href="#"> Log in</a>
-                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-user"></i>
             </div>
         </div>
     </header>
@@ -165,7 +167,7 @@
 
             <div class="data2">
                 <label for="phonenum">Phone*</label>
-                <input type="text" id="phonenum" placeholder="+61--- --- ---">
+                <input type="text" id="phonenum" placeholder="+61 --- --- ---">
                 <small class="error"></small>
             </div>
 
@@ -176,7 +178,7 @@
             </div>
 
             <div class="data4">
-                <label for="message">Message(maximum 1000 characters)</label>
+                <label for="message">Message (maximum 1000 characters)</label>
                 <textarea id="message" placeholder="Leave us a message" rows="6"></textarea>
                 <small class="error"></small>
             </div>
@@ -204,7 +206,7 @@
             </div>
 
             <div class="confirm-mark">
-                <img src="/res/product/confirmation.png" alt="">
+                <img src="/res/product/confirmation-L.png" alt="">
             </div>
 
             <div class="confirm-text">
@@ -248,67 +250,66 @@
 
 
 
-    <!--  Footer -->
-    <section class="footer">
+   
+ <!--  Footer -->
+ <section class="footer">
+	<div class="footer-container">
+		<div class="footer-box hide">
+			<a href="index.html"><img class="logo" src="res/logo.png" alt="logo"></a>
+			<div class="contact">
+				<h5>Call us: (08)9311 7533</h5>
+				<h5>Location: 49 Burswood Rd,</h5>
+				<h5>Burswood WA 6100</h5>
+			</div>
+		</div>
 
-        <div class="footer-container">
+		<div class="footer-box">
+			<h3>OUR STOCK</h3>
+			<a href="#">Demo Vehicles</a>
+			<a href="#">Used Vehicles</a>
+			<a href="#">Luxury Vehicles</a>
+			<a href="#">Motorcycles</a>
+		</div>
 
-            <div class="footer-box">
-                <a href="index.html"><img class="logo" src="/res/logo.png" alt="logo"></a>
-                <div class="contact">
-                    <h5>Call us: (08)9311 7533</h5>
-                    <h5>Location: 49 Burswood Rd,</h5>
-                    <h5>Burswood WA 6100</h5>
-                </div>
-            </div>
+		<div class="footer-box">
+			<div class="up-footer">
+				<h3>SPECIALS</h3>
+				<a href="#">Special</a>
+			</div>
 
-            <div class="footer-box">
-                <h3>OUR STOCK</h3>
-                <a href="#">Demo Vehicles</a>
-                <a href="#">Used Vehicles</a>
-                <a href="#">Luxury Vehicles</a>
-                <a href="#">Motorcycles</a>
-            </div>
+			<div class="down-footer">
+				<h3>FINANCE</h3>
+				<a href="#">Finance</a>
+			</div>
+		</div>
 
-            <div class="footer-box">
-                <div class="up-footer">
-                    <h3>SPECIALS</h3>
-                    <a href="#">Special</a>
-                </div>
+		<div class="footer-box">
+			<div class="up-footer">
+				<h3>SERVICE</h3>
+				<a href="#">Finance Calculator</a>
+				<a href="#">Latest News</a>
+			</div>
+			
+			<div class="down-footer">
+				<h3>TRADE & SELL</h3>
+				<a href="#">Sell Your Car or Motorcycle</a>
+			</div>
+		</div>
 
-                <div class="down-footer">
-                    <h3>FINANCE</h3>
-                    <a href="#">Finance</a>
-                </div>
-            </div>
-
-            <div class="footer-box">
-                <div class="up-footer">
-                    <h3>SERVICE</h3>
-                    <a href="#">Finance Calculator</a>
-                    <a href="#">Latest News</a>
-                </div>
-                
-                <div class="down-footer">
-                    <h3>TRADE & SELL</h3>
-                    <a href="#">Sell Your Car or Motorcycle</a>
-                </div>
-            </div>
-
-            <div class="footer-box">
-                <h3>CONTACT US</h3>
-                <a href="#">Contact Us</a>
-                <a href="#">About Us</a>
-                <a href="#">COVID-19 Update</a>
-                <div class="social">
-                    <a href="https://www.instagram.com/autoclassicbmw/"><img src="/res/social media/Icon metro-instagram.png" alt="ins"></a>
-                    <a href="https://www.facebook.com/autoclassicbmw"><img src="/res/social media/Icon awesome-facebook-square.png" alt="fb"></a>
-                    <a href="#"><img src="/res/social media/Icon material-email.png" alt="email"></a>
-                    <a href="#"><img src="/res/social media/Icon awesome-youtube.png" alt="ytb"></a>
-                </div>
-            </div>
-        </div>
-    </section>
+		<div class="footer-box">
+			<h3>CONTACT US</h3>
+			<a href="#">Contact Us</a>
+			<a href="#">About Us</a>
+			<a href="#">COVID-19 Update</a>
+			<div class="social">
+				<a href="#"><img src="res/social media/Icon metro-instagram.png" alt="ins"></a>
+				<a href="#"><img src="res/social media/Icon awesome-facebook-square.png" alt="fb"></a>
+				<a href="#"><img class="email" src="res/social media/Icon material-email.png" alt="email"></a>
+				<a href="#"><img class="ytb" src="res/social media/Icon awesome-youtube.png" alt="ytb"></a>
+			</div>
+		</div>
+	</div>
+</section>
 
     <!-- Copyright -->
     <div class="copyright">

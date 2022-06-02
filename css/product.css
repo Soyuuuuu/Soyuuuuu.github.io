@@ -26,10 +26,9 @@
 }
 
 .fa-arrow-left, .fa-heart, .fa-car, .fa-brush, .fa-gas-pump, .fa-car-side{
-    font-size: 30px;
+    font-size: 38px;
     color: var(--main-color);
     cursor: pointer;
-    /* margin-top: 1rem; */
 }
 
 .product-container .container-left .title .title-btn .fa-heart:hover{
@@ -48,8 +47,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin-left: -3rem;
+    gap: 2rem;
+    margin-left: -4rem;
+    margin-right: -4rem;
+}
+
+.title .title-btn .fa-heart{
+    margin-top: 2rem;
 }
 
 .comparebtn:hover{
@@ -59,10 +63,10 @@
 .comparebtn{
     font-family: "Poppins", medium;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 18px;
     color: white;
     background-image: var(--gradient);
-    padding: 8px 11px;
+    padding: 14px 15px;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -76,19 +80,23 @@
 .car-title h2{
     padding: 1rem;
     text-align: center;
-    line-height: 2rem;
+    line-height: 4rem;
+    font-size: 40px;
 }
 
 .car-title h5{
     text-align: center;
+    font-size: large;
+    margin-top: 1rem;
 }
 
 .container-left .single-image{
     margin-top: -10rem;
+    margin-left: 6rem;
 }
 
 .container-left .single-image img{
-    width: 100%;
+    width: 130%;
     height: auto;
 }
 
@@ -125,14 +133,16 @@ padding-top: 2rem;}
     background-color: #d8d5eb2c;
     border-radius: 20px;
     box-shadow: 3px 2px 2px #b1a6eaad;
-    margin-left: 5rem;
-    margin-top: 2rem;
+    margin: 2rem 0 -1rem 8rem;
 }
 
 .container-right h2{
     text-align: center;
-    padding: 3rem;
-padding-bottom: 2rem;}
+    padding: 5rem;
+    font-size: 2.4rem;
+    padding-bottom: 4rem;
+
+}
 
 .key-features-container{
     display: flex;
@@ -144,8 +154,8 @@ padding-bottom: 2rem;}
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-column-gap: 4rem;
+    grid-row-gap: 5rem;
     padding-top: 1rem;
 }
     
@@ -171,37 +181,39 @@ padding-bottom: 2rem;}
     gap: 1rem;
     background-color: white;
     box-shadow: 3px 2px 2px #b0afb1ad;
-    padding: 20px 25px;
-    border-radius: 31px;
+    padding: 36px 34px;
+    border-radius: 25px;
     cursor: pointer;
 }
 
 .box1, .box3{
-    margin-left: 4rem;
+    margin-left: 7rem;
 }
 
 .box2, .box4{
-    margin-right: 4rem;
+    margin-right: 7rem;
 }
 
 
 .key-features h4 {
     color: var(--btntext-color);
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .Comment h5{
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 3rem;
     font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--main-color);
 }
 
 .contact-btn{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .contact-btn .details{
@@ -209,10 +221,11 @@ padding-bottom: 2rem;}
     font-weight: 500;
     color: var(--btntext-color);
     cursor: pointer;
+    font-size: x-large;
     color: white;
     background-image: var(--gradient);
     box-shadow: 3px 2px 2px #b0afb1ad;
-    padding: 12px 18px;
+    padding: 18px 34px;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -224,11 +237,11 @@ padding-bottom: 2rem;}
 .contact-btn .contactseller{
     font-family: "Poppins", medium;
     font-weight: 500;
-    font-size: 17px;
+    font-size: x-large;
     color: var(--main-color);
     background-color: white;
     box-shadow: 3px 2px 2px #b0afb1ad;
-    padding: 12px 18px;
+    padding: 18px 21px;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -251,7 +264,7 @@ padding-bottom: 2rem;}
 .contactseller, .submit-btn{
     font-family: "Poppins", medium;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1.5rem;
     color: var(--main-color);
     background-color: white;
     box-shadow: 3px 2px 2px #b0afb1ad;
@@ -278,7 +291,9 @@ padding-bottom: 2rem;}
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 2rem;
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    gap: 3rem;
 }
 
 .contact-form, .contact-confirm{
@@ -287,8 +302,8 @@ padding-bottom: 2rem;}
     height: 100%;
     position: absolute;
     top: 7rem;
-    /* display: flex; */
-    display: none;
+    display: flex;
+    /* display: none; */
     justify-content: center;
     align-items: center;
 }
@@ -302,31 +317,6 @@ padding-bottom: 2rem;}
     position: relative;
 }
 
-
-.contact-confirm-content{
-    height: 60%;
-    width: 32%;
-    background: #fffdfd;
-    padding: 2rem;
-    border-radius: 40px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contact-confirm-content .form-heading h2{
-    padding: 2rem;
-    padding-left: 0%;
-}
-
-.contact-confirm-content .confirm-text h5{
-    margin-bottom: 0.5rem;
-    text-align: center;
-}
-
-
 form{
     padding: 1rem;
 }
@@ -334,34 +324,39 @@ form{
 .contact-form .contact-form-content h2{
     padding-bottom: 0rem;
     padding-top: 0rem;
+    font-size: 2.5rem;
 }  
 
 label{
     display: block;
-    margin: 18px 0 8px 0;
+    margin: 29px 0 11px 0;
     font-family: "Poppins";
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .data1 input{
-    width: 136%;
-border: 1px solid #707070;}
+    width: 180%;
+    border: 1px solid #707070;
+}
 
 .data1{
     display: flex;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    gap: 11rem;
+    gap: 17rem;
+}
+
+.data4 #message, .data1 input, .data2 input, .data3 input{
+    font-family: "Montserrat";
 }
 
 input, textarea{
     width: 100%;
-    padding: 13px;
+    padding: 1.5rem;
     box-sizing: border-box;
     outline: none;
     border-radius: 10px;
-border: 1px solid #707070;}
+    border: 1px solid #707070;
+}
 
 /* checkbox  */
 
@@ -411,8 +406,8 @@ border: 1px solid #707070;}
     padding: 0rem 0.5rem;
     font-family: 'Montserrat';
     font-weight: 200;
-    font-size: smaller;
-    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
 }
 
 /* submit button */
@@ -422,6 +417,38 @@ border: 1px solid #707070;}
     padding-top: 15px;
     /* padding-bottom: 0rem; */
     /* padding-top: 1rem; */
+}
+
+.contact-confirm-content{
+    height: 60%;
+    width: 32%;
+    background: #fffdfd;
+    padding: 2rem;
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-confirm-content .form-heading{
+    margin-top: -5rem;
+}
+
+.contact-confirm-content .form-heading h2{
+    padding: 10rem 0rem 2rem 0%;
+    font-size: 2.1rem;
+}
+
+.contact-confirm-content .confirm-text{
+    margin-bottom: 1rem;
+}
+
+.contact-confirm-content .confirm-text h5{
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 /*-------------------------------------
@@ -489,10 +516,14 @@ border: 1px solid #707070;}
 .car-details .details .detail-col li{
     font-family: "Montserrat";
     font-weight: 400;
-    margin: 10px;
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
+    
 }
 
 .car-details .details .detail-col span{
     font-family: "Montserrat";
     font-weight: 600;
+    font-size: 1.5rem;
+    margin-right: 1rem;
 }
