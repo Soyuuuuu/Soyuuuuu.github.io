@@ -13,13 +13,16 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/compare.css">
+	<link rel="stylesheet" href="/css/responsive.css">
+
+
 
 </head>
 <body>
-    <!-- Nav section -->
+    <!-- Header section -->
     <header class="header">
         <div id="menu-btn" class="fa-solid fa-bars"></div>
-        <a href="index.html" class="logo"><img src="/res/logo.png" alt="logo"></a>
+        <a href="#" class="logo"><img src="res/logo.png" alt="logo"></a>
 
         <nav class="navbar">
             <a href="#">Our Stock</a>
@@ -30,15 +33,17 @@
         </nav>
 
         <div class="header-btn">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-heart hide"></i>
+            <i class="fa-regular fa-bell hide"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
             <div class ="account-btn">
                 <a class="sign-up" href="#"> Sign up</a>
                 <a class="log-in" href="#"> Log in</a>
-                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-user"></i>
             </div>
         </div>
     </header>
+
 
 <!-- Compare car Section -->
 
@@ -127,7 +132,7 @@
 							<p><span>Sedan</span> | <span>10,586km</span></p> 
 						</div>
 					</div>
-					<img src="res/compare_cars/car2.png"/>
+					<img class="car1" src="res/compare_cars/car1.png"/>
 					<div class="car_item_bottom">
 						<div class="car_item_bottom_left">
 							<h3>$165,990</h3>
@@ -187,66 +192,64 @@
 	</section>
 
 
-<!--  Footer -->
-<section class="footer">
+ <!--  Footer -->
+ <section class="footer">
+	<div class="footer-container">
+		<div class="footer-box hide">
+			<a href="index.html"><img class="logo" src="res/logo.png" alt="logo"></a>
+			<div class="contact">
+				<h5>Call us: (08)9311 7533</h5>
+				<h5>Location: 49 Burswood Rd,</h5>
+				<h5>Burswood WA 6100</h5>
+			</div>
+		</div>
 
-    <div class="footer-container">
+		<div class="footer-box">
+			<h3>OUR STOCK</h3>
+			<a href="#">Demo Vehicles</a>
+			<a href="#">Used Vehicles</a>
+			<a href="#">Luxury Vehicles</a>
+			<a href="#">Motorcycles</a>
+		</div>
 
-        <div class="footer-box">
-            <a href="index.html"><img class="logo" src="/res/logo.png" alt="logo"></a>
-            <div class="contact">
-                <h5>Call us: (08)9311 7533</h5>
-                <h5>Location: 49 Burswood Rd,</h5>
-                <h5>Burswood WA 6100</h5>
-            </div>
-        </div>
+		<div class="footer-box">
+			<div class="up-footer">
+				<h3>SPECIALS</h3>
+				<a href="#">Special</a>
+			</div>
 
-        <div class="footer-box">
-            <h3>OUR STOCK</h3>
-            <a href="#">Demo Vehicles</a>
-            <a href="#">Used Vehicles</a>
-            <a href="#">Luxury Vehicles</a>
-            <a href="#">Motorcycles</a>
-        </div>
+			<div class="down-footer">
+				<h3>FINANCE</h3>
+				<a href="#">Finance</a>
+			</div>
+		</div>
 
-        <div class="footer-box">
-            <div class="up-footer">
-                <h3>SPECIALS</h3>
-                <a href="#">Special</a>
-            </div>
+		<div class="footer-box">
+			<div class="up-footer">
+				<h3>SERVICE</h3>
+				<a href="#">Finance Calculator</a>
+				<a href="#">Latest News</a>
+			</div>
+			
+			<div class="down-footer">
+				<h3>TRADE & SELL</h3>
+				<a href="#">Sell Your Car or Motorcycle</a>
+			</div>
+		</div>
 
-            <div class="down-footer">
-                <h3>FINANCE</h3>
-                <a href="#">Finance</a>
-            </div>
-        </div>
-
-        <div class="footer-box">
-            <div class="up-footer">
-                <h3>SERVICE</h3>
-                <a href="#">Finance Calculator</a>
-                <a href="#">Latest News</a>
-            </div>
-            
-            <div class="down-footer">
-                <h3>TRADE & SELL</h3>
-                <a href="#">Sell Your Car or Motorcycle</a>
-            </div>
-        </div>
-
-        <div class="footer-box">
-            <h3>CONTACT US</h3>
-            <a href="#">Contact Us</a>
-            <a href="#">About Us</a>
-            <a href="#">COVID-19 Update</a>
-            <div class="social">
-                <a href="https://www.instagram.com/autoclassicbmw/"><img src="/res/social media/Icon metro-instagram.png" alt="ins"></a>
-                <a href="https://www.facebook.com/autoclassicbmw"><img src="/res/social media/Icon awesome-facebook-square.png" alt="fb"></a>
-                <a href="#"><img src="/res/social media/Icon material-email.png" alt="email"></a>
-                <a href="#"><img src="/res/social media/Icon awesome-youtube.png" alt="ytb"></a>
-            </div>
-        </div>
-    </div>
+		<div class="footer-box">
+			<h3>CONTACT US</h3>
+			<a href="#">Contact Us</a>
+			<a href="#">About Us</a>
+			<a href="#">COVID-19 Update</a>
+			<div class="social">
+				<a href="#"><img src="res/social media/Icon metro-instagram.png" alt="ins"></a>
+				<a href="#"><img src="res/social media/Icon awesome-facebook-square.png" alt="fb"></a>
+				<a href="#"><img class="email" src="res/social media/Icon material-email.png" alt="email"></a>
+				<a href="#"><img class="ytb" src="res/social media/Icon awesome-youtube.png" alt="ytb"></a>
+			</div>
+		</div>
+	</div>
 </section>
 
 <!-- Copyright -->
