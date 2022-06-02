@@ -8,24 +8,26 @@
     padding-top: 5rem;
     display: flex;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
     justify-content: space-evenly;
 }
 
 
 .car-image{
-    width: 55rem;
+    width: 50%;
     height: auto;
-    margin-top: 4rem;
+    margin-top: 1rem;
+    margin-left: -10rem;
 }
 
 .home .home-text{
+    /* width: 50%; */
     display: flex;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .home .button-container{
@@ -33,51 +35,55 @@
     padding-left: 3rem;
 }
 
-.folded-button {
-    font-family: "Poppins", medium;
-    width: 10rem;
-    height: 3rem;
+.home .home-text h1{
+    font-size: 4rem;
+}
+
+.folded-button{
+    font-family: "Poppins", medium;font-size: 24px;color: #4A4A4A;
+    width: 14rem;
+    height: 5rem;
     text-align: center;
     display: inline-flex;
     align-items: center;
     /* justify-content: space-between; */
-    padding-left: 5rem;
+    padding-left: 6rem;
     justify-items: center;
     /* border-radius: 130px; */
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 60px 60px 0px;
     margin-left: -4rem;
-    border: 1px solid #707070;
+    border: 2px solid #707070;
     border-left: none; 
 }
 
 #border {
     font-family: "Poppins", medium;
-    width: 7rem;
-    height: 3rem;
+    width: 12rem;
+    height: 5rem;
     text-align: center;
     /* display: inline-flex; */
     /* align-items: center; */
     /* justify-content: space-between; */
-    padding-left: 3rem;
+    padding-left: 5rem;
     justify-items: center;
-    border-radius: 30px;
-    border: 1px solid var(--btntext-color);
+    border-radius: 60px;
+    border: 2px solid var(--btntext-color);
 }
 
 .folded-button:hover, #border:hover{
     background-color: #F5F5F5;
     color: #ACA1E5;
     border-left:  1px solid #707070;
-    border-radius: 30px;
+    border-radius: 60px;
 }
 
 .dropdown {
     display: grid;
     grid-template-columns: repeat(2, 12rem);
     grid-template-rows: repeat(2, 2rem);
-    grid-column-gap: 40px;
-    grid-row-gap: 2rem;
-    padding-top: 2rem;padding-left: 4.5rem;
+    grid-column-gap: 9rem;
+    grid-row-gap: 4rem;
+    padding-top: 2rem;padding-left: -13rem;
     }
     
 .dropdown1 { grid-area: 1 / 1 / 2 / 2; }
@@ -90,90 +96,97 @@
 
 /* The container must be positioned relative: */
 .custom-select {
-position: relative;
-font-family: "Montserrat";
-border: 1px solid #707070;
-border-radius: 6px;
-width:12rem;
+    position: relative;
+    font-family: "Montserrat";
+    border: 1px solid #707070;
+    border-radius: 14px;
+    width: 16rem;
+    height: 4.2rem;
+    font-size: 1.2rem;
 }
 
 .custom-select select {
-display: none; /*hide original SELECT element: */
+    display: none; /*hide original SELECT element: */   
 }
 
 
 /* Style the arrow inside the select element: */
 .select-selected:after {
-position: absolute;
-content: "";
-top: 14px;
-right: 10px;
-width: 0;
-height: 0;
-border: 6px solid transparent;
-border-color: #707070 transparent transparent transparent;
+    position: absolute;
+    content: "";
+    top: 28px;
+    right: 16px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-color: #707070 transparent transparent transparent;
 }
 
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {
-border-color: transparent transparent #404040 transparent;
-top: 7px;
+    border-color: transparent transparent #404040 transparent;
+    top: 20px;
 }
 
 /* style the items (options), including the selected item: */
 .select-items div,.select-selected {
-color: #707070;
-padding: 8px 16px;
-border: 1px solid transparent;
-border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-cursor: pointer;
+    color: #707070;
+    padding: 22px 24px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
 }
 
 /* Style items (options): */
 .select-items {
-position: absolute;
-background-color: white;
-border-radius: 6px;border: 1px solid #707070;
-top: 100%;
-left: 0;
-right: 0;
-z-index: 99;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #707070;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
 }
 
 /* Hide the items when the select box is closed: */
 .select-hide {
-display: none;
+    display: none;
 }
 
 .select-items div:hover, .same-as-selected {
-background-color: var(--hover-color);
-color:white;
-}
+    background-color: var(--hover-color);
+    color:white;
+}   
 
 .searchbtn{
     display: flex;
     /* align-items: center; */
-    margin-left: 12rem;
-    margin-top: 2rem;
+    margin-left: 11rem;
+    margin-top: 5rem;
     margin-right: 13rem;
     font-family: "Poppins", medium;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 24px;
     color: white;
     background-image: var(--gradient);
-    padding: 8px 25px;
+    padding: 13px 25px;
     border-radius: 50px;
     cursor: pointer;
 }
 
 .searchbtn .fa-magnifying-glass{
     color: white;
-    font-size: 17px;
+    font-size: 22px;
     margin-right: .5rem;
 }
 
 .searchbtn:hover, .searchbtn .fa-magnifying-glass:hover{
     color: var(--hover-color);
+}
+
+.searchbtn .fa-magnifying-glass{
+    display: block;
 }
 
 /*-------------------------------------
@@ -185,7 +198,7 @@ color:white;
 }
 
  .brand_style{
-    height: 72vh;
+    height: 53vh;
  }
 
 .body_list {

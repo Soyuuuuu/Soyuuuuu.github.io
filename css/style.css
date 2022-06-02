@@ -107,14 +107,14 @@ p {
 }
 
 .header .logo img{
-    width: 10rem;
+    width: 14rem;
     margin-left: 2rem;
 }
 
 .header .navbar a{
     font-family: "Poppins", medium;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 22px;
     color: var(--btntext-color);
     margin: 0 2rem;
 }
@@ -130,7 +130,7 @@ p {
 }
 
 .header-btn .fa-heart, .fa-bell, .fa-magnifying-glass, .account-btn i{
-    font-size: 25px;
+    font-size: 30px;
     color: var(--btntext-color);
     cursor: pointer;
 }
@@ -149,7 +149,7 @@ p {
 .header-btn .sign-up{
     font-family: "Poppins", medium;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 22px;
     color: var(--btntext-color);
     cursor: pointer;
 }
@@ -161,12 +161,12 @@ p {
 .header-btn .log-in{
     font-family: "Poppins", medium;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 22px;
     color: white;
     background-image: var(--gradient);
     padding: 8px 16px;
     border-radius: 50px;
-    cursor: pointer;
+    cursor: pointer;margin-left: .3rem;
 }
 
 .header-btn .log-in:hover{
