@@ -125,6 +125,18 @@
 	padding:20px;
 }
 
+.car_item .car1{
+	/* width: 100%;
+	margin-top: -2rem;
+	margin-bottom: -2rem; */
+
+	width: 115%;
+    margin-left: -2rem;
+    margin-top: -1.2rem;
+    margin-bottom: -3rem;
+}
+
+
 .car_item .car_item_title{
 	display:flex;
     justify-content: space-between;
@@ -142,7 +154,7 @@
 
 .car_item img{
 	display: block;	
-	margin-top: 18px;
+	margin-top: 30px;
 	margin-bottom: -14px;
 }
 
