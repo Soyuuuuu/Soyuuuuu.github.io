@@ -13,32 +13,76 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/search_result.css">
+	<link rel="stylesheet" href="/css/responsive.css">
 
 </head>
 <body>
-    <!-- Nav section -->
+    <!-- Header section -->
     <header class="header">
         <div id="menu-btn" class="fa-solid fa-bars"></div>
-        <a href="index.html" class="logo"><img src="/res/logo.png" alt="logo"></a>
+        <a href="#" class="logo"><img src="res/logo.png" alt="logo"></a>
 
+        <!-- center part of navbar -->
         <nav class="navbar">
-            <a href="#">Our Stock</a>
+            <a href="#" id="ourstock">Our Stock</a>
             <a href="#">Finance</a>
             <a href="#">Service</a>
             <a href="#">Trade & Sell</a>
             <a href="#">Contact us</a>
         </nav>
 
+        <!-- right botton and sign up page -->
         <div class="header-btn">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-heart hide"></i>
+            <i class="fa-regular fa-bell hide"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
             <div class ="account-btn">
                 <a class="sign-up" href="#"> Sign up</a>
                 <a class="log-in" href="#"> Log in</a>
-                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-user"></i>
             </div>
         </div>
     </header>
+
+        <!-- hovered dropdown menu in navbar -->
+    <div class="popupwindow hide" id="popupwindow1">
+		<div class="txtlist">
+			<p>Demo Vehicles</p> 
+			<p>Used Vehicles</p>
+			<p>Luxury Vehicles</p>
+			<p>Motocycles</p>
+		</div>
+
+		<div class="bodystyle">
+
+			<p>Browse by body styles</p>
+			<ul class="body_list2">
+				<li><img src="/res/body/Hatchback.png" alt="hatchback"><a href="#">Hatchback</a></li>
+				<li><img src="/res/body/SUV.png" alt="suv"><a href="#">SUV</a></li>
+				<li><img src="/res/body/truck.png" alt="truck"><a href="#">Truck</a></li>
+				<li><img src="/res/body/sedan.png" alt="sedan"><a href="#">Sedan</a></li>
+				<li><img src="/res/body/Convertible.png" alt="convertible"><a href="#">Convertible</a></li>
+				<li><img src="/res/body/Wagon.png" alt="wagon"><a href="#">Wagon</a></li>
+			</ul>
+
+		</div>
+
+		<div class="brands">
+
+			<p>Browse by brands</p>
+		    <div class="brand_list2">
+				<a href="#"><img src="/res/brand/BMW.png" alt="BMW"></a>
+				<a href="#"><img src="/res/brand/MB.png" alt="Mercedes-Benz"></a>
+				<a href="#"><img src="/res/brand/audi.png" alt="Audi"></a>
+				<a href="#"><img src="/res/brand/Toyota.png" alt="Toyota"></a>
+				<a href="#"><img src="/res/brand/Honda.png" alt="Honda"></a>
+				<a href="#"><img src="/res/brand/ford.png" alt="Ford"></a>
+				<a href="#"><img src="/res/brand/hyundai.png" alt="Hyundai"></a>
+				<a href="#"><img src="/res/brand/Volkswagen.png" alt="Volkswagen"></a>
+		    </div>
+            
+		</div>
+	</div>
 
 
 	<!-- search result section -->
@@ -253,77 +297,73 @@
 
 <!--  Footer -->
 <section class="footer">
+	<div class="footer-container">
+		<div class="footer-box hide">
+			<a href="index.html"><img class="logo" src="res/logo.png" alt="logo"></a>
+			<div class="contact">
+				<h5>Call us: (08)9311 7533</h5>
+				<h5>Location: 49 Burswood Rd,</h5>
+				<h5>Burswood WA 6100</h5>
+			</div>
+		</div>
 
-    <div class="footer-container">
+		<div class="footer-box">
+			<h3>OUR STOCK</h3>
+			<a href="#">Demo Vehicles</a>
+			<a href="#">Used Vehicles</a>
+			<a href="#">Luxury Vehicles</a>
+			<a href="#">Motorcycles</a>
+		</div>
 
-        <div class="footer-box">
-            <a href="index.html"><img class="logo" src="/res/logo.png" alt="logo"></a>
-            <div class="contact">
-                <h5>Call us: (08)9311 7533</h5>
-                <h5>Location: 49 Burswood Rd,</h5>
-                <h5>Burswood WA 6100</h5>
-            </div>
-        </div>
+		<div class="footer-box">
+			<div class="up-footer">
+				<h3>SPECIALS</h3>
+				<a href="#">Special</a>
+			</div>
 
-        <div class="footer-box">
-            <h3>OUR STOCK</h3>
-            <a href="#">Demo Vehicles</a>
-            <a href="#">Used Vehicles</a>
-            <a href="#">Luxury Vehicles</a>
-            <a href="#">Motorcycles</a>
-        </div>
+			<div class="down-footer">
+				<h3>FINANCE</h3>
+				<a href="#">Finance</a>
+			</div>
+		</div>
 
-        <div class="footer-box">
-            <div class="up-footer">
-                <h3>SPECIALS</h3>
-                <a href="#">Special</a>
-            </div>
+		<div class="footer-box">
+			<div class="up-footer">
+				<h3>SERVICE</h3>
+				<a href="#">Finance Calculator</a>
+				<a href="#">Latest News</a>
+			</div>
+			
+			<div class="down-footer">
+				<h3>TRADE & SELL</h3>
+				<a href="#">Sell Your Car or Motorcycle</a>
+			</div>
+		</div>
 
-            <div class="down-footer">
-                <h3>FINANCE</h3>
-                <a href="#">Finance</a>
-            </div>
-        </div>
-
-        <div class="footer-box">
-            <div class="up-footer">
-                <h3>SERVICE</h3>
-                <a href="#">Finance Calculator</a>
-                <a href="#">Latest News</a>
-            </div>
-            
-            <div class="down-footer">
-                <h3>TRADE & SELL</h3>
-                <a href="#">Sell Your Car or Motorcycle</a>
-            </div>
-        </div>
-
-        <div class="footer-box">
-            <h3>CONTACT US</h3>
-            <a href="#">Contact Us</a>
-            <a href="#">About Us</a>
-            <a href="#">COVID-19 Update</a>
-            <div class="social">
-                <a href="https://www.instagram.com/autoclassicbmw/"><img src="/res/social media/Icon metro-instagram.png" alt="ins"></a>
-                <a href="https://www.facebook.com/autoclassicbmw"><img src="/res/social media/Icon awesome-facebook-square.png" alt="fb"></a>
-                <a href="#"><img src="/res/social media/Icon material-email.png" alt="email"></a>
-                <a href="#"><img src="/res/social media/Icon awesome-youtube.png" alt="ytb"></a>
-            </div>
-        </div>
-    </div>
+		<div class="footer-box">
+			<h3>CONTACT US</h3>
+			<a href="#">Contact Us</a>
+			<a href="#">About Us</a>
+			<a href="#">COVID-19 Update</a>
+			<div class="social">
+				<a href="#"><img src="res/social media/Icon metro-instagram.png" alt="ins"></a>
+				<a href="#"><img src="res/social media/Icon awesome-facebook-square.png" alt="fb"></a>
+				<a href="#"><img class="email" src="res/social media/Icon material-email.png" alt="email"></a>
+				<a href="#"><img class="ytb" src="res/social media/Icon awesome-youtube.png" alt="ytb"></a>
+			</div>
+		</div>
+	</div>
 </section>
 
 <!-- Copyright -->
 <div class="copyright">
-    <h5>Copyright© 2022. All rights reserved by Auto Classic Pre-Owned Cars and Motorcycles</h5>
+	<h5>Copyright© 2022. All rights reserved by Auto Classic Pre-Owned Cars and Motorcycles</h5>
 </div>
 
 <!-- js link -->
 <script src="/js/main.js"></script>
+<script src="/js/dropdown.js"></script>
 
 </body>
 </html>
-
-
-
 

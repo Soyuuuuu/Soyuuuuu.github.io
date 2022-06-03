@@ -22,7 +22,7 @@
 	padding:20px;
 	border-radius:1rem;
 	box-sizing:border-box;
-}
+z-index: -2;}
 
 .filter .row button{
 	font-family: "Poppins", medium;
@@ -46,8 +46,9 @@
 }
 
 .filter .title .title_txt{
-	font-size:1.75rem;
-	text-indent:2.5rem;
+	font-size: 1.75rem;
+    text-indent: 2.5rem;
+    color: var(--text-color);
 	background-image:url(../res/search_result/filter.png);
 	background-position:left center;
 	background-repeat:no-repeat;
@@ -97,7 +98,7 @@
 	height:3px;
 	background:#E3E0E0;
 	position:relative;
-}
+z-index: -1;}
 
 .row .range .line{
 	width:60%;
@@ -171,7 +172,7 @@
 .result .search{
 	width:100%;
 	position:relative;
-}
+z-index: -1;}
 
 .result .search input{
 	width:100%;
@@ -304,7 +305,7 @@
     font-size: 17px;
     color: white;
     background-image: var(--gradient);
-    padding: 8px 16px;
+    padding: 6px 11px;
     border-radius: 50px;
     cursor: pointer;
 }
