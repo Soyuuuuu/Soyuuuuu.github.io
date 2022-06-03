@@ -101,6 +101,14 @@
     .product .product-container {
         flex-direction: column;
     }
+
+    .container-left .single-image .car-image{
+        display: none;
+    }
+    .container-left .multi-image-group .single-image .car-image-small {
+        display: block;
+        margin-left: -4rem;
+    }
 }
 
 
