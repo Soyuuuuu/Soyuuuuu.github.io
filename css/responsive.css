@@ -313,6 +313,11 @@
 		font-size:14px;
 	}
 
+    .header .navbar a {
+        margin: 2.2rem;
+        font-size: 1.32rem;
+    }    
+
     .header .logo img {
         width: 12rem;
         margin: 0.5rem 0 0 1rem;
@@ -624,30 +629,115 @@
     }
 
 }
-    
-
-
-
-
-
 
 /*----------------------------------------
         Enquiry page mobile responsive
 -----------------------------------------*/
 @media(max-width:648px){
+    .contact-form, .contact-confirm {
+        height: 300%;
+    }
+
+    .contact-form-content {
+        height: 80%;
+        width: 90%;
+        margin-top: -122rem;
+    }
+
+    .contact-form .contact-form-content h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 11rem;
+    }
+
+    .form-heading {
+        margin-left: -10rem;
+        gap: 0rem;
+    }
+
+    .fa-xmark {
+        font-size: 2rem;
+    }
+
+    .data1{
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .data4 #message, .data1 input, .data2 input, .data3 input {
+        font-size: 1rem;
+    }
+
+    .data1 input {
+        width: 100%;
+        height: 2rem;
+    }
+
+    label {
+        font-size: .9rem;
+    }
+
+    input {
+        width: 100%;
+        height: 2rem;
+    }
+
+    textarea {
+        height: 6rem;
+    }
+
+    .contact-form-content p {
+        padding: 0rem 0.5rem;
+        font-size: 0.6rem;
+        line-height: .7rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        color: var(--main-color);
+        background-color: #F5F5F5;
+        padding: 12px 41px;
+    }
+
+    .checkbox-box {
+        width: 1em;
+        height: 1em;
+        margin-top: -1.5rem;
+    }
 
 }
-
-
-
-
-
-
-
 /*---------------------------------------------
         Confirmation page mobile responsive
 ----------------------------------------------*/
 @media(max-width:648px){
+    .contact-confirm-content {
+        height: 80%;
+        width: 90%;
+        margin-top: -122rem;
+    }
+
+    #confirm-xmark{
+        margin-top: -5rem;
+    }
+
+    .contact-confirm-content .form-heading h2 {
+        padding: 6rem 0rem 0rem 0%;
+        font-size: 1.5rem;
+        margin-top: -1rem;
+    }
+
+    .confirm-mark img{
+        width: 70%;
+        margin-left: 3rem;
+    }
+
+    .contact-confirm-content .confirm-text h5 {
+        font-size: .9em;
+    }
+
+    .contact-confirm-content .confirm-text {
+        margin-bottom: 6rem;
+    }
 
 }
 
