@@ -91,25 +91,25 @@
     margin-top: 1rem;
 }
 
-.container-left .single-image{
-    margin-top: -10rem;
-    margin-left: 6rem;
-}
-
-
-.container-left .single-image img{
-    width: 130%;
-    height: auto;
-}
-
-.container-left .single-image .product-car{
-    display: none;
-}
 
 .multi-image-group{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.container-left .single-image{
+    margin-top: -10rem;
+    margin-left: 6rem;
+}
+
+.container-left .single-image .car-image{
+    width: 130%;
+    height: auto;
+}
+
+.container-left .multi-image-group .single-image .car-image-small{
+    display: none;
 }
 
 .multi-image-group .small-image-group .multi-image-col img{
@@ -228,20 +228,19 @@ padding-top: 2rem;}
     flex-direction: row;
     justify-content: space-evenly;
     margin: 2rem;
+    font-family: "Poppins", medium;
+    font-weight: 500;
+    font-size: x-large;
+    color: var(--main-color);
+    cursor: pointer;
 }
 
 .contact-btn .details{
-    font-family: "Poppins", medium;
-    font-weight: 500;
-    color: var(--btntext-color);
-    cursor: pointer;
-    font-size: x-large;
     color: white;
     background-image: var(--gradient);
     box-shadow: 3px 2px 2px #b0afb1ad;
-    padding: 18px 34px;
+    padding: 18px 21px;
     border-radius: 50px;
-    cursor: pointer;
 }
 
 .contact-btn .details:hover{
@@ -249,15 +248,11 @@ padding-top: 2rem;}
 }
 
 .contact-btn .contactseller{
-    font-family: "Poppins", medium;
-    font-weight: 500;
-    font-size: x-large;
-    color: var(--main-color);
     background-color: white;
     box-shadow: 3px 2px 2px #b0afb1ad;
     padding: 18px 21px;
     border-radius: 50px;
-    cursor: pointer;
+    color: var(--main-color);
 }
 
 .contact-btn .contactseller:hover{
@@ -275,12 +270,13 @@ padding-top: 2rem;}
     text-align: center;
 } */
 
-.contactseller, .submit-btn{
+.submit-btn{
     font-family: "Poppins", medium;
     font-weight: 500;
     font-size: 1.5rem;
     color: var(--main-color);
     background-color: white;
+    color: var(--main-color);
     box-shadow: 3px 2px 2px #b0afb1ad;
     padding: 12px 25px;
     border-radius: 50px;
@@ -476,10 +472,6 @@ input, textarea{
     margin-top: -5rem;
 }
 
-.car-details h1{
-    padding: 2rem;
-    text-align: center;
-}
 
 
 .car-details .heading{
@@ -503,6 +495,11 @@ input, textarea{
     z-index: -1;
     background: var(--main-color);
     clip-path:polygon(0 90%, 100% 80%, 100% 100%, 0% 100%)
+}
+
+.car-details h1{
+    padding: 2rem;
+    text-align: center;
 }
 
 .car-details .details{

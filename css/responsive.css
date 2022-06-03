@@ -97,6 +97,10 @@
     .brand_list .firstrow, .secondrow {
         gap: 4rem;
     }
+
+    .product .product-container {
+        flex-direction: column;
+    }
 }
 
 
@@ -433,14 +437,37 @@
 /*----------------------------------------
         Product detail page mobile responsive
 -----------------------------------------*/
-    /* .product .product-container {
+@media(max-width:648px){
+    html,body{
+		width:100%;
+		height:100%;
+	}
+
+    
+
+    .product .product-container {
         flex-direction: column;
     }
 
-    .fa-arrow-left, .fa-heart, .fa-car, .fa-brush, .fa-gas-pump, .fa-car-side {
+    /* container left */
+    .container-left{
+        margin-left: -2rem;
+    }
+
+    .container-left .single-image .car-image{
+        display: none;
+    }
+    .container-left .multi-image-group .single-image .car-image-small {
+        display: block;
+        margin-left: -2rem;
+    }
+    
+    .fa-arrow-left, .fa-heart{
         font-size: 1.5rem;
     }
     
+
+
     #back-btn{
         margin-left: -6rem;
         margin-right: -2rem;
@@ -479,12 +506,117 @@
     }
 
     .multi-image-group .small-image-group {
-        margin: 1rem;
-        padding-top: 26rem;
-        margin-left: -6rem;
-        margin-right: -10rem;
+        padding-top: 0rem;
+        margin-left: 4rem;
+        width: 80%;
+    } 
+
+
+
+
+
+    /* Container right */
+
+    .container-right {
+        width: 359%;
+        margin: 3rem 0 0rem 3rem;
+        box-shadow: 0px -10px 10px #aca1e569;
+        margin-left: 0.5rem;
+    }
+
+    .key-features h4 {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        padding: 13px 29px;
+    }
+
+    .box1, .box3 {
+        margin-right: none;
+    }
+
+    .box2, .box4 {
+        margin-right: none;
+    }
+
+    .fa-car, .fa-brush, .fa-gas-pump, .fa-car-side {
+        font-size: 2rem;
+    }
+
+    .key-features {
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .container-right h2 {
+        padding: 3rem;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    /* .Comment{
+        margin-left: 18%;
+        margin-right: 18%;
     } */
 
+    .Comment h5 {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+
+    .contact-btn {
+        font-size: 1rem;
+        padding: 9px 2rem;
+        gap: 1rem
+    }
+
+    .contact-btn .contactseller, .contact-btn .contactseller {
+        padding: 1.2rem;
+    }
+
+    /* Detail section */
+    .car-details {
+        width: 100%;
+        margin-left: 6%;
+        background-color: white;
+        margin-top: -10rem;
+        margin-left: 0rem;
+    }
+
+    .car-details .details {
+        flex-direction: column;
+        margin: 1rem;
+        margin: 1rem 0rem 1rem 2rem;
+    }
+
+    .car-details .heading {
+        padding: 4rem 1rem 0rem;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .car-details .details .fa-circle {
+        font-size: 50%;
+    }
+
+    .car-details .details .detail-col {
+        margin: 0rem 9rem;
+    }
+
+    .car-details .details .detail-col span {
+        font-size: 1rem;
+    }
+
+    .car-details .details .detail-col li {
+        font-size: 1rem;
+        margin: 1rem -7rem;
+    }
+
+}
+    
 
 
 
@@ -494,7 +626,9 @@
 /*----------------------------------------
         Enquiry page mobile responsive
 -----------------------------------------*/
+@media(max-width:648px){
 
+}
 
 
 
@@ -505,7 +639,9 @@
 /*---------------------------------------------
         Confirmation page mobile responsive
 ----------------------------------------------*/
+@media(max-width:648px){
 
+}
 
 
 
@@ -528,10 +664,6 @@
 }
 
 @media(max-width:648px){
-	html,body{
-		width:100%;
-		height:100%;
-	}
 
 
     .tit1 {
