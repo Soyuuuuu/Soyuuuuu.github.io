@@ -204,7 +204,7 @@
         <div class="contact-confirm-content">
             <div class="form-heading">
                 <h2>Thanks for your enquiry!</h2>
-                <i class="fa-solid fa-xmark"></i>
+                <i id="confirm-xmark" class="fa-solid fa-xmark"></i>
             </div>
 
             <div class="confirm-mark">
@@ -321,7 +321,6 @@
     <script src="/js/main.js"></script>
 
     <script>
-
         document.getElementById("contactseller").addEventListener("click", function(){
             document.querySelector(".contact-form").style.display = "flex";
         })
@@ -330,13 +329,6 @@
             document.querySelector(".contact-form").style.display = "none";
         })
     
-    </script>
-
-    <script>
-        document.getElementsById("submit-btn").addEventListener("click", function(){
-            document.querySelector(".contact-confirm").style.display = "flex";
-        })
-        
     </script>
 
 </body>

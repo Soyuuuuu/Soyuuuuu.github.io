@@ -314,8 +314,8 @@ padding-top: 2rem;}
     height: 100%;
     position: absolute;
     top: 5rem;
-    display: flex;
-    /* display: none; */
+    /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
 }
