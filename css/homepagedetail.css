@@ -12,7 +12,6 @@
     justify-content: space-evenly;
 }
 
-
 .car-image{
     width: 50%;
     height: auto;
@@ -21,9 +20,7 @@
 }
 
 .home .home-text{
-    /* width: 50%; */
     display: flex;
-    /* margin-top: 5rem; */
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -46,13 +43,11 @@
     text-align: center;
     display: inline-flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding-left: 6rem;
     justify-items: center;
-    /* border-radius: 130px; */
     border-radius: 0px 60px 60px 0px;
     margin-left: -4rem;
-    border: 2px solid #707070;
+    border: 1.5px solid #707070;
     border-left: none; 
 }
 
@@ -61,13 +56,10 @@
     width: 12rem;
     height: 5rem;
     text-align: center;
-    /* display: inline-flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
     padding-left: 5rem;
     justify-items: center;
     border-radius: 60px;
-    border: 2px solid var(--btntext-color);
+    border: 1.5px solid var(--btntext-color);
 }
 
 .folded-button:hover, #border:hover{
@@ -82,7 +74,7 @@
     grid-template-columns: repeat(2, 12rem);
     grid-template-rows: repeat(2, 2rem);
     grid-column-gap: 9rem;
-    grid-row-gap: 4rem;
+    grid-row-gap: 5rem;
     padding-top: 2rem;padding-left: -13rem;
     }
     
@@ -94,15 +86,14 @@
 
 .dropdown4 { grid-area: 2 / 2 / 3 / 3; }
 
-/* The container must be positioned relative: */
 .custom-select {
-    position: relative;
+    position: relative; /* The container must be positioned relative: */
     font-family: "Montserrat";
-    border: 1px solid #707070;
+    border: 1.5px solid #707070;
     border-radius: 14px;
     width: 16rem;
-    height: 4.2rem;
-    font-size: 1.2rem;
+    height: 4.9rem;
+    font-size: 1.5rem;
 }
 
 .custom-select select {
@@ -161,9 +152,8 @@
 
 .searchbtn{
     display: flex;
-    /* align-items: center; */
     margin-left: 11rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
     margin-right: 13rem;
     font-family: "Poppins", medium;
     font-weight: 500;
@@ -229,7 +219,6 @@
 }
 
 .body_list img {
-    /* width: 8rem; */
     height: 4rem;
     display: flex;
 }
@@ -242,8 +231,6 @@
     flex-wrap: wrap;
     gap: 10rem;
     justify-content: center;
-    /* overflow: scroll; */
-/* margin: 3rem; *//* margin-bottom: 30rem; */
 }
 
 .brand_list img{
@@ -332,7 +319,6 @@
     transition: 0.4s;
 }
 
-
 /*-------------------------------------
        Review Section
 --------------------------------------*/
@@ -349,7 +335,7 @@
 
 .review h3:hover{
    color: var(--hover-color);
-   text-decoration:underline;
+   text-decoration: underline;
 }
 
 .review{
@@ -405,10 +391,7 @@
 
 
 .home .home-text select {
-    /* display: block; */
-/* padding: 5px 10px; */
-/* margin-bottom: 13px; */
-color: #707070;
-background-color: white;
-border: 1px solid #707070;
+    color: #707070;
+    background-color: white;
+    border: 1px solid #707070;
 }

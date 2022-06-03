@@ -13,6 +13,7 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
+
 //dropdown menu
 
     var x, i, j, l, ll, selElmnt, a, b, c;
@@ -97,8 +98,6 @@ window.onscroll = () =>{
 
 // contact seller & enquiry
 
-
-
 document.getElementById("contactseller").addEventListener("click", function(){
     document.querySelector(".contact-form").style.display = "flex";
 })
@@ -118,3 +117,5 @@ document.getElementById("submit-btn").addEventListener("click", function(){
 document.getElementById("confirm-xmark").addEventListener("click", function(){
     document.querySelector(".contact-confirm").style.display = "none";
 })
+
+
