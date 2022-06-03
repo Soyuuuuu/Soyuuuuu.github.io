@@ -9,7 +9,8 @@
 .product .product-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
@@ -105,6 +106,12 @@
     display: none;
 }
 
+.multi-image-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .multi-image-group .small-image-group .multi-image-col img{
     width: 100%;
     cursor: pointer;
@@ -126,7 +133,7 @@ padding-top: 2rem;}
 .product-container .container-left .title{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
 }
 
 /*-------------------------------------
@@ -134,6 +141,8 @@ padding-top: 2rem;}
 --------------------------------------*/
 
 .container-right{
+    display: flex;
+    flex-direction: column;
     width: 50%;
     background-color: #d8d5eb2c;
     border-radius: 20px;
@@ -186,7 +195,7 @@ padding-top: 2rem;}
     gap: 1rem;
     background-color: white;
     box-shadow: 3px 2px 2px #b0afb1ad;
-    padding: 36px 34px;
+    padding: 30px 34px;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -218,7 +227,7 @@ padding-top: 2rem;}
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
 .contact-btn .details{
@@ -456,6 +465,7 @@ input, textarea{
         Car Details section
 --------------------------------------*/
 .car-details{
+    width: 80%;
     background-color: #d8d5eb2c;
     border-radius: 20px;
     margin-left: 10%;
