@@ -800,7 +800,7 @@
 
     .contact-form-content {
         height: 72vh;
-        width: 40vh;
+        width: 42vh;
         margin-top: -200vh;
         margin-left: -140vh;
         z-index: 100000;}
@@ -864,7 +864,7 @@
         padding: 10px 30px;
         margin-left: 2rem;
     }
-    
+
     .checkbox-box {
         width: 1em;
         height: 1em;
