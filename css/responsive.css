@@ -180,6 +180,7 @@
 
     .dropdown {
         grid-column-gap: 0rem;
+        grid-row-gap: 3rem;
         padding-left: 5rem;
     }
 
