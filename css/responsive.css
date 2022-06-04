@@ -799,10 +799,10 @@
     }
 
     .contact-form-content {
-        height: 74vh;
-        width: 42vh;
+        height: 72vh;
+        width: 40vh;
         margin-top: -200vh;
-        margin-left: -136vh;
+        margin-left: -140vh;
         z-index: 100000;}
 
     .contact-form .contact-form-content h2 {
@@ -858,11 +858,11 @@
     }
 
     .submit-btn {
-        font-size: 1rem;
+        font-size: .8rem;
         color: var(--main-color);
         background-color: #F5F5F5;
-        padding: 12px 41px;
-    margin-left: 1rem;}
+        padding: 10px 30px;
+        margin-left: 2rem;
 
     .checkbox-box {
         width: 1em;
