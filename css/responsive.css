@@ -313,7 +313,12 @@
 	html{
 		font-size:14px;
 	}
-
+	.filter .title div{
+		flex:0 1 33.3%;
+	}
+	.filter .title .clear_all{
+		text-align:right;
+	}
     .header .navbar a {
         margin: 2.2rem;
         font-size: 1.32rem;
@@ -544,7 +549,7 @@
         text-indent: 2rem;
         line-height: 3rem;
         margin-left: 0.5rem;
-        background-image: url(..res/search_result/filter.png);
+        background-image: url(../res/search_result/filter.png);
         background-position: left center;
         background-repeat: no-repeat;
         background-size: 1.75rem;
@@ -589,7 +594,7 @@
 	}
 
 	.result_item img{
-		width: 80vw;
+		width: 71vw;
 	}
 
 	.popupwindow{

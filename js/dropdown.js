@@ -5,17 +5,6 @@ let addcompare = document.getElementsByClassName('addcompare');
 let comparecars = document.querySelector('.comparecars');
 
 
-
-//filter popup
-
-document.querySelector("#showFilter").addEventListener("click", function(){
-    document.querySelector(".filter").style.top = "8rem";
-})
-document.querySelector("#back").addEventListener("click", function(){
-    document.querySelector(".filter").style.top = "-90vh";
-})
-
-
 //compare car popupwindows
 
 for(let i =0;i<addcompare.length;i++){
@@ -36,4 +25,14 @@ document.addEventListener('click',(e)=>{
 　　if(e.target.className!=='addcompare' && e.target.className!=='popupwindow'){
 		popupwindow2.style.top = '-60vh';
 　　}
+})
+
+
+//filter popup
+
+document.querySelector("#showFilter").addEventListener("click", function(){
+    document.querySelector(".filter").style.top = "8rem";
+})
+document.querySelector("#back").addEventListener("click", function(){
+    document.querySelector(".filter").style.top = "-90vh";
 })

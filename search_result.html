@@ -10,10 +10,10 @@
     <script src="https://kit.fontawesome.com/3a1f568e67.js" crossorigin="anonymous"></script>
 
     <!-- css file link -->
-    <link rel="stylesheet" href="/css/reset.css">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/search_result.css">
-	<link rel="stylesheet" href="/cssresponsive.css">
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/search_result.css">
+	<link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
@@ -50,7 +50,7 @@
 		<!-- filter section -->
 		<div class="filter">
 			<div class="title">
-				<div class="back mobile_show"><i class="fa fa-arrow-left"></i></div>
+				<div class="back mobile_show" id="back"><i class="fa fa-arrow-left"></i></div>
 				<div class="title_txt">Filter</div>
 				<div class="clear_all">Clear All</div>
 			</div>
@@ -96,7 +96,8 @@
 					<div class="icon"><a href="#"><img src="res/brand/Volkswagen.png" alt="Volkswagen"></a></div>
 				</div>
 			</div>
-
+			
+			<!-- for grid layout when mobile responsive -->
 			<div class="mobile_use">
 				<div class="row m50">
 					<h3>Body type</h3>
@@ -124,7 +125,7 @@
 			<div class="result_top">
 
 				<div class="search">
-					<div class="title_txt mobile_show">Filter</div>
+					<div class="title_txt mobile_show" id="showFilter">Filter</div>
 					<div class="search_box">
 						<div class="search_icon">
 							<img src="res/search_result/search_icon.png">
@@ -352,8 +353,9 @@
 </div>
 
 <!-- js link -->
-<script src="/js/main.js"></script>
-<script src="/js/dropdown.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/noscaleup.js"></script>
 
 </body>
 </html>
