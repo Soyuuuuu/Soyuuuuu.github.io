@@ -794,29 +794,29 @@
 -----------------------------------------*/
 @media(max-width:648px){
     .contact-form, .contact-confirm {
-        height: 330%;
+        height: 290vh;
     }
 
     .contact-form-content {
-        height: 80%;
-        width: 90%;
-        margin-top: -122rem;
+        height: 80vh;
+        width: 40vh;
+        margin-top: -190vh;
     }
 
     .contact-form .contact-form-content h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-align: center;
-        margin-left: 11rem;
+        margin-left: 6rem;
     }
 
     .form-heading {
-        margin-left: -10rem;
-        gap: 3rem;
+        margin-left: -3rem;
+        gap: 0rem;
     }
 
     .fa-xmark {
         font-size: 2rem;
-    }
+    margin-right: 0rem;margin-top: -4rem;}
 
     .data1{
         flex-direction: column;
@@ -870,19 +870,25 @@
 ----------------------------------------------*/
 @media(max-width:648px){
     .contact-confirm-content {
-        height: 80%;
-        width: 90%;
-        margin-top: -122rem;
+        height: 80vh;
+        width: 40vh;
+        margin-top: -190vh;
     }
 
     #confirm-xmark{
         margin-top: -5rem;
-    margin-right: -15rem;}
+        margin-right: -15rem;
+}
 
     .contact-confirm-content .form-heading h2 {
         padding: 6rem 0rem 0rem 0%;
         font-size: 1.5rem;
         margin-top: -1rem;
+    }
+
+    .contact-confirm-content .form-heading {
+        margin-left: -13rem;
+        gap: 0rem;
     }
 
     .confirm-mark img{

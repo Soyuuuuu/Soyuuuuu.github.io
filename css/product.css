@@ -303,15 +303,15 @@ padding-top: 2rem;}
     align-items: center;
     font-size: 2rem;
     margin-left: 1rem;
-    gap: 9rem;
+    gap: 4rem;
 }
 
 .contact-form, .contact-confirm{
     background: #4a4a4a86;
     background-repeat: repeat-x;
     background-size: 200vh;
-    width: 100%;
-    height: 208%;
+    width: 190vh;
+    height: 200vh;
     position: absolute;
     top: 5rem;
     /* display: flex; */
@@ -323,9 +323,9 @@ padding-top: 2rem;}
 
 .contact-form-content {
     position: fixed;
-    height: 72%;
-    width: 45%;
-    margin-top: -90rem;
+    height: 80vh;
+    width: 90vh;
+    margin-top: -105vh;
     background: #fffdfd;
     padding: 2rem;
     border-radius: 40px;
@@ -340,7 +340,7 @@ form{
     padding-bottom: 0rem;
     padding-top: 0rem;
     font-size: 2.3rem;
-}  
+margin-left: 4rem;}  
 
 label{
     display: block;
@@ -351,13 +351,13 @@ label{
 }
 
 .data1 input{
-    width: 150%;
+    width: 36vh;
     border: 1px solid #707070;
 }
 
 .data1{
     display: flex;
-    gap: 13.5rem;
+    gap: 7.2rem;
 }
 
 .data4 #message, .data1 input, .data2 input, .data3 input{
@@ -366,7 +366,7 @@ label{
 }
 
 input, textarea{
-    width: 100%;
+    width: 82vh;
     padding: 1.5rem;
     box-sizing: border-box;
     outline: none;
@@ -433,9 +433,9 @@ input, textarea{
 
 .contact-confirm-content{
     position: fixed;
-    height: 72%;
-    width: 45%;
-    margin-top: -90rem;
+    height: 80vh;
+    width: 90vh;
+    margin-top: -105vh;
     background: #fffdfd;
     padding: 2rem;
     border-radius: 40px;
@@ -452,12 +452,12 @@ input, textarea{
 }
 
 .contact-confirm-content .form-heading h2{
-    padding: 3rem 0rem 1rem 0%;
-    font-size: 2.2rem;
+    padding: 3rem 6rem 1rem 0%;
+    font-size: 2.5rem;
 }
 
 .contact-confirm-content .confirm-text{
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .contact-confirm-content .confirm-text h5{
