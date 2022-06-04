@@ -179,76 +179,77 @@
     </section>
 
 
-     <!-- popup enquiry section -->
+      <!-- popup enquiry section -->
     <div class="contact-form">
         <div class="contact-form-content">
             <div class="form-heading">
-                <h2>Submit an Enquiry To Seller</h2>
+                <h2 id="headingh2">Submit an Enquiry To Seller</h2>
                 <i class="fa-solid fa-xmark"></i>
             </div>
 
-            <form>
-            <div class="data1">
-                <div>
-                    <label for="name">First Name*</label>
-                    <input type="text" id="name" placeholder="Your first name here">
-                <small class="error"></small>
+            <form onsubmit="event.preventDefault(); validateForm()">
+                <div class="data1">
+                    <div>
+                        <label for="name">First Name*</label>
+                        <input type="text" id="name1" placeholder="Your first name here">
+                        <small class="error"></small>
+                    </div>
+
+                    <div>
+                        <label for="name">Last Name*</label>
+                        <input type="text" id="name2" placeholder="Your Last name here">
+                        <small class="error"></small>
+                    </div>
+                </div>
+
+                <div class="data2">
+                    <label for="phonenum">Phone*</label>
+                    <input type="text" id="phonenum" placeholder="+61 --- --- ---">
+                    <small class="error"></small>
+                </div>
+
+                <div class="data3">
+                    <label for="email">Email*</label>
+                    <input type="text" id="email" placeholder="example@email.com">
+                    <small class="error"></small>
+                </div>
+
+                <div class="data4">
+                    <label for="message">Message (maximum 1000 characters)</label>
+                    <textarea id="message" placeholder="Leave us a message" rows="6"></textarea>
+                    <small class="error"></small>
                 </div>
 
                 <div>
-                    <label for="name">Last Name*</label>
-                    <input type="text" id="name" placeholder="Your Last name here">
-                <small class="error"></small>
+                    <label class="checkbox" for="checkboxId">
+                        <input class="checkbox-input" type="checkbox" name="checkboxId" id="checkboxId">
+                        <div class="checkbox-box"></div>
+                        <p>I agree with the website terms of use and that my information will be handled by Auto Classic PreOwned Cars and Motorcycles in accordance with the Dealer Privacy Policy.*</p>
+                    </label>
                 </div>
-            </div>
 
-            <div class="data2">
-                <label for="phonenum">Phone*</label>
-                <input type="text" id="phonenum" placeholder="+61 --- --- ---">
-                <small class="error"></small>
-            </div>
+                <div class="center">
+                    <input type="submit" id="submit-btn" value="Submit">
+                    <p id="success"></p>
+                    
+                </div>
 
-            <div class="data3">
-                <label for="email">Email*</label>
-                <input type="text" id="email" placeholder="Your email here">
-                <small class="error"></small>
-            </div>
-
-            <div class="data4">
-                <label for="message">Message (maximum 1000 characters)</label>
-                <textarea id="message" placeholder="Leave us a message" rows="6"></textarea>
-                <small class="error"></small>
-            </div>
-
-            <div>
-                <label class="checkbox" for="checkboxId">
-                    <input class="checkbox-input" type="checkbox" name="checkboxId" id="checkboxId">
-                    <div class="checkbox-box"></div>
-                    <p>I agree with the website terms of use and that my information will be handled by Auto Classic PreOwned Cars and Motorcycles in accordance with the Dealer Privacy Policy.*</p>
-                </label>
-            </div>
             </form>
 
-            <div class="submit">
-                <a href="#" class="submit-btn" id="submit-btn">Submit</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="contact-confirm">
-        <div class="contact-confirm-content">
-            <div class="form-heading">
-                <h2>Thanks for your enquiry!</h2>
-                <i id="confirm-xmark" class="fa-solid fa-xmark"></i>
-            </div>
-
-            <div class="confirm-mark">
-                <img src="res/product/confirmation-L.png" alt="">
-            </div>
-
-            <div class="confirm-text">
-                <h5>Your enquiry has been submitted!</h5>
-                <h5>Our staff will be in touch with you shortly :)</h5>
+            <div class="thank-you hidden">
+                    <div>
+                        <i id="confirm-xmark" class="fa-solid fa-xmark"></i>
+                        <h2>Thanks for your enquiry!</h2>
+                    </div>
+        
+                    <div class="confirm-mark">
+                        <img src="res/product/confirmation-L.png" alt="">
+                    </div>
+        
+                    <div class="confirm-text">
+                        <h5>Your enquiry has been submitted!</h5>
+                        <h5>Our staff will be in touch with you shortly :)</h5>
+                    </div>
             </div>
         </div>
     </div>
@@ -354,6 +355,7 @@
     <!-- js link -->
     <script src="js/main.js"></script>
     <script src="js/navbar-dropdown.js"></script>
+    <script src="js/validate.js"></script>
     <script src="js/enquiry-confirm.js"></script>
     <script src="js/noscaleup.js"></script>
 
