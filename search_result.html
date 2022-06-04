@@ -11,7 +11,7 @@
 
     <!-- css file link -->
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/search_result.css">
 	<link rel="stylesheet" href="/css/responsive.css">
 
@@ -20,7 +20,7 @@
     <!-- Header section -->
     <header class="header">
         <div id="menu-btn" class="fa-solid fa-bars"></div>
-        <a href="#" class="logo"><img src="res/logo.png" alt="logo"></a>
+        <a href="index.html" class="logo"><img src="res/logo.png" alt="logo"></a>
 
         <!-- center part of navbar -->
         <nav class="navbar">
@@ -44,53 +44,13 @@
         </div>
     </header>
 
-        <!-- hovered dropdown menu in navbar -->
-    <div class="popupwindow hide" id="popupwindow1">
-		<div class="txtlist">
-			<p>Demo Vehicles</p> 
-			<p>Used Vehicles</p>
-			<p>Luxury Vehicles</p>
-			<p>Motocycles</p>
-		</div>
-
-		<div class="bodystyle">
-
-			<p>Browse by body styles</p>
-			<ul class="body_list2">
-				<li><img src="/res/body/Hatchback.png" alt="hatchback"><a href="#">Hatchback</a></li>
-				<li><img src="/res/body/SUV.png" alt="suv"><a href="#">SUV</a></li>
-				<li><img src="/res/body/truck.png" alt="truck"><a href="#">Truck</a></li>
-				<li><img src="/res/body/sedan.png" alt="sedan"><a href="#">Sedan</a></li>
-				<li><img src="/res/body/Convertible.png" alt="convertible"><a href="#">Convertible</a></li>
-				<li><img src="/res/body/Wagon.png" alt="wagon"><a href="#">Wagon</a></li>
-			</ul>
-
-		</div>
-
-		<div class="brands">
-
-			<p>Browse by brands</p>
-		    <div class="brand_list2">
-				<a href="#"><img src="/res/brand/BMW.png" alt="BMW"></a>
-				<a href="#"><img src="/res/brand/MB.png" alt="Mercedes-Benz"></a>
-				<a href="#"><img src="/res/brand/audi.png" alt="Audi"></a>
-				<a href="#"><img src="/res/brand/Toyota.png" alt="Toyota"></a>
-				<a href="#"><img src="/res/brand/Honda.png" alt="Honda"></a>
-				<a href="#"><img src="/res/brand/ford.png" alt="Ford"></a>
-				<a href="#"><img src="/res/brand/hyundai.png" alt="Hyundai"></a>
-				<a href="#"><img src="/res/brand/Volkswagen.png" alt="Volkswagen"></a>
-		    </div>
-            
-		</div>
-	</div>
-
-
 	<!-- search result section -->
 	<section class="search_result">
 
 		<!-- filter section -->
 		<div class="filter">
 			<div class="title">
+				<div class="back mobile_show"><i class="fa fa-arrow-left"></i></div>
 				<div class="title_txt">Filter</div>
 				<div class="clear_all">Clear All</div>
 			</div>
@@ -137,35 +97,42 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<h3>Body type</h3>
+			<div class="mobile_use">
+				<div class="row m50">
+					<h3>Body type</h3>
+				</div>
+				<div class="row m50">
+					<h3>Age And Km</h3>
+				</div>
+				<div class="row m50">
+					<h3>Transmission</h3>
+				</div>
+				<div class="row m50">
+					<h3>Fuel type</h3>
+				</div>
 			</div>
-			<div class="row">
-				<h3>Age And Km</h3>
-			</div>
-			<div class="row">
-				<h3>Transmission</h3>
-			</div>
-			<div class="row">
-				<h3>Fuel type</h3>
-			</div>
+
 			<div class="row">
 				<button>Refine your serach</button>
 			</div>
 
 		</div>
+
 		<!-- right search result section -->
 		<div class="result">
 
 			<div class="result_top">
 
 				<div class="search">
-					<div class="search_icon">
-						<img src="res/search_result/search_icon.png">
-					</div>
-					<input type="text" placeholder="Search model, brands or Keywords"/>
-					<div class="mike">
-						<img src="res/search_result/mike.png">
+					<div class="title_txt mobile_show">Filter</div>
+					<div class="search_box">
+						<div class="search_icon">
+							<img src="res/search_result/search_icon.png">
+						</div>
+						<input type="text" placeholder="Search model, brands or Keywords"/>
+						<div class="mike">
+							<img src="res/search_result/mike.png">
+						</div>
 					</div>
 				</div>
 				
@@ -198,14 +165,14 @@
 						</div>
 					</div>
 
-					<img src="res/search_result/car1.png"/></a>
+					<img src="res/search_result/car1.png"/>
 					<div class="result_item_bottom">
 						<div class="result_bottom_left">
 							<h3>$185,990</h3>
 							<p>Petrol - Premium ULP</p>
 						</div>
 						<div class="result_bottom_right">
-							<button>+compare</button>
+							<button class="addcompare">+compare</button>
 						</div>
 					</div>
 				</div>
@@ -221,14 +188,16 @@
 							<i class="fa-regular fa-heart"></i>
 						</div>
 					</div>
+
 					<a href="product1.html"><img src="res/search_result/car2.png"/></a>
+					
 					<div class="result_item_bottom">
 						<div class="result_bottom_left">
 							<h3>$130,990</h3>
 							<p>6 CYL Direct Injection</p>
 						</div>
-						<div class="result_bottom_right"><a href="compare.html">
-							<button>+compare</button></a>
+						<div class="result_bottom_right">
+							<button class="addcompare">+compare</button>
 						</div>
 					</div>
 				</div>
@@ -251,7 +220,7 @@
 							<p>Petrol - Premium ULP</p>
 						</div>
 						<div class="result_bottom_right">
-							<button>+compare</button>
+							<button class="addcompare">+compare</button>
 						</div>
 					</div>
 				</div>
@@ -273,8 +242,8 @@
 							<h3>$165,990</h3>
 							<p>Petrol - Premium ULP</p>
 						</div>
-						<div class="result_bottom_right"><a href="compare.html">
-							<button>+compare</button></a>
+						<div class="result_bottom_right">
+							<button class="addcompare">+compare</button>
 						</div>
 					</div>
 				</div>
@@ -293,7 +262,7 @@
 			</div>
 		</div>
 	</section>
-
+	
 
 <!--  Footer -->
 <section class="footer">
@@ -358,6 +327,28 @@
 <!-- Copyright -->
 <div class="copyright">
 	<h5>Copyright© 2022. All rights reserved by Auto Classic Pre-Owned Cars and Motorcycles</h5>
+</div>
+
+<!-- Comapre cars popup section -->
+<div class="popupwindow" id="popupwindow2">
+	<div class="carspace">
+		<div class="caritem">
+			<img src="res/search_result/car4.png">
+			<span>BMW 840</span>
+		</div>
+	</div>
+	<div class="carspace">
+		<div class="caritem">
+			<img src="res/search_result/car2.png">
+			<span>BMW X7</span>
+		</div>
+	</div>
+	<div class="carspace">
+		+  Add an another car
+	</div>
+	<div class="comparecars">
+		Compare cars
+	</div>
 </div>
 
 <!-- js link -->

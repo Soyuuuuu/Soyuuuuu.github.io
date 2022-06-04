@@ -1,349 +1,445 @@
-/*-------------------------------------
-       Search result space
---------------------------------------*/
+	/*-------------------------------------
+		Search result space
+	--------------------------------------*/
 
-.search_result{
-	width:100rem;
-	height:auto;
-	margin:0 auto;
-	margin-top:10rem;
-	display:flex;
-	gap:2rem;
-}
+	.search_result{
+		width: 100rem;
+		height :auto;
+		margin: 0 auto;
+		margin-top: 12rem;
+		display: flex;
+		gap: 2rem;
+	}
 
-/*-----------------------------------------
-       Search result left space - filter
--------------------------------------------*/
+	/*-----------------------------------------
+		Search result left space - filter
+	-------------------------------------------*/
 
-.filter{
-	flex:0 1 460px;
-	background:#fff;
-	box-shadow:0 0 5px #aaa;
-	padding:20px;
-	border-radius:1rem;
-	box-sizing:border-box;
-z-index: -2;}
+	.filter{
+		flex: 0 1 460px;
+		background: #fff;
+		box-shadow: 0 0 5px #aaa;
+		padding: 20px;
+		border-radius :1rem;
+		box-sizing: border-box;
+		z-index: -2;
+	}
 
-.filter .row button{
-	font-family: "Poppins", medium;
-    font-weight: 500;
-    font-size: 17px;
-    color: white;
-    background-image: var(--gradient);
-    padding: 8px 16px;
-    border-radius: 50px;
-    cursor: pointer;
-	display:block;
-	margin:0 auto;
-}
+	.filter .row button{
+		font-family: "Poppins", medium;
+		font-weight: 500;
+		font-size: 17px;
+		color: white;
+		background-image: var(--gradient);
+		padding: 8px 16px;
+		border-radius: 50px;
+		cursor: pointer;
+		display: block;
+		margin: 0 auto;
+	}
 
-.filter .title{
-	display:flex;
-    align-items: center;
-    justify-content: space-between;
-	line-height: 37px;
-	font-family: "Poppins";
-}
+	.filter .title{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		line-height: 37px;
+		font-family: "Poppins";
+	}
 
-.filter .title .title_txt{
-	font-size: 1.75rem;
-    text-indent: 2.5rem;
-    color: var(--text-color);
-	background-image:url(../res/search_result/filter.png);
-	background-position:left center;
-	background-repeat:no-repeat;
-	background-size:1.75rem;
-}
+	.filter .title .title_txt{
+		font-size: 1.75rem;
+		text-indent: 2.5rem;
+		color: var(--text-color);
+		background-image: url(../res/search_result/filter.png);
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 1.75rem;
+	}
 
-.filter .title .clear_all{
-	font-size: 1rem;
-    color: var(--btntext-color);
-	font-family: "Montserrat";
-}
+	.filter .title .clear_all{
+		font-size: 1rem;
+		color: var(--btntext-color);
+		font-family: "Montserrat";
+	}
 
-.filter .title .clear_all:hover{
-	color: var(--hover-color);
-}
+	.filter .title .clear_all:hover{
+		color: var(--hover-color);
+	}
 
-.filter .row{
-	margin: 1rem 0;
-}
+	.filter .row{
+		margin: 1rem 0;
+	}
 
-.filter .row h3{
-	line-height:2.5rem;
-}
+	.filter .row h3{
+		line-height: 2.5rem;
+	}
 
-.filter .row.price {
-	display: flex;
-	gap: 1rem;
-	font-family: "Montserrat";
-}
+	.filter .row.price {
+		display: flex;
+		gap: 1rem;
+		font-family: "Montserrat";
+	}
 
-.filter .row.price div{
-	flex:1;
-	font-size:1rem;
-}
+	.filter .row.price div{
+		flex: 1;
+		font-size: 1rem;
+	}
 
-.filter .row.price div input{
-	width:100%;
-	border: 1px solid #707070;
-	height:3rem;
-	box-sizing:border-box;
-    border-radius: 13px;
-	margin-top:0.6rem;
-}
+	.filter .row.price div input{
+		width: 100%;
+		border: 1px solid #707070;
+		height: 3rem;
+		box-sizing: border-box;
+		border-radius: 13px;
+		margin-top: 0.6rem;
+	}
 
-.row .range {
-	margin:2rem 0;
-	height:3px;
-	background:#E3E0E0;
-	position:relative;
-z-index: -1;}
+	.row .range {
+		margin: 2rem 0;
+		height: 3px;
+		background: #E3E0E0;
+		position: relative;
+		z-index: -1;
+	}
 
-.row .range .line{
-	width:60%;
-	margin:0 auto;
-	height:3px;
-	background:#9B8FE4;
-}
+	.row .range .line{
+		width: 60%;
+		margin: 0 auto;
+		height: 3px;
+		background: #9B8FE4;
+	}
 
-.row .range .spot{
-	width:1.68rem;
-	height:1.68rem;
-	box-sizing:border-box;
-	border:3px solid #9B8FE4;
-	border-radius:50%;
-	position:absolute;
-	background:#fff;
-	box-shadow:0 0 11px #aaa;
-}
+	.row .range .spot{
+		width: 1.68rem;
+		height: 1.68rem;
+		box-sizing: border-box;
+		border: 3px solid #9B8FE4;
+		border-radius: 50%;
+		position: absolute;
+		background: #fff;
+		box-shadow: 0 0 11px #aaa;
+	}
 
-.row .range .spot1{
-	top:-0.8rem;
-	left:20%;
-}
+	.row .range .spot1{
+		top: -0.8rem;
+		left: 20%;
+	}
 
-.row .range .spot2{
-	top:-0.8rem;
-	right:20%;
-}
+	.row .range .spot2{
+		top: -0.8rem;
+		right: 20%;
+	}
 
-.row.per input{
-	width:100%;
-	height:3rem;
-	box-sizing:border-box;
-    border-radius: 13px;
-	margin-top:0.6rem;
-	border: 1px solid #707070;
-	background-image:url(../res/search_result/sort.png);
-	background-position:97% center;
-	background-repeat:no-repeat;
-}
+	.row.per input{
+		width: 100%;
+		height: 3rem;
+		box-sizing: border-box;
+		border-radius: 13px;
+		margin-top: 0.6rem;
+		border: 1px solid #707070;
+		background-image :url(../res/search_result/sort.png);
+		background-position: 97% center;
+		background-repeat: no-repeat;
+	}
 
-.row .iconlist{
-	width:100%;
-	display:flex;
-	 flex-wrap:wrap;
-}
+	.row .iconlist{
+		width: 100%;
+		display: flex;
+		flex-wrap:wrap;
+	}
 
-.row .iconlist .icon{
-	flex:0 1 25%;
-	text-align:center;
-	margin:1rem 0;
-}
+	.row .iconlist .icon{
+		flex :0 1 25%;
+		text-align: center;
+		margin: 1rem 0;
+	}
 
-.row .iconlist .icon img{
-	width:4.5rem;
-}
+	.row .iconlist .icon img{
+		width: 4.5rem;
+	}
 
-/*-----------------------------------------
-       Search result right space - result
--------------------------------------------*/
+	/*-----------------------------------------
+		Search result right space - result
+	-------------------------------------------*/
 
-.result{
-	flex:1 1 1160px;
-	display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 2rem;
-	box-sizing:border-box;
-}
+	.result{
+		flex: 1 1 1160px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		gap: 2rem;
+		box-sizing: border-box;
+	}
 
-.result .search{
-	width:100%;
-	position:relative;
-z-index: -1;}
+	.result .search{
+		width: 100%;
+		position: relative;
+		z-index: -1;
+	}
 
-.result .search input{
-	width:100%;
-	background:#F9F9F9;
-	height:5.4rem;
-	border-radius:10px;
-	border:1px solid #707070;
-	font-size:1.7rem;
-	text-indent:8%;
-	font-family: "Montserrat";
-}
+	.result .search input{
+		width: 70rem;
+		background: #F9F9F9;
+		height: 5.4rem;
+		border-radius: 10px;
+		border: 1px solid #70707057;
+		font-size: 1.7rem;
+		text-indent: 8%;
+		font-family: "Montserrat";
+	}
 
-.result .search div{
-	position:absolute;
-	top:0px;
-	height:5.4rem;
-	display: flex;
-    justify-content: space-between;
-	align-items:center;
-}
+	.result .search .search_icon, .result .search .mike{
+		position: absolute;
+		top: 0px;
+		height: 5.4rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-.result .search .search_icon{
-	left:2%;
-}
+	.search .search_box img{
+		width: 80%;
+	} 
 
-.result .search .mike{
-	right:2%;
-}
+	.result .search .search_icon{
+		left: 2%;
+	}
 
-/*-----------------------------------------
-       right space - result tips/hints
--------------------------------------------*/
+	.result .search .mike{
+		right: 2%;
+	}
 
-.tips{
-	font-size: 1.7rem;
-	line-height:2.56rem;
-	margin: 1rem 0;
-}
+	/*-----------------------------------------
+		right space - result tips/hints
+	-------------------------------------------*/
 
-.filter_items{
-	display:flex;
-	gap:1rem;
-	background-image:url(../res/search_result/sort.png);
-	background-position:98% center;
-	background-repeat:no-repeat;
-}
+	.tips{
+		font-size: 1.7rem;
+		line-height:2.56rem;
+		margin: 2rem 0 -6rem 0;
+	}
 
-.filter_items .filter_btn{
-	font-family: "Poppins", medium;
-    font-weight: 500;
-    font-size: 17px;
-    color: white;
-    background-image: var(--gradient);
-    padding: 8px 16px;
-    border-radius: 50px;
-    cursor: pointer;
-	display: flex;
-	gap:0.5rem;
-}
+	.filter_items{
+		display: flex;
+		gap: 1rem;
+		background-image: url(../res/search_result/sort.png);
+		background-position: 98% center;
+		background-repeat: no-repeat;
+		margin: 7rem 0 -1rem 0;
+	}
 
-.filter_items .filter_btn img{
-	width:1rem;
-}
+	.filter_items .filter_btn{
+		font-family: "Poppins", medium;
+		font-weight: 500;
+		font-size: 17px;
+		color: white;
+		background-image: var(--gradient);
+		padding: 8px 16px;
+		border-radius: 50px;
+		cursor: pointer;
+		display: flex;
+		gap: 0.5rem;
+	}
 
-/*-----------------------------------------
-       right space - result content
--------------------------------------------*/
-.result_content{
-	width:100%;
-	display:flex;
-	flex-wrap:wrap;
-    justify-content: space-between;
-	gap:2rem;
-}
+	.filter_items .filter_btn img{
+		width: 1rem;
+	}
 
-.result_item{
-	flex:0 1 45%;
-	height:20rem;
-	background:#FDFDFD;
-	border:1px solid #CFCFCF;
-	border-radius:15px;
-	box-shadow:3px 3px 6px #aaa;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-	box-sizing:border-box;
-	padding:20px;
-}
+	/*-----------------------------------------
+		right space - result content
+	-------------------------------------------*/
+	.result_content{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 2rem;
+	}
 
-.result_item .result_title{
-	display:flex;
-    justify-content: space-between;
-}
+	.result_item{
+		flex: 0 1 45%;
+		height: 20rem;
+		background: #FDFDFD;
+		border: 1px solid #CFCFCF;
+		border-radius: 15px;
+		box-shadow: 3px 3px 6px #aaa;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		box-sizing: border-box;
+		padding: 20px;
+	}
 
-.result_item .result_title_icon{
-	line-height:2.5rem;
-	font-size:1.7rem;
-}
-.result_item .result_title_icon:hover{
-	color: #D33DA5;
-}
+	.result_item .result_title{
+		display: flex;
+		justify-content: space-between;
+	}
 
-.result_item .result_title_txt h3{
-	font-size:1.25rem;
-	line-height:1.7rem;
-}
+	.result_item .result_title_icon{
+		line-height: 2.5rem;
+		font-size: 1.7rem;
+	}
+	.result_item .result_title_icon:hover{
+		color: #D33DA5;
+	}
 
-.result_item .result_title_txt p{
-	font-size:0.85rem;
-}
+	.result_item .result_title_txt h3{
+		font-size: 1.25rem;
+		line-height: 1.7rem;
+	}
 
-.result_item img{
-	display:block;
-	margin:0 auto;
-}
+	.result_item .result_title_txt p{
+		font-size: 0.85rem;
+	}
 
-.result_item .result_item_bottom{
-	display:flex;
-    justify-content: space-between;
-}
+	.result_item img{
+		display: block;
+		margin: 0 auto;
+	}
 
-.result_item .result_item_bottom p{
-	margin-top: 0.5rem;
-}
+	.result_item .result_item_bottom{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.result_item .result_item_bottom p{
+		margin-top: 0.5rem;
+	}
 
 
-.result_item .result_item_bottom .result_bottom_right button{
-	font-family: "Poppins", medium;
-    font-weight: 500;
-    font-size: 17px;
-    color: white;
-    background-image: var(--gradient);
-    padding: 6px 11px;
-    border-radius: 50px;
-    cursor: pointer;
-}
+	.result_item .result_item_bottom .result_bottom_right button{
+		font-family: "Poppins", medium;
+		font-weight: 500;
+		font-size: 17px;
+		color: white;
+		background-image: var(--gradient);
+		padding: 6px 11px;
+		border-radius: 50px;
+		cursor: pointer;
+	}
 
-/*-----------------------------------------
-       right space - page number section
--------------------------------------------*/
+	/*-----------------------------------------
+		right space - page number section
+	-------------------------------------------*/
 
-.pagenum ul{
-	display:flex;
-	justify-content:center;
-	gap:0.8rem;
-}
-.pagenum ul li{
-	width:3rem;
-	height:3rem;
-	line-height:3rem;
-	text-align:center;
-	line-height:3rem;
-	border:1px solid #707070;
-	border-radius: 6px;
-	font-family: "Montserrat";
-	cursor: pointer;
-}
+	.pagenum ul{
+		display: flex;
+		justify-content: center;
+		gap: 0.8rem;
+	}
+	.pagenum ul li{
+		width: 3rem;
+		height: 3rem;
+		line-height: 3rem;
+		text-align: center;
+		line-height: 3rem;
+		border: 1px solid #707070;
+		border-radius: 6px;
+		font-family: "Montserrat";
+		cursor: pointer;
+	}
 
-.pagenum ul li:hover{
-	background: var(--gradient);
-	color: white;
-}
+	.pagenum ul li:hover{
+		background: var(--gradient);
+		color: white;
+	}
 
-.pagenum ul li.nostyle{
-	border:0px solid #707070;
-	border-radius:6px;
-	width:1.5rem;
-}
-.pagenum ul li.act{
-	border:1px solid #ACACAC;
-	border-radius:12px;
-	color: white;
-    background-image: var(--gradient);
-}
+	.pagenum ul li.nostyle{
+		border: 0px solid #707070;
+		border-radius: 6px;
+		width: 1.5rem;
+	}
+	.pagenum ul li.act{
+		border:1px solid #ACACAC;
+		border-radius: 12px;
+		color: white;
+		background-image: var(--gradient);
+	}
+
+	/*-----------------------------------------
+		right space - popup compare cars section
+	-------------------------------------------*/
+	.mobile_show{
+		display: none;
+	}
+
+	.popupwindow{
+		width:100vw;
+		position:fixed;
+		/*top:6.5rem;*/
+		top:-30vh;
+		background: #E3E2E3;
+		border-radius:1rem;
+		height:12rem;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		flex-wrap:wrap;
+		transition:all 1s ease;
+		font-family: "Montserrat";
+		font-weight: 600;
+	}
+	
+	/* .popupwindow{
+		width: 100vw; */
+		/* position: fixed; */
+		/* height: 16rem;
+		padding: 3rem 0;
+		z-index: 999; */
+		/* top: -30vh;
+		background: #E3E2E3;
+		border-radius: 1rem;
+		height: 12rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		transition: all 1s ease;
+		font-family: "Montserrat";
+		font-weight: 600;
+	} */
+
+	.carspace{
+		flex: 0 1 auto;
+		width: 15rem;
+		height: 6rem;
+		line-height: 6rem;
+		text-align: center;
+		margin: 0 3rem;
+		border-radius: 2rem;
+		background: #FCFCFC;
+		border: 2px dashed #7070706b;
+		color: var(--main-color);
+	}
+
+	.caritem{
+		display: flex;
+		align-items: center;
+		padding: 1rem 0 ;
+		border-radius: 2rem;
+		background: #fff;
+		width: 15rem;
+		height: 6rem;
+		box-sizing: border-box;
+		margin-left: -2px;
+		margin-top: -2px;
+		color: var(--main-color);
+	}
+
+	.caritem img{
+		height: 4rem;
+		margin-left: 1rem;
+	}
+
+	.comparecars{
+		padding: 0 2rem;
+		color: var(--main-color);
+		height: 3rem;
+		line-height: 3rem;
+		text-align: center;
+		border-radius: 2rem;
+		background: #fff;
+		font-size: 1rem;
+		margin-left: 2rem;
+		box-shadow: 3px 2px 2px #b0afb1ad;
+	}

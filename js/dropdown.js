@@ -2,19 +2,21 @@
 let ourstock = document.querySelector('#ourstock');
 let popupwindow1 = document.querySelector('#popupwindow1');
 
-ourstock.onmouseenter = function(){
-    popupwindow1.style.top="6.45rem";
-}
-
-ourstock.onmouseleave = function(){
-    popupwindow1.style.top="-30vh";
-}
-
 //popupwindows
-
 let popupwindow2 = document.querySelector('#popupwindow2');
 let addcompare = document.querySelector('.addcompare');
 let comparecars = document.querySelector('.comparecars');
+
+//navigation dropdown
+ourstock.onmouseenter = function(){
+   		popupwindow1.style.top="6.45rem";
+}
+
+ourstock.onmouseleave = function(){
+   		popupwindow1.style.top="-30vh";
+}
+
+//popupwindows
 
 addcompare.onclick = () =>{
 	if(document.documentElement.clientWidth < 648){
@@ -23,8 +25,9 @@ addcompare.onclick = () =>{
 		popupwindow2.style.top = '6.5rem';
 	}
 }
+
 comparecars.onclick = () =>{
-	location.href="compare_cars.html"
+	location.href="compare.html"
 }
 
 document.addEventListener('click',(e)=>{
