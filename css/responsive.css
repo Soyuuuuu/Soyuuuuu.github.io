@@ -789,7 +789,7 @@
 -----------------------------------------*/
 @media(max-width:648px){
     .contact-form, .contact-confirm {
-        height: 300%;
+        height: 330%;
     }
 
     .contact-form-content {
@@ -806,7 +806,7 @@
 
     .form-heading {
         margin-left: -10rem;
-        gap: 0rem;
+        gap: 3rem;
     }
 
     .fa-xmark {
@@ -819,17 +819,17 @@
     }
 
     .data4 #message, .data1 input, .data2 input, .data3 input {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .data1 input {
         width: 100%;
-        height: 2rem;
+        font-size: .8rem;height: rem;
     }
 
     label {
         font-size: .9rem;
-    }
+    margin: .5rem 0 .5rem 0;}
 
     input {
         width: 100%;
@@ -856,7 +856,7 @@
     .checkbox-box {
         width: 1em;
         height: 1em;
-        margin-top: -1.5rem;
+        /* margin-top: -1.5rem; */
     }
 
 }
@@ -872,7 +872,7 @@
 
     #confirm-xmark{
         margin-top: -5rem;
-    }
+    margin-right: -15rem;}
 
     .contact-confirm-content .form-heading h2 {
         padding: 6rem 0rem 0rem 0%;

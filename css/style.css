@@ -22,7 +22,7 @@
     --text-color: #4A4A4A;
     --hover-color: #ACA1E5;
     --gradient: linear-gradient(#A09AEE,#C8AFE4);
-    --background-gradient: linear-gradient(#fff,#f5f5f5);
+    --background-gradient: linear-gradient(#fff,#3f3f3f);
 }
 
 html{
