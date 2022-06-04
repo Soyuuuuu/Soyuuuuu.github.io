@@ -332,9 +332,6 @@
 
     .home .home-text {
         margin: 9rem 1rem 3rem;
-        /* background: #b4aedc82; */
-        /* background-image: url(../res/background.png); */
-        /* background-repeat: no-repeat; */
     }
 
     .body_list {
@@ -444,10 +441,11 @@
 
 }
 /*----------------------------------------
-        Product page mobile responsive
+        Search result page mobile responsive
 -----------------------------------------*/
+
 @media(max-width:648px){
-	html, body{
+	html,body{
 		width: 100%;
 		height: 100%;
 	}
@@ -495,7 +493,7 @@
 		color: var(--main-color);
 	}
 
-	.result, .search, .tips, .filter_items, .result_content{
+	.result, .search,.tips, .filter_items, .result_content{
 		max-width: 100vw;
 	}
 
@@ -512,15 +510,17 @@
 
 	.search_box{
 		position: relative;
-		width: 75%;
+		width: 80%;
 	}
 
 	.tips{
-		font-size: 0.8rem;
+        font-size: 0.8rem;
+        margin: 0.5rem 0 0 0.5rem;
 	}
-
+	
 	.filter_items{
 		height: 2rem;
+        margin: 0 0 -2rem 0;
 	}
 
 	.filter_items .filter_btn{
@@ -534,32 +534,43 @@
 		height: 1rem;
 		line-height: 2rem;
 	}
+
 	.result .search .title_txt{
 		width: 20%;
-		font-size: 1rem;
-		text-indent: 2.5rem;
-		line-height: 3rem;
-		margin-left: 1rem;
-		background-image: url(../res/search_result/filter.png);
-		background-position: left center;
-		background-repeat: no-repeat;
-		background-size: 1.75rem;
+        font-size: 1rem;
+        font-family: "Poppins";
+        color: var(--main-color);
+        text-indent: 2rem;
+        line-height: 3rem;
+        margin-left: 0.5rem;
+        background-image: url(../res/search_result/filter.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 1.75rem;
 	}
 
 	.result .search input{
 		width: 100%;
-		font-size: 1rem;
+		font-size: .9rem;
 		height: 3rem;
 		text-indent: 10%;
 	}
 
-	.result .search .search_icon img, .result .search .mike img{
-		height: 1.5rem;
-	}
+    .search .search_box img{
+		width: 40%;
+	} 
 
-	.result .search .search_icon, .result .search .mike{
+	/* .result .search .search_icon img,.result .search .mike img{
+		height: 1.5rem;
+	} */
+
+	.result .search .search_icon,.result .search .mike{
 		height: 3rem;
 	}
+
+    .result .search .mike {
+        margin-right: -1.5rem;
+    }
 
 	.result_item .result_title_txt h3{
 		font-size: 1rem;
@@ -585,7 +596,7 @@
 		/*top:7.6rem;*/
 		top: -70vh;
 	}
-
+	
 	.carspace{
 		margin: 20px 0;
 	}
@@ -603,7 +614,6 @@
 		height:100%;
 	}
 
-    
 
     .product .product-container {
         flex-direction: column;
@@ -625,8 +635,6 @@
     .fa-arrow-left, .fa-heart{
         font-size: 1.5rem;
     }
-    
-
 
     #back-btn{
         margin-left: -6rem;
@@ -670,8 +678,6 @@
         margin-left: 4rem;
         width: 80%;
     } 
-
-
 
 
 
@@ -1025,6 +1031,10 @@
 
 	.hide{
 		display:none;
+	}
+
+    .mobile_show{
+		display: flex;
 	}
 	
 }
