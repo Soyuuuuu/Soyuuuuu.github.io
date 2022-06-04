@@ -12,32 +12,32 @@
     <!-- css file link -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/homepagedetail.css">
     <link rel="stylesheet" href="/css/product.css">
+	<link rel="stylesheet" href="/css/homepagedetail.css">
     <link rel="stylesheet" href="/css/responsive.css">
 
 
 </head>
 <body>
-    <!-- Nav section -->
+    <!-- Header section -->
     <header class="header">
-        <div id="menu-btn" class="fa-solid fa-bars">
-        </div>
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+        <a href="index.html" class="logo"><img src="res/logo.png" alt="logo"></a>
 
-        <a href="index.html" class="logo"><img src="/res/logo.png" alt="logo"></a>
-
+        <!-- center part of navbar -->
         <nav class="navbar">
-            <a href="#">Our Stock</a>
+            <a href="#" id="ourstock">Our Stock</a>
             <a href="#">Finance</a>
             <a href="#">Service</a>
             <a href="#">Trade & Sell</a>
             <a href="#">Contact us</a>
         </nav>
 
+        <!-- right botton and sign up page -->
         <div class="header-btn">
             <i class="fa-regular fa-heart hide"></i>
             <i class="fa-regular fa-bell hide"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <a a href="search_result.html"><i class="fa-solid fa-magnifying-glass"></i></a>
             <div class ="account-btn">
                 <a class="sign-up" href="#"> Sign up</a>
                 <a class="log-in" href="#"> Log in</a>
@@ -45,6 +45,45 @@
             </div>
         </div>
     </header>
+
+        <!-- hovered dropdown menu in navbar -->
+    <div class="popupwindow hide" id="popupwindow1">
+		<div class="txtlist">
+			<p>Demo Vehicles</p> 
+			<p>Used Vehicles</p>
+			<p>Luxury Vehicles</p>
+			<p>Motocycles</p>
+		</div>
+
+		<div class="bodystyle">
+			<p>Browse by body styles</p>
+			<ul class="body_list2">
+				<li><img src="/res/body/Hatchback.png" alt="hatchback"><a href="#">Hatchback</a></li>
+				<li><img src="/res/body/SUV.png" alt="suv"><a href="#">SUV</a></li>
+				<li><img src="/res/body/truck.png" alt="truck"><a href="#">Truck</a></li>
+				<li><img src="/res/body/sedan.png" alt="sedan"><a href="#">Sedan</a></li>
+				<li><img src="/res/body/Convertible.png" alt="convertible"><a href="#">Convertible</a></li>
+				<li><img src="/res/body/Wagon.png" alt="wagon"><a href="#">Wagon</a></li>
+			</ul>
+
+		</div>
+
+		<div class="brands">
+			<p>Browse by brands</p>
+		    <div class="brand_list2">
+				<a href="#"><img src="/res/brand/BMW.png" alt="BMW"></a>
+				<a href="#"><img src="/res/brand/MB.png" alt="Mercedes-Benz"></a>
+				<a href="#"><img src="/res/brand/audi.png" alt="Audi"></a>
+				<a href="#"><img src="/res/brand/Toyota.png" alt="Toyota"></a>
+				<a href="#"><img src="/res/brand/Honda.png" alt="Honda"></a>
+				<a href="#"><img src="/res/brand/ford.png" alt="Ford"></a>
+				<a href="#"><img src="/res/brand/hyundai.png" alt="Hyundai"></a>
+				<a href="#"><img src="/res/brand/Volkswagen.png" alt="Volkswagen"></a>
+		    </div>
+            
+		</div>
+	</div>
+
 
 
     <!-- Single product detail -->
@@ -132,8 +171,8 @@
                 </div>
 
                 <div class ="contact-btn">
-                    <a class="details" href="#"> View Details </a>
-                    <a class="contactseller" href="#"> Contact Seller </a>
+                    <a href="#" class="details"> View Details </a>
+                    <a href="#" class="contactseller" id="contactseller"> Contact Seller </a>
                 </div>
             </div>
         </div>
@@ -141,10 +180,6 @@
 
 
      <!-- popup enquiry section -->
-     <!-- <div class="enquiry-container">
-        <a href="#" class="contactseller" id="contactseller"> Contact Seller </a>
-    </div> -->
-
     <div class="contact-form">
         <div class="contact-form-content">
             <div class="form-heading">
@@ -169,7 +204,7 @@
 
             <div class="data2">
                 <label for="phonenum">Phone*</label>
-                <input type="text" id="phonenum" placeholder="+61--- --- ---">
+                <input type="text" id="phonenum" placeholder="+61 --- --- ---">
                 <small class="error"></small>
             </div>
 
@@ -180,7 +215,7 @@
             </div>
 
             <div class="data4">
-                <label for="message">Message(maximum 1000 characters)</label>
+                <label for="message">Message (maximum 1000 characters)</label>
                 <textarea id="message" placeholder="Leave us a message" rows="6"></textarea>
                 <small class="error"></small>
             </div>
@@ -208,7 +243,7 @@
             </div>
 
             <div class="confirm-mark">
-                <img src="/res/product/confirmation.png" alt="">
+                <img src="/res/product/confirmation-L.png" alt="">
             </div>
 
             <div class="confirm-text">
@@ -217,7 +252,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Details specifications -->
     <section class="car-details">
@@ -319,6 +353,7 @@
 
     <!-- js link -->
     <script src="/js/main.js"></script>
+    <script src="/js/dropdown.js"></script>
 
 </body>
 </html>

@@ -14,24 +14,29 @@
     <link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/compare.css">
 	<link rel="stylesheet" href="/css/responsive.css">
+	<link rel="stylesheet" href="/css/homepagedetail.css">
 
 
 
 </head>
 <body>
-    <!-- Header section -->
+	<!-- Compare car Section -->
+
+    <!-- Nav Header section -->
     <header class="header">
         <div id="menu-btn" class="fa-solid fa-bars"></div>
-        <a href="#" class="logo"><img src="res/logo.png" alt="logo"></a>
+        <a href="index.html" class="logo"><img src="res/logo.png" alt="logo"></a>
 
+        <!-- center part of navbar -->
         <nav class="navbar">
-            <a href="#">Our Stock</a>
+            <a href="#" id="ourstock">Our Stock</a>
             <a href="#">Finance</a>
             <a href="#">Service</a>
             <a href="#">Trade & Sell</a>
             <a href="#">Contact us</a>
         </nav>
 
+        <!-- right botton and sign up page -->
         <div class="header-btn">
             <i class="fa-regular fa-heart hide"></i>
             <i class="fa-regular fa-bell hide"></i>
@@ -44,8 +49,46 @@
         </div>
     </header>
 
+        <!-- hovered dropdown menu in navbar -->
+    <div class="popupwindow hide" id="popupwindow1">
+		<div class="txtlist">
+			<p>Demo Vehicles</p> 
+			<p>Used Vehicles</p>
+			<p>Luxury Vehicles</p>
+			<p>Motocycles</p>
+		</div>
 
-<!-- Compare car Section -->
+		<div class="bodystyle">
+
+			<p>Browse by body styles</p>
+			<ul class="body_list2">
+				<li><img src="/res/body/Hatchback.png" alt="hatchback"><a href="#">Hatchback</a></li>
+				<li><img src="/res/body/SUV.png" alt="suv"><a href="#">SUV</a></li>
+				<li><img src="/res/body/truck.png" alt="truck"><a href="#">Truck</a></li>
+				<li><img src="/res/body/sedan.png" alt="sedan"><a href="#">Sedan</a></li>
+				<li><img src="/res/body/Convertible.png" alt="convertible"><a href="#">Convertible</a></li>
+				<li><img src="/res/body/Wagon.png" alt="wagon"><a href="#">Wagon</a></li>
+			</ul>
+
+		</div>
+
+		<div class="brands">
+
+			<p>Browse by brands</p>
+		    <div class="brand_list2">
+				<a href="#"><img src="/res/brand/BMW.png" alt="BMW"></a>
+				<a href="#"><img src="/res/brand/MB.png" alt="Mercedes-Benz"></a>
+				<a href="#"><img src="/res/brand/audi.png" alt="Audi"></a>
+				<a href="#"><img src="/res/brand/Toyota.png" alt="Toyota"></a>
+				<a href="#"><img src="/res/brand/Honda.png" alt="Honda"></a>
+				<a href="#"><img src="/res/brand/ford.png" alt="Ford"></a>
+				<a href="#"><img src="/res/brand/hyundai.png" alt="Hyundai"></a>
+				<a href="#"><img src="/res/brand/Volkswagen.png" alt="Volkswagen"></a>
+		    </div>
+            
+		</div>
+	</div>
+
 
 	<!-- Header Title -->
 	<section class="compare_cars">
@@ -119,7 +162,7 @@
 							<div class="column2">Wagon</div>
 						</div>
 					</div>
-					<button>View Details</button>
+					<a href="product1.html"><button>View Details</button></a>
 				</div>
 			</div>
 
@@ -180,7 +223,7 @@
 							<div class="column2">Sedan</div>
 						</div>
 					</div>
-					<button>View Details</button>
+					<a href="product2.html"><button>View Details</button></a>
 				</div>
 			</div>
 
@@ -257,8 +300,9 @@
     <h5>Copyright© 2022. All rights reserved by Auto Classic Pre-Owned Cars and Motorcycles</h5>
 </div>
 
-<!-- js link -->
-<script src="/js/main.js"></script>
+ <!-- js link -->
+ <script src="/js/main.js"></script>
+ <script src="/js/dropdown.js"></script>
 
 </body>
 </html>
