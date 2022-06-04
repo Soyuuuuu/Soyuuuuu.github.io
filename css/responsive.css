@@ -63,8 +63,9 @@
     }
 
     #menu-btn.fa-xmark{
+        font-size: 2.5rem;
         transform: rotate(-180deg);
-    }
+        margin-top: .1rem;}
 
     .header {
         padding: 2rem;
@@ -645,6 +646,7 @@
     #back-btn{
         margin-left: -6rem;
         margin-right: -2rem;
+        z-index: 999;
     }
 
     .car-title h2 {
@@ -729,14 +731,13 @@
         padding-bottom: 1rem;
     }
 
-    /* .Comment{
-        margin-left: 18%;
-        margin-right: 18%;
-    } */
+    .Comment{
+        margin-top: 1rem;
+    }
 
     .Comment h5 {
         line-height: 2rem;
-        font-size: 1rem;
+        font-size: .75rem;
     }
 
     .contact-btn {
@@ -798,10 +799,11 @@
     }
 
     .contact-form-content {
-        height: 80vh;
-        width: 40vh;
+        height: 72vh;
+        width: 42vh;
         margin-top: -190vh;
-    }
+        margin-left: -140vh;
+        z-index: 100000;}
 
     .contact-form .contact-form-content h2 {
         font-size: 1.3rem;
@@ -827,6 +829,10 @@
         font-size: .8rem;
     }
 
+    .data4 #message{
+        width: 32vh;
+    }
+
     .data1 input {
         width: 100%;
         font-size: .8rem;height: rem;
@@ -834,7 +840,7 @@
 
     label {
         font-size: .9rem;
-    margin: .5rem 0 .5rem 0;}
+    margin: 0.6rem 0 .6rem 0;}
 
     input {
         width: 100%;
@@ -856,7 +862,7 @@
         color: var(--main-color);
         background-color: #F5F5F5;
         padding: 12px 41px;
-    }
+    margin-left: 1rem;}
 
     .checkbox-box {
         width: 1em;
@@ -870,9 +876,11 @@
 ----------------------------------------------*/
 @media(max-width:648px){
     .contact-confirm-content {
-        height: 80vh;
-        width: 40vh;
+        height: 72vh;
+        width: 42vh;
         margin-top: -190vh;
+        margin-left: -140vh;
+        z-index: 10000;
     }
 
     #confirm-xmark{
@@ -901,7 +909,7 @@
     }
 
     .contact-confirm-content .confirm-text {
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
     }
 
 }
