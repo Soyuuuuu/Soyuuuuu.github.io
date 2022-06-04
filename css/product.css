@@ -403,6 +403,7 @@ input[type="submit"]{
     padding: 12px 25px;
     border-radius: 50px;
     cursor: pointer;
+    border: none;
 }
 
 input[type="text"]:focus, textarea:focus{
@@ -509,41 +510,6 @@ input[type="text"]:focus, textarea:focus{
     display: none;
 }
 
-/* confirm page */
-/* .contact-confirm-content{
-    position: fixed;
-    height: 80vh;
-    width: 90vh;
-    margin-top: -105vh;
-    background: #fffdfd;
-    padding: 2rem;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-}
-
-#confirm-xmark {
-    margin-top: -2rem;
-    margin-right: -12rem;
-}
-
-.contact-confirm-content .form-heading h2{
-    padding: 3rem 6rem 1rem 0%;
-    font-size: 2.5rem;
-}
-
-.contact-confirm-content .confirm-text{
-    margin-bottom: 3rem;
-}
-
-.contact-confirm-content .confirm-text h5{
-    margin-bottom: 0.5rem;
-    text-align: center;
-    font-size: 1.3rem;
-} */
 
 /*-------------------------------------
         Car Details section

@@ -799,7 +799,7 @@
     }
 
     .contact-form-content {
-        height: 72vh;
+        height: 80vh;
         width: 42vh;
         margin-top: -200vh;
         margin-left: -140vh;
@@ -811,14 +811,21 @@
         margin-left: 6rem;
     }
 
+    form {
+        padding: 0.5rem 0.5rem;
+    }
+
     .form-heading {
         margin-left: -3rem;
         gap: 0rem;
+        margin-top: 1rem;
     }
 
     .fa-xmark {
         font-size: 2rem;
-    margin-right: 0rem;margin-top: -4rem;}
+        margin-right: 0rem;
+        margin-top: -4rem;
+    }
 
     .data1{
         flex-direction: column;
@@ -830,21 +837,24 @@
     }
 
     .data4 #message{
-        width: 32vh;
+        width: 33.5vh;
     }
 
     .data1 input {
         width: 100%;
-        font-size: .8rem;height: rem;
+        font-size: .8rem;
+        height: rem;
     }
 
     label {
         font-size: .9rem;
-    margin: 0.6rem 0 .6rem 0;}
+        margin: 0.6rem 0 .6rem 0;
+    }
 
     input {
         width: 100%;
         height: 2rem;
+        margin-bottom: 1px;
     }
 
     textarea {
@@ -871,49 +881,48 @@
         /* margin-top: -1.5rem; */
     }
 
+    .error {
+        margin: 0rem 0 0 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    input[type="submit"] {
+        width: 38%;
+        padding: 0px 26px;
+        font-size: 1rem;
+    }
+
+    .center {
+        text-align: center;
+        margin-top: -1rem;
+    }
 }
+
+
 /*---------------------------------------------
         Confirmation page mobile responsive
 ----------------------------------------------*/
 @media(max-width:648px){
-    .contact-confirm-content {
-        height: 72vh;
-        width: 42vh;
-        margin-top: -190vh;
-        margin-left: -140vh;
-        z-index: 10000;
+
+    #confirm-xmark {
+        width: 20vh;
+        font-size: 3rem;
+        margin: -19rem 0px 3rem 30rem;
     }
 
-    #confirm-xmark{
-        margin-top: -5rem;
-        margin-right: -15rem;
-}
-
-    .contact-confirm-content .form-heading h2 {
-        padding: 6rem 0rem 0rem 0%;
-        font-size: 1.5rem;
-        margin-top: -1rem;
+    .thank-you {
+        gap: 5rem;
+        margin-top: 1rem;
     }
 
-    .contact-confirm-content .form-heading {
-        margin-left: -13rem;
-        gap: 0rem;
+    .contact-form .contact-form-content .thank-you h2{
+        font-size: 1.7rem;
     }
 
-    .confirm-mark img{
-        width: 70%;
-        margin-left: 3rem;
+    .thank-you h5{
+        font-size: 1rem;
     }
 
-    .contact-confirm-content .confirm-text h5 {
-        font-size: .9em;
-    }
-
-    .contact-confirm-content .confirm-text {
-        margin-bottom: 5rem;
-    }
-
-}
 
 /*-----------------------------------------
         Compare page mobile responsive
@@ -1057,5 +1066,5 @@
     .mobile_show{
 		display: flex;
 	}
-	
+}
 }
