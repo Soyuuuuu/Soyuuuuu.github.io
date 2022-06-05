@@ -210,8 +210,8 @@ padding-top: 2rem;}
 
 
 .key-features h4 {
-    color: var(--btntext-color);
-    font-size: 1.5rem;
+    color: var(--main-color);
+    font-size: 1rem;
     line-height: 2rem;
 }
 
