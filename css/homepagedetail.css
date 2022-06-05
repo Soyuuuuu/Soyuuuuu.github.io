@@ -62,10 +62,16 @@
     border: 2px solid var(--btntext-color);
 }
 
-.folded-button:hover, #border:hover{
+.folded-button:hover{
     background-color: var(--background-gradient);
     color: #ACA1E5;
     border-left: 0px solid #707070;
+}
+
+ #border:hover{
+    background-color: var(--background-gradient);
+    color: #ACA1E5;
+    border-left: 2px solid #707070;
 }
 
 .dropdown {
