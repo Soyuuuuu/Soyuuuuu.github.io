@@ -733,7 +733,7 @@
 
     .Comment h5 {
         line-height: 2rem;
-        font-size: .75rem;
+        font-size: .6rem;
     }
 
     .contact-btn {
@@ -798,7 +798,7 @@
         height: 79vh;
         width: 42vh;
         margin-top: -190vh;
-        margin-left: -140vh;
+        margin-left: -144vh;
         z-index: 100000;
     }
 
