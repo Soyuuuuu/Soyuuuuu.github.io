@@ -215,11 +215,15 @@ padding-top: 2rem;}
     line-height: 2rem;
 }
 
+.Comment{
+    margin-top: -2rem;
+}
+
 .Comment h5{
     text-align: center;
     line-height: 3rem;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--main-color);
 }
 
@@ -262,25 +266,6 @@ padding-top: 2rem;}
 /*-------------------------------------
         pop-up enquiry section
 --------------------------------------*/
-/* submit button */
-/* .submit{
-    margin-left: -2rem;
-    text-align: center;
-    padding-top: .5rem;
-}
-
-.submit-btn{
-    font-family: "Poppins", medium;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--main-color);
-    background-color: white;
-    color: var(--main-color);
-    box-shadow: 3px 2px 2px #b0afb1ad;
-    padding: 12px 25px;
-    border-radius: 50px;
-    cursor: pointer; 
-}*/
 
 .contactseller:hover, .submit-btn:hover{
     background-color: var(--hover-color);
@@ -323,7 +308,7 @@ padding-top: 2rem;}
 
 .contact-form-content {
     position: fixed;
-    height: 76vh;
+    height: 83vh;
     width: 90vh;
     margin-top: -105vh;
     margin-left: -20vh;
@@ -334,7 +319,7 @@ padding-top: 2rem;}
 }
 
 form{
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
 }
 
 .contact-form .contact-form-content h2{
@@ -484,6 +469,10 @@ input[type="text"]:focus, textarea:focus{
     margin-top: 3rem;
 }
 
+.confirm-mark img{
+    width: 20rem;
+}
+
 .contact-form .contact-form-content .thank-you h2{
     padding: 0rem 6rem 0rem 0%;
     font-size: 3.5rem;
@@ -496,7 +485,7 @@ input[type="text"]:focus, textarea:focus{
 }
 
 .thank-you .confirm-text{
-    margin-bottom: 3rem;
+    margin-bottom: -2rem;
     font-size: 12rem;
 }
 

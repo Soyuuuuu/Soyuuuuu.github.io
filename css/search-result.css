@@ -318,6 +318,10 @@
 		cursor: pointer;
 	}
 
+	.result_item .result_item_bottom .result_bottom_right button:hover{
+		color: var(--hover-color);
+	}
+
 	/*-----------------------------------------
 		right space - page number section
 	-------------------------------------------*/
@@ -379,25 +383,6 @@
 		font-family: "Montserrat";
 		font-weight: 600;
 	}
-	
-	/* .popupwindow{
-		width: 100vw; */
-		/* position: fixed; */
-		/* height: 16rem;
-		padding: 3rem 0;
-		z-index: 999; */
-		/* top: -30vh;
-		background: #E3E2E3;
-		border-radius: 1rem;
-		height: 12rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		transition: all 1s ease;
-		font-family: "Montserrat";
-		font-weight: 600;
-	} */
 
 	.carspace{
 		flex: 0 1 auto;
@@ -410,6 +395,7 @@
 		background: #FCFCFC;
 		border: 2px dashed #7070706b;
 		color: var(--main-color);
+		cursor: pointer;
 	}
 
 	.caritem{
@@ -443,4 +429,8 @@
 		margin-left: 2rem;
 		box-shadow: 3px 2px 2px #b0afb1ad;
 		cursor: pointer;
+	}
+
+	.comparecars:hover{
+		background: var(--hover-color);
 	}
