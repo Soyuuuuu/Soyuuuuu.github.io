@@ -50,7 +50,7 @@
 		font-family: "Poppins";
 	}
 
-	.filter .title .title_txt{
+	.filter .title .title-txt{
 		font-size: 1.75rem;
 		text-indent: 2.5rem;
 		color: var(--text-color);
@@ -60,13 +60,13 @@
 		background-size: 1.75rem;
 	}
 
-	.filter .title .clear_all{
+	.filter .title .clear-all{
 		font-size: 1rem;
 		color: var(--btntext-color);
 		font-family: "Montserrat";
 	}
 
-	.filter .title .clear_all:hover{
+	.filter .title .clear-all:hover{
 		color: var(--hover-color);
 	}
 
@@ -192,7 +192,7 @@
 		font-family: "Montserrat";
 	}
 
-	.result .search .search_icon, .result .search .mike{
+	.result .search .search-icon, .result .search .mike{
 		position: absolute;
 		top: 0px;
 		height: 5.4rem;
@@ -201,11 +201,11 @@
 		align-items: center;
 	}
 
-	.search .search_box img{
+	.search .search-box img{
 		width: 80%;
 	} 
 
-	.result .search .search_icon{
+	.result .search .search-icon{
 		left: 2%;
 	}
 
@@ -223,7 +223,7 @@
 		margin: 2rem 0 -6rem 0;
 	}
 
-	.filter_items{
+	.filter-items{
 		display: flex;
 		gap: 1rem;
 		background-image: url(..res/search-result/sort.png);
@@ -232,7 +232,7 @@
 		margin: 7rem 0 -1rem 0;
 	}
 
-	.filter_items .filter_btn{
+	.filter-items .filter-btn{
 		font-family: "Poppins", medium;
 		font-weight: 500;
 		font-size: 17px;
@@ -245,14 +245,14 @@
 		gap: 0.5rem;
 	}
 
-	.filter_items .filter_btn img{
+	.filter-items .filter-btn img{
 		width: 1rem;
 	}
 
 	/*-----------------------------------------
 		right space - result content
 	-------------------------------------------*/
-	.result_content{
+	.result-content{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
@@ -260,7 +260,7 @@
 		gap: 2rem;
 	}
 
-	.result_item{
+	.result-item{
 		flex: 0 1 45%;
 		height: 20rem;
 		background: #FDFDFD;
@@ -274,44 +274,44 @@
 		padding: 20px;
 	}
 
-	.result_item .result_title{
+	.result-item .result-title{
 		display: flex;
 		justify-content: space-between;
 	}
 
-	.result_item .result_title_icon{
+	.result-item .result-title-icon{
 		line-height: 2.5rem;
 		font-size: 1.7rem;
 	}
-	.result_item .result_title_icon:hover{
+	.result-item .result-title-icon:hover{
 		color: #D33DA5;
 	}
 
-	.result_item .result_title_txt h3{
+	.result-item .result-title-txt h3{
 		font-size: 1.25rem;
 		line-height: 1.7rem;
 	}
 
-	.result_item .result_title_txt p{
+	.result-item .result-title-txt p{
 		font-size: 0.85rem;
 	}
 
-	.result_item img{
+	.result-item img{
 		display: block;
 		margin: 0 auto;
 	}
 
-	.result_item .result_item_bottom{
+	.result-item .result-item-bottom{
 		display: flex;
 		justify-content: space-between;
 	}
 
-	.result_item .result_item_bottom p{
+	.result-item .result-item-bottom p{
 		margin-top: 0.5rem;
 	}
 
 
-	.result_item .result_item_bottom .result_bottom_right button{
+	.result-item .result-item-bottom .result-bottom-right button{
 		font-family: "Poppins", medium;
 		font-weight: 500;
 		font-size: 17px;
@@ -322,7 +322,7 @@
 		cursor: pointer;
 	}
 
-	.result_item .result_item_bottom .result_bottom_right button:hover{
+	.result-item .result-item-bottom .result-bottom-right button:hover{
 		color: var(--hover-color);
 	}
 
@@ -367,7 +367,7 @@
 	/*-----------------------------------------
 		right space - popup compare cars section
 	-------------------------------------------*/
-	.mobile_show{
+	.mobile-show{
 		display: none;
 	}
 

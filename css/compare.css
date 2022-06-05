@@ -47,12 +47,10 @@
 	position:relative;
 }
 
-.searchbox .clear_list{
+.searchbox .clear-list{
 	font-family: "Montserrat";
 	min-width: 200px;
 	flex:0 1 20%;
-	/* background-image:url(..res/compare-cars/del.png);
-	background-position:2% center; */
 	line-height:2.5rem;
 	color:var(--main-color);
 	text-indent:25%;
@@ -61,7 +59,7 @@
 	background-repeat:no-repeat;
 }
 
-.searchbox .clear_list:hover{
+.searchbox .clear-list:hover{
 	text-decoration: underline;
 }
 
@@ -86,7 +84,7 @@
 	align-items:center;
 }
 
-.searchbox .search .search_icon{
+.searchbox .search .search-icon{
 	left:2%;
 }
 
@@ -94,14 +92,14 @@
         Single car space
 --------------------------------------*/
 
-.car_list{
+.car-list{
 	width:100%;
 	display:flex;
     justify-content: space-between;
 	gap:2rem;
 }
 
-.car_space{
+.car-space{
 	flex: 0 1 28rem;
 	height: auto;
 	background:#FDFDFD;
@@ -113,7 +111,7 @@
 	position: relative;
 }
 
-.car_item{
+.car-item{
 	margin-top:-2px;
 	margin-left:-2px;
 	flex:0 1 28rem;
@@ -129,7 +127,7 @@
 	padding: 20px;
 }
 
-.car_item .car1{
+.car-item .car1{
 	width: 115%;
     margin-left: -2rem;
     margin-top: -1.2rem;
@@ -137,38 +135,38 @@
 }
 
 
-.car_item .car_item_title{
+.car-item .car-item-title{
 	display: flex;
     justify-content: space-between;
 }
 
-.car_item .car_item_title_txt h3{
+.car-item .car-item-title-txt h3{
 	font-size: 1.2rem;
 	line-height: 2.7rem;
 
 }
 
-.car_item .car_item_title_txt p{
+.car-item .car-item-title-txt p{
 	font-size: 0.85rem;
 }
 
-.car_item img{
+.car-item img{
 	display: block;	
 	margin-top: 30px;
 	margin-bottom: -14px;
 }
 
-.car_item .car_item_bottom{
+.car-item .car-item-bottom{
 	display: flex;
     justify-content: space-between;
 }
 
-.car_item .car_item_bottom .car_item_bottom_left h3{
+.car-item .car-item-bottom .car-item-bottom-left h3{
 	font-size: 1.25rem;
 	line-height: 4.5rem;
 }
 
-.car_item .car_item_bottom .car_item_bottom_right button{
+.car-item .car-item-bottom .car-item-bottom-right button{
 	font-family: "Poppins", medium;
     font-weight: 500;
     font-size: 17px;
@@ -185,30 +183,30 @@
         Single car space - Text section
 -------------------------------------------------*/
 
-.text_list .row{
+.text-list .row{
 	display:flex;
 	height:2.2rem;
 	background:#D9D9D9;
 	border-radius:1.1rem;
 }
 
-.text_list .row div{
+.text-list .row div{
 	display:flex;
 	align-items:center;
 }
 
-.text_list .row .column1{
+.text-list .row .column1{
 	flex:0 1 13rem;
 	text-indent:2rem;
 	font-family: "Montserrat";
 	font-weight: 500;
 }
 
-.text_list .row .column2 p{
+.text-list .row .column2 p{
 	line-height: .5rem;
 }
 
-.text_list .row .column2{
+.text-list .row .column2{
 	display: flex;
 	align-items: flex-start;
     flex-direction: column;
@@ -217,7 +215,7 @@
 	font-size: small;
 }
 
-.text_list .row:nth-child(2n){
+.text-list .row:nth-child(2n){
 	background: #fff;
 }
 
@@ -225,7 +223,7 @@
         Bottom button space
 --------------------------------------*/
 
-.car_item button{
+.car-item button{
 	font-family: "Poppins", medium;
     font-weight: 500;
     font-size: 17px;
@@ -238,6 +236,6 @@
 	margin:1rem auto;
 }
 
-.car_item button:hover{
+.car-item button:hover{
 	color: var(--hover-color);
 }

@@ -16,7 +16,7 @@
         padding: 30px 20px;
     }
 
-    .brand_list .firstrow, .secondrow {
+    .brand-list .firstrow, .secondrow {
         gap: 11rem;
     }
 }
@@ -45,7 +45,7 @@
         display: none;
     }
 
-    .brand_list .firstrow, .secondrow {
+    .brand-list .firstrow, .secondrow {
         gap: 5rem;
     }
 }
@@ -95,7 +95,7 @@
 		display:none;
 	}
 
-    .brand_list .firstrow, .secondrow {
+    .brand-list .firstrow, .secondrow {
         gap: 4rem;
     }
 
@@ -122,7 +122,7 @@
 		font-size: large;
 	}
 
-    .brand_list .firstrow, .secondrow {
+    .brand-list .firstrow, .secondrow {
         gap: 20rem;
     }
 
@@ -206,12 +206,12 @@
         top: 11px;
     }
         
-    .body_list {
+    .body-list {
         gap: 2.5rem;
     }
 
 
-    .body_list img {
+    .body-list img {
         width: 6rem;
         height: 3rem;
         display: flex;
@@ -221,15 +221,15 @@
         margin-left: 14px;
     }
 
-    .brand_style {
+    .brand-style {
         height: 56vh;
     }
 
-    .brand_list .firstrow, .secondrow {
+    .brand-list .firstrow, .secondrow {
         gap: 7rem;
     }
 
-    .brand_list img {
+    .brand-list img {
         width: 8rem;
     }
 
@@ -317,7 +317,7 @@
 	.filter .title div{
 		flex:0 1 33.3%;
 	}
-	.filter .title .clear_all{
+	.filter .title .clear-all{
 		text-align:right;
 	}
     .header .navbar a {
@@ -341,36 +341,36 @@
         margin: 9rem 1rem 3rem;
     }
 
-    .body_list {
+    .body-list {
         flex-wrap: wrap;
         gap: 2.5rem;
         justify-content: space-evenly;
     }
 
-    .brand_list .firstrow, .secondrow {
+    .brand-list .firstrow, .secondrow {
         gap: 2rem;
     }
 
 
-    .body_style, .brand_style {
+    .body-style, .brand-style {
         text-align: center;
         height: 34vh;
     }
 
-    .body_list a {
+    .body-list a {
         font-size: 9px;
     }
 
-    .body_list img {
+    .body-list img {
         width: auto;
         height: 2rem;
     }
 
-    .body_list .sedan{
+    .body-list .sedan{
         margin-left: 1.5rem;
     }
 
-    .brand_list img {
+    .brand-list img {
         width: 4rem;
     }
 
@@ -479,17 +479,17 @@
 		line-height: 1.5rem;
 	}
 
-	.mobile_show{
+	.mobile-show{
 		display: flex;
 	}
 
-	.mobile_use{
+	.mobile-use{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
-	.mobile_use .m50{
+	.mobile-use .m50{
 		max-width: 50%;
 		flex: 0 1 50%;
 	}
@@ -500,11 +500,11 @@
 		color: var(--main-color);
 	}
 
-	.result, .search,.tips, .filter_items, .result_content{
+	.result, .search,.tips, .filter-items, .result-content{
 		max-width: 100vw;
 	}
 
-	.result_top{
+	.result-top{
 		padding: 0 1rem;
 	}
 
@@ -515,7 +515,7 @@
 		position: static;
 	}
 
-	.search_box{
+	.search-box{
 		position: relative;
 		width: 80%;
 	}
@@ -525,24 +525,24 @@
         margin: 0.5rem 0 0 0.5rem;
 	}
 	
-	.filter_items{
+	.filter-items{
 		height: 2rem;
         margin: 0 0 -2rem 0;
 	}
 
-	.filter_items .filter_btn{
+	.filter-items .filter-btn{
 		font-size: 0.8rem;
 		padding: 0px 0.5rem;
 		align-items: center;
 	}
 
-	.filter_items .filter_btn img{
+	.filter-items .filter-btn img{
 		width: 1rem;
 		height: 1rem;
 		line-height: 2rem;
 	}
 
-	.result .search .title_txt{
+	.result .search .title-txt{
 		width: 20%;
         font-size: 1rem;
         font-family: "Poppins";
@@ -563,11 +563,11 @@
 		text-indent: 10%;
 	}
 
-    .search .search_box img{
+    .search .search-box img{
 		width: 40%;
 	} 
 
-	.result .search .search_icon,.result .search .mike{
+	.result .search .search-icon,.result .search .mike{
 		height: 3rem;
 	}
 
@@ -575,22 +575,22 @@
         margin-right: -1.5rem;
     }
 
-	.result_item .result_title_txt h3{
+	.result-item .result-title-txt h3{
 		font-size: 1rem;
 	}
 
-	.result_content{
+	.result-content{
 		gap: 0;
 		width: 100vw;
 	}
 
-	.result_item{
+	.result-item{
 		max-width: 96vw;
 		margin: 1rem 2vw;
 		flex: 0 1 96vw;
 	}
 
-	.result_item img{
+	.result-item img{
 		width: 71vw;
 	}
 
@@ -979,7 +979,7 @@
         width: 102%;
 	}
 
-	.searchbox .clear_list {
+	.searchbox .clear-list {
         width: 19%;
         flex: 0 0 24%;
         font-size: 1rem;
@@ -987,53 +987,53 @@
         background: none;
 	}
 
-    .car_item .car1{
+    .car-item .car1{
         width: 120%;
         margin-left: -2rem;
     }
 
-    .car_item .car_item_title_txt h3 {
+    .car-item .car-item-title-txt h3 {
         font-size: 1.3rem;
         line-height: 1.7rem;
         margin-bottom: 0.5rem;
     }
 
-    .car_item .car_item_title_txt p {
+    .car-item .car-item-title-txt p {
         font-size: 0.8rem;
     }
 
-    .car_item .car_item_bottom .car_item_bottom_left h3 {
+    .car-item .car-item-bottom .car-item-bottom-left h3 {
         font-size: 1rem;
         line-height: 5rem;
     }
 
-    .car_item .car_item_bottom .car_item_bottom_right button {
+    .car-item .car-item-bottom .car-item-bottom-right button {
         font-size: 12px;
         padding: 7px 14px;
         margin-top: 1.5rem;
     }
 
-    .car_item .car_item_bottom .car_item_bottom_right button:hover{
+    .car-item .car-item-bottom .car-item-bottom-right button:hover{
         background-color: var(--hover-color);
     }
 
-    .text_list .row .column2 {
+    .text-list .row .column2 {
         font-size: 10px;
         text-align: right;
         margin-left: -6rem;
     }
 
-    .text_list .row .column1 {
+    .text-list .row .column1 {
         text-indent: 1rem;
         font-weight: 500;
         font-size: 12px;
     }
 
-    .car_item button {
+    .car-item button {
         font-size: 14px;
     }
 
-    .car_item button:hover{
+    .car-item button:hover{
         color: var(--hover-color);
     }
 
@@ -1047,21 +1047,21 @@
 		padding:0 2%;
 	}
 
-	.car_list{
+	.car-list{
 		width:100%;
 		overflow:scroll;
 	}
 
-	.car_space{
+	.car-space{
 		min-width:20rem;
 	}
 
-	.car_space,.car_item{
+	.car-space,.car-item{
 		width:20rem;
 		flex: 0 1 20rem;
 	}
 
-	.car_item img{
+	.car-item img{
 		width:90%;
 	}
 
@@ -1069,7 +1069,7 @@
 		display:none;
 	}
 
-    .mobile_show{
+    .mobile-show{
 		display: flex;
 	}
 }

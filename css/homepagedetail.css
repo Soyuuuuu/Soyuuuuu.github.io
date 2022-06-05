@@ -181,15 +181,15 @@
        Brand & body style
 --------------------------------------*/
 
-.body_style, .brand_style{
+.body-style, .brand-style{
     background-color: var(--mainbackground-color);
 }
 
- .brand_style{
+ .brand-style{
     height: 53vh;
  }
 
-.body_list {
+.body-list {
     display: flex;
     align-content: center;
     justify-content: space-around;
@@ -197,7 +197,7 @@
     padding-right: 8%;
 }
 
-.body_list a{
+.body-list a{
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -211,17 +211,17 @@
     display: inline-block;
 }
 
-.body_list > *{
+.body-list > *{
     display: block;
     text-align: center;
 }
 
-.body_list img {
+.body-list img {
     height: 4rem;
     display: flex;
 }
 
-.brand_list{
+.brand-list{
     padding-left: 8%;
     padding-right: 8%;
     display: flex;
@@ -231,19 +231,19 @@
     justify-content: center;
 }
 
-.brand_list img{
+.brand-list img{
     width: 12rem;
     display: flex;
     justify-content: space-between;
 }
 
-.brand_list .firstrow, .secondrow{
+.brand-list .firstrow, .secondrow{
     display: flex;
     flex-direction: row;
     gap: 16rem;
 }
 
-.brand_list .secondrow{
+.brand-list .secondrow{
     margin-top: -8rem;
 }
 

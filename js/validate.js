@@ -20,6 +20,7 @@ function validateForm(){
     if(nameInput1.value.length < 1){
         errorNodes[0].innerText = "Name cannot be blank";
         nameInput1.classList.add("error-border");
+        
         errorFlag = true;
     }
 
