@@ -798,7 +798,7 @@
         height: 79vh;
         width: 42vh;
         margin-top: -190vh;
-        margin-left: -144vh;
+        margin-left: -140vh;
         z-index: 100000;
     }
 
@@ -1014,7 +1014,7 @@
     }
 
     .car-item .car-item-bottom .car-item-bottom-right button:hover{
-        background-color: var(--hover-color);
+        color: var(--hover-color);
     }
 
     .text-list .row .column2 {
