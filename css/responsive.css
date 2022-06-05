@@ -461,7 +461,7 @@
 		display: none;
 	}
 
-	.search_result{
+	.search-result{
 		margin-top: 10rem;
 	}
 
@@ -550,7 +550,7 @@
         text-indent: 2rem;
         line-height: 3rem;
         margin-left: 0.5rem;
-        background-image: url(../res/search_result/filter.png);
+        background-image: url(../res/search-result/filter.png);
         background-position: left center;
         background-repeat: no-repeat;
         background-size: 1.75rem;
@@ -962,7 +962,7 @@
 		color:var(--main-color)
 	}
 
-    .compare_cars {
+    .compare-cars {
         gap: 1.5rem;
     }
 
@@ -1035,7 +1035,7 @@
 		width:100vw;
 	}
 
-	.compare_cars{
+	.compare-cars{
 		width:100%;
 		box-sizing:border-box;
 		padding:0 2%;
