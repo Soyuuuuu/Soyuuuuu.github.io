@@ -447,9 +447,9 @@
 
 
 }
-/*----------------------------------------
+/*--------------------------------------------
         Search result page mobile responsive
------------------------------------------*/
+---------------------------------------------*/
 
 @media(max-width:648px){
 	html,body{
@@ -682,6 +682,12 @@
         margin-left: 4rem;
         width: 80%;
     } 
+
+    .multi-image-group h2{
+        font-size: 1.4rem;
+        padding-left: 15%;
+        padding-bottom: 4rem;
+    }
 
 
 
