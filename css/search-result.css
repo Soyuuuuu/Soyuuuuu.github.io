@@ -38,6 +38,10 @@
 		margin: 0 auto;
 	}
 
+	.filter .row button:hover{
+		color: var(--hover-color);
+	}
+
 	.filter .title{
 		display: flex;
 		align-items: center;
@@ -50,7 +54,7 @@
 		font-size: 1.75rem;
 		text-indent: 2.5rem;
 		color: var(--text-color);
-		background-image: url(..res/search-result/filter.png);
+		background-image: url(../res/search-result/filter.png);
 		background-position: left center;
 		background-repeat: no-repeat;
 		background-size: 1.75rem;
