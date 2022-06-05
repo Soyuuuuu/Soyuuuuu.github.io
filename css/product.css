@@ -275,7 +275,6 @@ padding-top: 2rem;}
     color: var(--main-color);
     font-size: 2.5em;
     cursor: pointer;
-    /* margin-right: -55rem; */
 }
 
 .fa-xmark:hover{
@@ -299,7 +298,6 @@ padding-top: 2rem;}
     height: 200vh;
     position: absolute;
     top: 5rem;
-    /* display: flex; */
     display: none;
     justify-content: center;
     align-items: center;
@@ -338,7 +336,6 @@ label{
 
 .data1 input{
     width: 35.5vh;
-    /* border: 1px solid #707070; */
 }
 
 .data1{
@@ -381,7 +378,6 @@ input[type="submit"]{
     font-family: "Poppins", medium;
     font-weight: 500;
     font-size: 1.5rem;
-    /* color: var(--main-color); */
     background-color: #F5F5F5;
     color: var(--main-color);
     box-shadow: 3px 2px 2px #b0afb1ad;
