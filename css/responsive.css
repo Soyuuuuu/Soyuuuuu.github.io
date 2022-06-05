@@ -799,11 +799,12 @@
     }
 
     .contact-form-content {
-        height: 80vh;
+        height: 79vh;
         width: 42vh;
-        margin-top: -200vh;
-        margin-left: -140vh;
-        z-index: 100000;}
+        margin-top: -190vh;
+        margin-left: -135vh;
+        z-index: 100000;
+    }
 
     .contact-form .contact-form-content h2 {
         font-size: 1.3rem;
