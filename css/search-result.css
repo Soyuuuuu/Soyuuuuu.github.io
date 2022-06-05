@@ -226,7 +226,8 @@
 	.filter-items{
 		display: flex;
 		gap: 1rem;
-		background-image: url(..res/search-result/sort.png);
+		background-image: url(../res/search-result/sort.png);
+		background-size: 1.5rem;
 		background-position: 98% center;
 		background-repeat: no-repeat;
 		margin: 7rem 0 -1rem 0;
