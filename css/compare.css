@@ -51,8 +51,8 @@
 	font-family: "Montserrat";
 	min-width: 200px;
 	flex:0 1 20%;
-	background-image:url(..res/compare-cars/del.png);
-	background-position:2% center;
+	/* background-image:url(..res/compare-cars/del.png);
+	background-position:2% center; */
 	line-height:2.5rem;
 	color:var(--main-color);
 	text-indent:25%;
@@ -61,8 +61,12 @@
 	background-repeat:no-repeat;
 }
 
+.searchbox .clear_list:hover{
+	text-decoration: underline;
+}
+
 .searchbox .search input{
-	width:100%;
+	width: 110%;
 	background:#F9F9F9;
 	height:2.5rem;
 	border-radius:10px;
@@ -98,15 +102,15 @@
 }
 
 .car_space{
-	flex:0 1 28rem;
-	height:auto;
+	flex: 0 1 28rem;
+	height: auto;
 	background:#FDFDFD;
-	border:2px dashed #CFCFCF;
-	border-radius:15px;
-	background-image:url(..res/compare-cars/add.png);
-	background-position:center center;
-	background-repeat:no-repeat;
-	position:relative;
+	border: 2px dashed #CFCFCF;
+	border-radius: 15px;
+	background-image: url(..res/compare-cars/add.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
 .car_item{
@@ -121,15 +125,11 @@
 	display: flex;
     justify-content: space-between;
     flex-direction: column;
-	box-sizing:border-box;
-	padding:20px;
+	box-sizing: border-box;
+	padding: 20px;
 }
 
 .car_item .car1{
-	/* width: 100%;
-	margin-top: -2rem;
-	margin-bottom: -2rem; */
-
 	width: 115%;
     margin-left: -2rem;
     margin-top: -1.2rem;
@@ -138,18 +138,18 @@
 
 
 .car_item .car_item_title{
-	display:flex;
+	display: flex;
     justify-content: space-between;
 }
 
 .car_item .car_item_title_txt h3{
-	font-size:1.2rem;
-	line-height:2.7rem;
+	font-size: 1.2rem;
+	line-height: 2.7rem;
 
 }
 
 .car_item .car_item_title_txt p{
-	font-size:0.85rem;
+	font-size: 0.85rem;
 }
 
 .car_item img{
@@ -159,13 +159,13 @@
 }
 
 .car_item .car_item_bottom{
-	display:flex;
+	display: flex;
     justify-content: space-between;
 }
 
 .car_item .car_item_bottom .car_item_bottom_left h3{
-	font-size:1.25rem;
-	line-height:4.5rem;
+	font-size: 1.25rem;
+	line-height: 4.5rem;
 }
 
 .car_item .car_item_bottom .car_item_bottom_right button{
@@ -218,7 +218,7 @@
 }
 
 .text_list .row:nth-child(2n){
-	background:#fff;
+	background: #fff;
 }
 
 /*-------------------------------------

@@ -957,10 +957,10 @@
 	}
 
 	.bigtit div i{
-		float:left;
-		margin-left:1rem;
-		font-size:2rem;
-		color:var(--main-color)
+		float: left;
+		margin-left: 1rem;
+		font-size: 2rem;
+		color: var(--main-color)
 	}
 
     .compare-cars {
@@ -978,8 +978,9 @@
     }
 
 	.searchbox .search input{
-		font-size:0.8rem;
-		text-indent:2.5rem;
+		font-size: 0.8rem;
+		text-indent: 2.5rem;
+        width: 102%;
 	}
 
 	.searchbox .clear_list {
@@ -1016,6 +1017,10 @@
         margin-top: 1.5rem;
     }
 
+    .car_item .car_item_bottom .car_item_bottom_right button:hover{
+        background-color: var(--hover-color);
+    }
+
     .text_list .row .column2 {
         font-size: 10px;
         text-align: right;
@@ -1030,6 +1035,10 @@
 
     .car_item button {
         font-size: 14px;
+    }
+
+    .car_item button:hover{
+        color: var(--hover-color);
     }
 
 	.footer{
